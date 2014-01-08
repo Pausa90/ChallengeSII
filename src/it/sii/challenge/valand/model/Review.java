@@ -1,6 +1,5 @@
 package it.sii.challenge.valand.model;
 
-import java.util.Map;
 
 public class Review {
 	
@@ -12,6 +11,15 @@ public class Review {
 	private String date; //this is a formatted date: yyyy-mm-dd in strptime notation
 	private Map<String, Integer> votes;
 	*/
+	/**
+	 * Constructors
+	 */
+	public Review(String businessId, String userId, double stars) {
+		super();
+		this.businessId = businessId;
+		this.userId = userId;
+		this.stars = stars;
+	}	
 	
 	
 	/**

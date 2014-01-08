@@ -19,8 +19,30 @@ public class Business {
 	private boolean open; //indicating if the structure is still working or failed.
 	*/
 	
+	/**
+	 * Constructors
+	 */
 	
+	public Business(String id, String name, List<String> neighborhoods,
+			double stars, int reviewCount, List<String> categories) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.neighborhoods = neighborhoods;
+		this.stars = stars;
+		this.reviewCount = reviewCount;
+		this.categories = categories;
+	}
+		
+	public Business(String id, String name, double stars) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.stars = stars;
+	}
+
 	
+
 	/**
 	 * Getters & Setters
 	 */
@@ -29,6 +51,7 @@ public class Business {
 	public String getId() {
 		return id;
 	}
+	
 	public void setId(String id) {
 		this.id = id;
 	}

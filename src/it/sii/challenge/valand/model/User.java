@@ -1,6 +1,5 @@
 package it.sii.challenge.valand.model;
 
-import java.util.Map;
 
 public class User {
 	
@@ -12,6 +11,15 @@ public class User {
 	private Map<String, Integer> votes;
 	*/
 	
+	/**
+	 * Constructors
+	 */
+	public User(String id, int reviewCount, double averageStars) {
+		super();
+		this.id = id;
+		this.reviewCount = reviewCount;
+		this.averageStars = averageStars;
+	}
 	
 	
 	/**

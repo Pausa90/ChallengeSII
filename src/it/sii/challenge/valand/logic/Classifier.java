@@ -1,8 +1,18 @@
 package it.sii.challenge.valand.logic;
 
+import it.sii.challenge.valand.utilities.UserBusinessMatrix;
+
 public class Classifier {
 	
+	private UserBusinessMatrix matrix;
 	
-	//TODO: Creazione matrice (sparsa) User-Item  
-
+	public Classifier(){
+		this.matrix = new UserBusinessMatrix();
+	}
+	
+	
+	
+	
+	
+	
 }
