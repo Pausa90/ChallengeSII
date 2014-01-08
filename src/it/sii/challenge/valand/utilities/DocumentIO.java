@@ -9,6 +9,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -28,9 +29,9 @@ public class DocumentIO {
 		this.userFile = newFileIstance(userFileName);
 	}
 
-	public Map<String,Business> getBusinessFromFile(){		
+	public List<Business> getBusinessFromFile(){		
 		try {
-			TypeToken<Map<String, Business>> token = new TypeToken<Map<String, Business>>(){};
+			TypeToken<List<Business>> token = new TypeToken<List<Business>>(){};
 			BufferedReader reader = new BufferedReader(new FileReader(this.businessFile));
 			return new Gson().fromJson(reader, token.getType());
 		} catch (FileNotFoundException e) {
@@ -39,9 +40,9 @@ public class DocumentIO {
 		return null;
 	}
 
-	public Map<String,User> getUsersFromFile(){
+	public List<User> getUsersFromFile(){
 		try {
-			TypeToken<Map<String, User>> token = new TypeToken<Map<String, User>>(){};
+			TypeToken<List<User>> token = new TypeToken<List<User>>(){};
 			BufferedReader reader = new BufferedReader(new FileReader(this.userFile));
 			return new Gson().fromJson(reader, token.getType());
 		} catch (FileNotFoundException e) {
@@ -72,6 +73,59 @@ public class DocumentIO {
 		return null;
 	}
 
+	
+	/**
+	 * Methods to take maps from json file
+	 */
+	
+	
+	/**
+	 * In this Map, the key of a Review is given by UserId concatenated ItemId
+	 */
+	public Map<String, Review> getMapReviewFromFile(){
+		try {
+			Map<String, Review> result = new HashMap<String, Review>();
+			for(Review r : getReviewFromFile()){
+				result.put(r.getUserId()+r.getBusinessId(), r);
+			}	
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	
+	public Map<String, User> getMapUserFromFile(){
+		try {
+			Map<String, User> result = new HashMap<String, User>();
+			for(User u : getUsersFromFile()){
+				result.put(u.getId(), u);
+			}	
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	
+	}
+	
+	
+	public Map<String, Business> getMapBusinessFromFile(){
+		try {
+			Map<String, Business> result = new HashMap<String, Business>();
+			for(Business b : getBusinessFromFile()){
+				result.put(b.getId(), b);
+			}	
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	
+	}
+	
+	
+	
+	
+	
 	
 	
 	/**
