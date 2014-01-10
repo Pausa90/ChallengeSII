@@ -22,27 +22,29 @@ public class User {
 		this.average_stars = averageStars;
 	}
 	
-	
 	/**
 	 * Getters & Setters
 	 */
-	
-	
 	public String getId() {
 		return user_id;
 	}
+	
 	public void setId(String id) {
 		this.user_id = id;
 	}
+	
 	public int getReviewCount() {
 		return review_count;
 	}
+	
 	public void setReviewCount(int reviewCount) {
 		this.review_count = reviewCount;
 	}
+	
 	public double getAverageStars() {
 		return average_stars;
 	}
+	
 	public void setAverageStars(double averageStars) {
 		this.average_stars = averageStars;
 	}
