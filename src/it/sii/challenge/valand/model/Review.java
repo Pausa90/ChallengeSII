@@ -3,21 +3,22 @@ package it.sii.challenge.valand.model;
 
 public class Review {
 	
-	private String businessId;
-	private String userId;
-	private double stars;
+	private String business_id;
+	private String user_id;
+	private int stars;
 	/*
 	private String text;
 	private String date; //this is a formatted date: yyyy-mm-dd in strptime notation
 	private Map<String, Integer> votes;
 	*/
+	
 	/**
 	 * Constructors
 	 */
-	public Review(String businessId, String userId, double stars) {
+	public Review(String businessId, String userId, int stars) {
 		super();
-		this.businessId = businessId;
-		this.userId = userId;
+		this.business_id = businessId;
+		this.user_id = userId;
 		this.stars = stars;
 	}	
 	
@@ -27,21 +28,21 @@ public class Review {
 	 */
 	
 	public String getBusinessId() {
-		return businessId;
+		return business_id;
 	}
 	public void setBusinessId(String businessId) {
-		this.businessId = businessId;
+		this.business_id = businessId;
 	}
 	public String getUserId() {
-		return userId;
+		return user_id;
 	}
 	public void setUserId(String userId) {
-		this.userId = userId;
+		this.user_id = userId;
 	}
-	public double getStars() {
+	public int getStars() {
 		return stars;
 	}
-	public void setStars(double stars) {
+	public void setStars(int stars) {
 		this.stars = stars;
 	}
 

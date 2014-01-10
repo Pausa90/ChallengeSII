@@ -4,10 +4,9 @@ import java.util.Map;
 
 public class Checkin {
 
-	private String businessId;
-	private Map<String, Integer> checkinInfo;
+	private String business_id;
+	private Map<String, Integer> checkin_info;
 
-	
 	
 	/**
 	 * Getters & Setters
@@ -15,16 +14,16 @@ public class Checkin {
 	
 	
 	public String getBusinessId() {
-		return businessId;
+		return business_id;
 	}
 	public void setBusinessId(String businessId) {
-		this.businessId = businessId;
+		this.business_id = businessId;
 	}
 	public Map<String, Integer> getCheckinInfo() {
-		return checkinInfo;
+		return checkin_info;
 	}
 	public void setCheckinInfo(Map<String, Integer> checkinInfo) {
-		this.checkinInfo = checkinInfo;
+		this.checkin_info = checkinInfo;
 	}
 	
 	

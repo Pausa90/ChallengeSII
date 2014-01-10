@@ -3,22 +3,23 @@ package it.sii.challenge.valand.model;
 
 public class User {
 	
-	private String id;
-	private int reviewCount;
-	private double averageStars;
+	private String user_id;
+	private int review_count;
+	private double average_stars;
 	/*
 	private String name; //firstname
 	private Map<String, Integer> votes;
 	*/
+	
 	
 	/**
 	 * Constructors
 	 */
 	public User(String id, int reviewCount, double averageStars) {
 		super();
-		this.id = id;
-		this.reviewCount = reviewCount;
-		this.averageStars = averageStars;
+		this.user_id = id;
+		this.review_count = reviewCount;
+		this.average_stars = averageStars;
 	}
 	
 	
@@ -28,22 +29,22 @@ public class User {
 	
 	
 	public String getId() {
-		return id;
+		return user_id;
 	}
 	public void setId(String id) {
-		this.id = id;
+		this.user_id = id;
 	}
 	public int getReviewCount() {
-		return reviewCount;
+		return review_count;
 	}
 	public void setReviewCount(int reviewCount) {
-		this.reviewCount = reviewCount;
+		this.review_count = reviewCount;
 	}
 	public double getAverageStars() {
-		return averageStars;
+		return average_stars;
 	}
 	public void setAverageStars(double averageStars) {
-		this.averageStars = averageStars;
+		this.average_stars = averageStars;
 	}
 
 	/**
@@ -53,7 +54,7 @@ public class User {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((user_id == null) ? 0 : user_id.hashCode());
 		return result;
 	}
 	
@@ -66,10 +67,10 @@ public class User {
 		if (getClass() != obj.getClass())
 			return false;
 		User other = (User) obj;
-		if (id == null) {
-			if (other.id != null)
+		if (user_id == null) {
+			if (other.user_id != null)
 				return false;
-		} else if (!id.equals(other.id))
+		} else if (!user_id.equals(other.user_id))
 			return false;
 		return true;
 	}
