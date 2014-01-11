@@ -16,7 +16,6 @@ public class User {
 	 * Constructors
 	 */
 	public User(String id, int reviewCount, double averageStars) {
-		super();
 		this.user_id = id;
 		this.review_count = reviewCount;
 		this.average_stars = averageStars;
@@ -62,21 +61,13 @@ public class User {
 	
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		User other = (User) obj;
-		if (user_id == null) {
-			if (other.user_id != null)
-				return false;
-		} else if (!user_id.equals(other.user_id))
-			return false;
-		return true;
+		User user = (User) obj;
+		return this.getId().equals(user.getId());
 	}
 	
+	public String toString(){
+		return this.user_id;
+	}
 	
 	
 }

@@ -24,12 +24,16 @@ public class DocumentIO {
 	private File checkinFile;
 	private File reviewFile;
 	private File userFile;	
+	
+	private File reviewsToTestFile;
 
-	public DocumentIO(String businessFileName, String checkinFileName, String reviewFileName, String userFileName){
+	public DocumentIO(String businessFileName, String checkinFileName, String reviewFileName, String userFileName, String testFileName){
 		this.businessFile = newFileIstance(businessFileName);
 		this.checkinFile = newFileIstance(checkinFileName);
 		this.reviewFile = newFileIstance(reviewFileName);
 		this.userFile = newFileIstance(userFileName);
+		
+		this.reviewsToTestFile = newFileIstance(testFileName);
 	}
 
 	private List<Business> getListBusinessFromFile(){		
@@ -53,7 +57,7 @@ public class DocumentIO {
 		return result;
 	}
 
-	private List<User> getListUsersFromFile(){
+	public List<User> getUsersFromFile(){
 		List<User> result = new LinkedList<User>();
 		try {
 			TypeToken<User> token = new TypeToken<User>(){};
@@ -120,18 +124,17 @@ public class DocumentIO {
 	/**
 	 * Methods to take maps from json file
 	 */	
-	public Map<String, User> getUsersFromFile(){
-	Map<String, User> result = new HashMap<String, User>();
-		try {
-			for(User u : getListUsersFromFile()){
-				result.put(u.getId(), u);
-			}	
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return result;
-	
-	}
+//	public Map<String, User> getUsersFromFile(){
+//	Map<String, User> result = new HashMap<String, User>();
+//		try {
+//			for(User u : getListUsersFromFile()){
+//				result.put(u.getId(), u);
+//			}	
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		return result;
+//	}
 	
 	
 	public Map<String, Business> getBusinessFromFile(){
@@ -146,6 +149,37 @@ public class DocumentIO {
 		return result;
 	}
 	
+	public List<Review> getReviewsFromTest(){
+		if (!reviewsToTestFile.isFile()){
+			System.out.println("file file does not exist");
+			return null;
+		}			
+		else{
+			List<Review> reviews = new LinkedList<Review>();
+			try{
+				BufferedReader reader = new BufferedReader(new FileReader(reviewsToTestFile));
+				String line = reader.readLine();
+				while (line != null){
+					if (!line.equals("")){
+						Review review = this.extractReview(line);
+						reviews.add(review);
+					}
+					line = reader.readLine();
+				}
+				reader.close();
+				return reviews;
+			} catch (IOException e){
+				e.printStackTrace();
+				return null;
+			}
+		}		
+	}
+	
+	private Review extractReview(String line) {
+		String[] splitted = line.split("\t");
+		return new Review(splitted[1], splitted[0], -1);
+	}
+
 	/**
 	 * Metodo che verifica se il file system in uso è basato su Unix o su Windows.
 	 * Utile per la gestione del path

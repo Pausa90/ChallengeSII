@@ -21,11 +21,13 @@ public class MapsListsUtilities {
 	}
 	
 
+	/** Metodi per i Test **/
+	
 	public Map<String, Integer> insertion(){
 		Map<String, Integer> ratingsOfAUser = new HashMap<String, Integer>();
 		for (int i=0; i<50; i++){
-			String stringaCasuale = randomStringGenerator(10);
-			ratingsOfAUser.put(stringaCasuale, (int)(Math.random()*10));
+			String randomString = randomStringGenerator(10);
+			ratingsOfAUser.put(randomString, (int)(Math.random()*10));
 		}
 		return ratingsOfAUser;
 	}

@@ -1,6 +1,12 @@
 package it.sii.challenge.valand.logic.algorithm;
 
 import it.sii.challenge.valand.logic.similarity.SimilarityCalculator;
+import it.sii.challenge.valand.model.Business;
+import it.sii.challenge.valand.model.Review;
+import it.sii.challenge.valand.model.User;
+import it.sii.challenge.valand.model.UserBusinessMatrix;
+import it.sii.challenge.valand.utilities.MapsListsUtilities;
+import it.sii.challenge.valand.utilities.MapsListsUtilitiesTest;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -15,82 +21,37 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
          * Rating i-esimo.
          * Si considerano infine i primi n elementi, riportando il valore scelto.
          */
-        private int k;
-        private List<CoupleObjectDistance> neighborsList;
-        private List<String> allKeys; //Lista di chiavi delle mappe di entrambi i object
-        
-        public KNNAlgorithm(int k, SimilarityCalculator method){
-                super(method);
-                this.k = k;
-                this.neighborsList = new LinkedList<CoupleObjectDistance>();
-                this.allKeys = new LinkedList<String>();
-        }
+		private int k;
+	
+		public KNNAlgorithm(int k) {
+			this.k = k;
+		}
+		
+		@Override
+		public List<User> getNeighborHood(UserBusinessMatrix matrix, User user) {
+			// TODO Auto-generated method stub
+			return null;
+		}
 
-        @Override
-        public int RatingPrediction(List<CoupleObjectDistance> couplesObjectDistances, Object newObject) {
-                                
-                for (CoupleObjectDistance c : couplesObjectDistances){
-                        
-                        this.setAllKeys(c, newObject);
-                        double distance = this.calculateDistance(newObject,c);
-                        this.neighborsList.add(new CoupleObjectDistance(c, distance));
-                        this.allKeys.clear();
-                }
-                
 
-                int prediction = this.predict(newObject);
-                this.neighborsList.clear();
-                
-                return prediction;
-        }
+		@Override
+		public List<Business> getNeighborHood(UserBusinessMatrix matrix, Business business) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public int itemBasedPrediction(List<Business> neighborhood, Review review) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
 
-        private int predict(Object object) {
-//                Collections.sort(this.neighborsList, new MinDistance());
-//                
-//                double positive = 0;
-//                double negative = 0;
-//                Object tmpObject;
-//                
-//                for (int i=0; i<this.k; i++){
-//                        tmpObject = this.neighborsList.get(i).getObject();
-//                        if (tmpObject.isPositive())
-//                                positive++;
-//                        else
-//                                negative++;
-//                }
-//                
-//                //Eventuali emotion positive e/o negative influiscono il giudizio
-//                int emotions = object.getPositiveEmotionNumber() - object.getNegativeEmotionNumber();
-//                if (emotions>0) //ho più emotion positive che negative
-//                        positive += emotions * (this.emotionPredictionFactor);
-//                else if (emotions<0) //ho più emotion negative che positive
-//                        negative += Math.abs(emotions) * (this.emotionPredictionFactor);
-//                
-//                
-//                if (positive<negative)
-//                        return negativePrediction;
-//                else 
-//                        return positivePrediction;
-        	
-        	//TODO da fare metodo
-        	return 0;
-        }
 
-        //TODO da fare!
-        private double calculateDistance(Object object1, Object object2) {
-                return 0;
-                		//this.calculator.calculateSimilarity(object1, object2);
-        }
-        //TODO da fare!
-        private void setAllKeys(Object t, Object newObject) {
-//                for (String key : t.getObjectMap().keySet())
-//                        this.allKeys.add(key);
-//                
-//                for (String key : newObject.getObjectMap().keySet())
-//                        if (!this.allKeys.contains(key))
-//                                this.allKeys.add(key);          
-        }
-
+		@Override
+		public int userBasedPrediction(List<User> neighborhood, Review review) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
         
         public int getK() {
                 return k;
@@ -108,11 +69,11 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
  * @author andrea
  *
  */
-class CoupleObjectDistance {
+class CoupleObjectDistance<T> {
         private double distance;
-        private Object object;
+        private T object;
         
-        public CoupleObjectDistance(Object object, double distance){
+        public CoupleObjectDistance(T object, double distance){
                 this.distance = distance;
                 this.object = object;
         }
@@ -125,16 +86,16 @@ class CoupleObjectDistance {
                 this.distance = distance;
         }
         
-        public Object getObject() {
+        public T getObject() {
                 return object;
         }
         
-        public void setObject(Object object) {
+        public void setObject(T object) {
                 this.object = object;
         }
         
         public String toString(){
-                return "("+this.object+","+this.distance+")";
+                return "("+this.object.toString()+","+this.distance+")";
         }
         
 }
@@ -142,11 +103,12 @@ class CoupleObjectDistance {
 /**
  * Metodo di comparazione basato sulla distanza tra due object
  * @author andrea
+ * @param <T>
  *
  */
-class MinDistance implements Comparator<CoupleObjectDistance>{
+class MinDistance<T> implements Comparator<CoupleObjectDistance<T>>{
 
-        public int compare(CoupleObjectDistance c1, CoupleObjectDistance c2) {
+        public int compare(CoupleObjectDistance<T> c1, CoupleObjectDistance<T> c2) {
                 return Double.compare(c1.getDistance(),c2.getDistance());
         }
         
