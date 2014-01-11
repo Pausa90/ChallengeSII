@@ -24,7 +24,7 @@ public class MapsListsUtilities {
 	public Map<String, Integer> insertion(){
 		Map<String, Integer> ratingsOfAUser = new HashMap<String, Integer>();
 		for (int i=0; i<50; i++){
-			String stringaCasuale = generaStringaCasuale(10);
+			String stringaCasuale = randomStringGenerator(10);
 			ratingsOfAUser.put(stringaCasuale, (int)(Math.random()*10));
 		}
 		return ratingsOfAUser;
@@ -34,11 +34,11 @@ public class MapsListsUtilities {
 	public Map<String, Map<String, Integer>> multipleInsertionInMatrix(){
 		Map<String, Map<String, Integer>> matrix = new HashMap<String, Map<String, Integer>>();
 		for (int i=0; i<30; i++)
-			matrix.put(generaStringaCasuale(5), insertion());
+			matrix.put(randomStringGenerator(5), insertion());
 		return matrix;
 	}
 	
-	public String generaStringaCasuale(int lunghezza){
+	public String randomStringGenerator(int lunghezza){
 		String risultato = "";
 		for(int i=0; i<lunghezza; i++)
 			risultato += (char)((int)((Math.random()*25)+97));

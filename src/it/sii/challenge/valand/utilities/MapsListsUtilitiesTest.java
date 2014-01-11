@@ -29,13 +29,13 @@ public class MapsListsUtilitiesTest {
 		utilities = new MapsListsUtilities();
 		
 		for(int i=0; i<map1length-numberOfEqualTerms; i++){
-			map1.put(utilities.generaStringaCasuale(6), (int)(Math.random()*10));
+			map1.put(utilities.randomStringGenerator(6), (int)(Math.random()*10));
 		}
 		for(int i=0; i<map2length-numberOfEqualTerms; i++){
-			map2.put(utilities.generaStringaCasuale(6), (int)(Math.random()*10));
+			map2.put(utilities.randomStringGenerator(6), (int)(Math.random()*10));
 		}
 		for(int i=0; i<numberOfEqualTerms; i++){
-			String equalkey = utilities.generaStringaCasuale(7); 
+			String equalkey = utilities.randomStringGenerator(7); 
 			map1.put(equalkey, (int)(Math.random()*10));
 			map2.put(equalkey, (int)(Math.random()*10));
 		}

@@ -90,12 +90,18 @@ public class UserBusinessMatrix {
 	
 	public String toString(){
 		String output = "";
+		boolean first = true;
 		
 		for(String user : this.matrix.keySet()){
 			output += user+":\t[";
 			for(String business : this.matrix.get(user).keySet())
-				output += business + " - "+ this.matrix.get(user).get(business).intValue() + " | ";
+				if (first){
+					output += business + " - "+ this.matrix.get(user).get(business).intValue();
+					first = false;
+				}
+				else output += " | " + business + " - "+ this.matrix.get(user).get(business).intValue();
 			output += "]\n";
+			first = true;
 		}
 
 		return output;
