@@ -2,6 +2,8 @@ package it.sii.challenge.valand.logic.algorithm;
 
 import it.sii.challenge.valand.logic.similarity.SimilarityCalculator;
 
+import java.util.List;
+
 
 public abstract class ClassificationAlgorithm {
         public final int initializedPrediction = -1;
@@ -28,6 +30,6 @@ public abstract class ClassificationAlgorithm {
                 return negativePrediction;
         }
         
-//        public abstract int tweetPredict(List<Tweet> tweets, Tweet newTweet);
+        public abstract int RatingPrediction(List<CoupleObjectDistance> coupleObjectDistances, Object newObject);
         
 }
