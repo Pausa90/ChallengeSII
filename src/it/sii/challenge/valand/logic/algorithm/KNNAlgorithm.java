@@ -1,5 +1,8 @@
 package it.sii.challenge.valand.logic.algorithm;
 
+import it.sii.challenge.valand.logic.similarity.SimilarityCalculator;
+
+import java.util.LinkedList;
 import java.util.List;
 
 public class KNNAlgorithm extends ClassificationAlgorithm {
@@ -7,19 +10,19 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
         /**
          * I conti di KNN vengono realizzati tramite una matrice sparsa.
          * Il suo output è una lista di oggetti, che vengono ordinati sulla base della distanza dal
-         * tweet i-esimo.
+         * Rating i-esimo.
          * Si considerano infine i primi n elementi, riportando il valore scelto.
          */
         private int k;
-//        private List<CoupleTweetDistance> neighborsList;
+        private List<Object> neighborsList;
         private List<String> allKeys; //Lista di chiavi delle mappe di entrambi i tweet
         
-//        public KNNAlgorithm(int k,DistanceCalculator method){
-//                super(method);
-//                this.k = k;
-//                this.neighborsList = new LinkedList<CoupleTweetDistance>();
-//                this.allKeys = new LinkedList<String>();
-//        }
+        public KNNAlgorithm(int k, SimilarityCalculator method){
+                super(method);
+                this.k = k;
+                this.neighborsList = new LinkedList<Object>();
+                this.allKeys = new LinkedList<String>();
+        }
 //
 //        @Override
 //        public int tweetPredict(List<Tweet> tweets, Tweet newTweet) {

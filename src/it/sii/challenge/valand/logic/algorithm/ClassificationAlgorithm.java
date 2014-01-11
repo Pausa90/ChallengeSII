@@ -1,17 +1,19 @@
 package it.sii.challenge.valand.logic.algorithm;
 
+import it.sii.challenge.valand.logic.similarity.SimilarityCalculator;
+
 
 public abstract class ClassificationAlgorithm {
         public final int initializedPrediction = -1;
         public final int positivePrediction = 4;
         public final int negativePrediction = 0;
-//        public DistanceCalculator calculator;
+        public SimilarityCalculator calculator;
 
         protected final double emotionPredictionFactor = 2.01;
         
-//        public ClassificationAlgorithm(DistanceCalculator method){
-//                this.calculator = method;
-//        }
+        public ClassificationAlgorithm(SimilarityCalculator method){
+                this.calculator = method;
+        }
         
 
         public int getInitializedPrediction() {
