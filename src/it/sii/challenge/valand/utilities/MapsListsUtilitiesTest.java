@@ -1,6 +1,7 @@
 package it.sii.challenge.valand.utilities;
 
 import static org.junit.Assert.assertTrue;
+import it.sii.challenge.valand.model.User;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -50,5 +51,21 @@ public class MapsListsUtilitiesTest {
 			if(s.length() == 7)
 			System.out.println(s);
 	}
+	
+	@Test
+	public void testCopyMap(){
+		User user = new User("abc", 3, 3);
+		
+		Map<String, User> mappa = new HashMap<String, User>();
+		
+		
+		mappa.put(user.getId(), user);
+		
+		user.setId("idmodificato");
+		
+		System.out.println("IDMODIFICATO: " + user.getId() + " IDNellaMappa: " + mappa.get("abc").getId());
+		
+	}
+	
 
 }
