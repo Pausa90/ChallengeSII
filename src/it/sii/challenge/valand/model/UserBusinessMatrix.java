@@ -15,8 +15,9 @@ public class UserBusinessMatrix {
 	 * @param userMap 
 	 */
 	public UserBusinessMatrix(List<User> users, Map<String, Business> business, List<Review> reviews) {
+		System.out.println("Crea matrice");
 		this.matrix = new HashMap<User, Map<Business, Integer>>();
-		
+		System.out.println("utenti:" + users.size());
 		for(User user : users){
 			Map<Business, Integer> tempMap = new HashMap<Business, Integer>();
 			for(Review review : reviews)
@@ -24,6 +25,7 @@ public class UserBusinessMatrix {
 					tempMap.put(business.get(review.getBusinessId()), review.getStars());
 			this.matrix.put(user, tempMap);
 		}
+		System.out.println("fine matrice");
 	}
 	
 	/**
@@ -41,18 +43,18 @@ public class UserBusinessMatrix {
 	}
 	
 	/**
+	 * A Row of the matrix. A row represent all ratings of a user, in a map where the key is the business_id
 	 * @param user
 	 * @return Map<String, Integer>
-	 * @return A Row of the matrix. A row represent all ratings of a user, in a map where the key is the business_id
 	 */
 	public Map<Business, Integer> getUserValutatedItems(User user){
 		return this.getMatrix().get(user);
 	}
 	
 	/**
+	 * A Column of the matrix. A column represent all ratings of all users for a particular business
 	 * @param business
 	 * @return Map<String, Integer>
-	 * @return A Column of the matrix. A column represent all ratings of all users for a particular business
 	 */
 	public Map<User, Integer> getItemRatingsByAllUsers(Business business){
 		Map<User, Integer> result = new HashMap<User, Integer>();
@@ -65,9 +67,9 @@ public class UserBusinessMatrix {
 	}
 	
 	/**
+	 * The Rating of a User for a particular Business
 	 * @param user, business
 	 * @return Integer
-	 * @return The Rating of a User for a particular Business
 	 */
 	public Integer getRatingByUserItem(User user, Business business){
 		return this.getMatrix().get(user).get(business);

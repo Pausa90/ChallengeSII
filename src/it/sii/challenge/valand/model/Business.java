@@ -7,7 +7,7 @@ public class Business {
 	private String business_id;
 	private String name;
 	private List<String> neighborhoods;
-	private int stars;
+	private double stars;
 	private int review_count;
 	private List<String> categories;
 	/*
@@ -25,7 +25,7 @@ public class Business {
 	 */
 	
 	public Business(String id, String name, List<String> neighborhoods,
-			int stars, int reviewCount, List<String> categories) {
+			double stars, int reviewCount, List<String> categories) {
 		super();
 		this.business_id = id;
 		this.name = name;
@@ -35,7 +35,7 @@ public class Business {
 		this.categories = categories;
 	}
 		
-	public Business(String id, String name, int stars) {
+	public Business(String id, String name, double stars) {
 		super();
 		this.business_id = id;
 		this.name = name;
@@ -71,7 +71,7 @@ public class Business {
 	public double getStars() {
 		return stars;
 	}
-	public void setStars(int stars) {
+	public void setStars(double stars) {
 		this.stars = stars;
 	}
 	public int getReviewCount() {

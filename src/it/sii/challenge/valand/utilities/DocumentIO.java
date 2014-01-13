@@ -7,17 +7,23 @@ import it.sii.challenge.valand.model.User;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
+import com.google.gson.stream.MalformedJsonException;
 
 public class DocumentIO {
 	private File businessFile;
@@ -104,17 +110,19 @@ public class DocumentIO {
 		try {
 			TypeToken<Review> token = new TypeToken<Review>(){};
 			BufferedReader reader = new BufferedReader(new FileReader(this.reviewFile));
-			while(reader.ready())
-				result.add((Review) new Gson().fromJson(reader.readLine(), token.getType()));
+			while(reader.ready()){
+				String line = reader.readLine();
+				try {
+					result.add((Review) new Gson().fromJson(line, token.getType()));
+				} catch (JsonSyntaxException e){
+					e.printStackTrace();
+				}
+			}
 			reader.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("Review file non trovato!");
 			e.printStackTrace();
-		} catch (JsonSyntaxException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return result;
@@ -179,6 +187,25 @@ public class DocumentIO {
 		String[] splitted = line.split("\t");
 		return new Review(splitted[1], splitted[0], -1);
 	}
+	
+	public void save(String fileName, List<Review> reviewsToTest) {
+		String toSave = this.getString(reviewsToTest);
+		try {
+			FileOutputStream file = new FileOutputStream(fileName);
+			PrintStream stream = new PrintStream(file);
+			stream.print(toSave);
+			stream.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private String getString(List<Review> reviewsToTest) {
+		String out = "";
+		for (Review review : reviewsToTest)
+			out += review.getStars() + "\n";		
+		return out;
+	}
 
 	/**
 	 * Metodo che verifica se il file system in uso è basato su Unix o su Windows.
@@ -201,5 +228,4 @@ public class DocumentIO {
 			completeTrainingBackupFilePath = System.getProperty("user.dir") + "\\" + abstractPath;
 		return new File(completeTrainingBackupFilePath);
 	}
-
 }
