@@ -101,19 +101,8 @@ public class Business {
 	
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Business other = (Business) obj;
-		if (business_id == null) {
-			if (other.business_id != null)
-				return false;
-		} else if (!business_id.equals(other.business_id))
-			return false;
-		return true;
+		Business business = (Business) obj;
+		return this.business_id.equals(business.getId());
 	}
 	
 	

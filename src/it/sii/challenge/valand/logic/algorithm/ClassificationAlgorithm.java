@@ -1,35 +1,19 @@
 package it.sii.challenge.valand.logic.algorithm;
 
-import it.sii.challenge.valand.logic.similarity.SimilarityCalculator;
+import it.sii.challenge.valand.model.Business;
+import it.sii.challenge.valand.model.Review;
+import it.sii.challenge.valand.model.User;
+import it.sii.challenge.valand.model.UserBusinessMatrix;
 
 import java.util.List;
 
 
 public abstract class ClassificationAlgorithm {
         public final int initializedPrediction = -1;
-        public final int positivePrediction = 4;
-        public final int negativePrediction = 0;
-        public SimilarityCalculator calculator;
 
-        protected final double emotionPredictionFactor = 2.01;
-        
-        public ClassificationAlgorithm(SimilarityCalculator method){
-                this.calculator = method;
-        }
-        
-
-        public int getInitializedPrediction() {
-                return initializedPrediction;
-        }
-
-        public int getPositivePrediction() {
-                return positivePrediction;
-        }
-
-        public int getNegativePrediction() {
-                return negativePrediction;
-        }
-        
-        public abstract int RatingPrediction(List<CoupleObjectDistance> coupleObjectDistances, Object newObject);
+        public abstract int itemBasedPrediction(List<Business> neighborhood, Review review);
+        public abstract int userBasedPrediction(List<User> neighborhood, Review review);
+        public abstract List<User> getNeighborHood(UserBusinessMatrix matrix, User user);
+        public abstract List<Business> getNeighborHood(UserBusinessMatrix matrix, Business business);
         
 }

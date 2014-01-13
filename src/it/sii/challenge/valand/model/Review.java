@@ -30,23 +30,31 @@ public class Review {
 	public String getBusinessId() {
 		return business_id;
 	}
+	
 	public void setBusinessId(String businessId) {
 		this.business_id = businessId;
 	}
+	
 	public String getUserId() {
 		return user_id;
 	}
+	
 	public void setUserId(String userId) {
 		this.user_id = userId;
 	}
+	
 	public int getStars() {
 		return stars;
 	}
+	
 	public void setStars(int stars) {
 		this.stars = stars;
 	}
 
-	
+	public boolean equals(Object obj){
+		Review review = (Review) obj;
+		return this.user_id.equals(review.getUserId()) && this.business_id.equals(review.getBusinessId());
+	}
 	
 
 }
