@@ -15,7 +15,7 @@ public class DataSource{
 	
 		Connection connection=null;
 		try{
-		Class.forName("com.mysql.jdbc.Driver").newInstance();
+		Class.forName("com.mysql.jdbc.Driver");
 		connection=DriverManager.getConnection(dbUri, username, password);
 		}
 		catch (ClassNotFoundException e){
@@ -23,12 +23,6 @@ public class DataSource{
 		}
 		catch (SQLException e){
 			throw new PersistenceException(e.getMessage());
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
 	return connection;
 	}

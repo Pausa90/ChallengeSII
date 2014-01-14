@@ -7,7 +7,10 @@ import it.sii.challenge.valand.model.Review;
 import it.sii.challenge.valand.model.User;
 import it.sii.challenge.valand.model.UserBusinessMatrix;
 import it.sii.challenge.valand.utilities.CoupleObjectSimilarity;
+import it.sii.challenge.valand.utilities.DocumentIO;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 public class Predictor {
@@ -31,36 +34,53 @@ public class Predictor {
 		this.matrix = matrix;
 	}
 	
-	public String startPrediction(int k){		
-		String allPrediction = ""; //Salva ogni predizione su ogni riga
+	public void startPrediction(int k, DocumentIO doc_io){		
 		this.algorithm = new KNNAlgorithm(new SimilarityCalculator(), k);
-				
-		for (Review review : this.reviewsToTest){
-			int prediction = this.predict(k, review);
-			allPrediction += prediction + "\n";
-		}	
 		
-		return allPrediction;
+		FileWriter writerOutput;
+		try {
+			writerOutput = new FileWriter(doc_io.getOutputFile());
+			for (Review review : this.reviewsToTest){
+				int prediction = this.predict(k, review);
+				System.out.println("Predizione: " + prediction);
+				writerOutput.write(prediction + "\n");
+			}	
+	
+			writerOutput.flush();
+			writerOutput.close();
+		
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
+		
 	}
 	
 	private int predict(int k, Review review){
-		User user = this.matrix.getUser(review.getUserId());
-		Business business = this.matrix.getBusiness(review.getBusinessId());
+		User user = this.matrix.getUserFromMatrix(review.getUserId());
+		Business business = this.matrix.getBusinessFromMatrix(review.getBusinessId());
 		
-		if (user!=null && business!=null)
+		if (user!=null && business!=null){
 			return this.linearCombinationPrediction(review, user, business);
-		else if (user!=null)
+		}
+		else if (user!=null){
+			business = this.matrix.getBusinessFromBusiness(review.getBusinessId());
 			return this.userBasedPrediction(review, user, business);
-		else if (business!=null)
+		}
+		else if (business!=null){
+			user = this.matrix.getUserFromUsers(review.getUserId());
+			if(user == null)
+				return AVERAGE_VALUE;
 			return this.itemBasedPrediction(review, user);
+		}
 		return AVERAGE_VALUE;
 	}
 
 	private int linearCombinationPrediction(Review review, User user, Business business) {
-		List<CoupleObjectSimilarity<User>> userNeighborhood = this.algorithm.getNeighborHood(this.matrix, this.matrix.getUser(review.getUserId()), 
-				this.matrix.getBusiness(review.getBusinessId()));
-		List<CoupleObjectSimilarity<Business>> buisnessNeighborhood = this.algorithm.getNeighborHood(this.matrix, this.matrix.getBusiness(review.getBusinessId()),
-				this.matrix.getUser(review.getUserId()));
+		List<CoupleObjectSimilarity<User>> userNeighborhood = this.algorithm.getNeighborHood(this.matrix, this.matrix.getUserFromMatrix(review.getUserId()), 
+				this.matrix.getBusinessFromMatrix(review.getBusinessId()));
+		List<CoupleObjectSimilarity<Business>> buisnessNeighborhood = this.algorithm.getNeighborHood(this.matrix, this.matrix.getBusinessFromMatrix(review.getBusinessId()),
+				this.matrix.getUserFromMatrix(review.getUserId()));
 		
 		//Parametro che stabilisce dinamicamente quanto fidarsi delle predizioni
 		int lambda = this.calculateLambda(userNeighborhood.size(), buisnessNeighborhood.size());
@@ -81,14 +101,14 @@ public class Predictor {
 	}
 
 	private int userBasedPrediction(Review review, User user, Business business) {		
-		List<CoupleObjectSimilarity<User>> neighborhood = this.algorithm.getNeighborHood(this.matrix, this.matrix.getUser(review.getUserId()), 
-																		this.matrix.getBusiness(review.getBusinessId()));
+		List<CoupleObjectSimilarity<User>> neighborhood = this.algorithm.getNeighborHood(this.matrix, this.matrix.getUserFromMatrix(review.getUserId()), 
+																		this.matrix.getBusinessFromMatrix(review.getBusinessId()));
 		return this.userBasedPrediction(review, neighborhood, user, business);
 	}
 
 	private int itemBasedPrediction(Review review, User user) {
-		List<CoupleObjectSimilarity<Business>> neighborhood = this.algorithm.getNeighborHood(this.matrix, this.matrix.getBusiness(review.getBusinessId()),
-																		this.matrix.getUser(review.getUserId()));
+		Business b = this.matrix.getBusinessFromBusiness(review.getBusinessId());
+		List<CoupleObjectSimilarity<Business>> neighborhood = this.algorithm.getNeighborHood(this.matrix, b, user);
 		return this.itemBasedPrediction(review, neighborhood, user);
 	}
 	

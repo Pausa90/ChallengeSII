@@ -40,6 +40,17 @@ public class UserRepositoryImpl implements UserRepository{
 			e.printStackTrace();
 			return null;
 		}
+		finally {
+			try {
+				if (c!= null) c.close();
+			} catch (SQLException e) {
+				try {
+					throw new PersistenceException(e.getMessage());
+				} catch (PersistenceException e1) {
+					e1.printStackTrace();
+				}
+			}
+		}
 		return listUsers;
 	}
 
@@ -70,6 +81,17 @@ public class UserRepositoryImpl implements UserRepository{
 		
 			e.printStackTrace();
 			return null;
+		}
+		finally {
+			try {
+				if (c!= null) c.close();
+			} catch (SQLException e) {
+				try {
+					throw new PersistenceException(e.getMessage());
+				} catch (PersistenceException e1) {
+					e1.printStackTrace();
+				}
+			}
 		}
 		return null;
 	}
@@ -133,6 +155,17 @@ public class UserRepositoryImpl implements UserRepository{
 		}
 		catch(Exception e){
 			e.printStackTrace();
+		}
+		finally {
+			try {
+				if (c!= null) c.close();
+			} catch (SQLException e) {
+				try {
+					throw new PersistenceException(e.getMessage());
+				} catch (PersistenceException e1) {
+					e1.printStackTrace();
+				}
+			}
 		}
 		return false;
 	}

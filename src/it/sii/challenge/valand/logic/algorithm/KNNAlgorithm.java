@@ -10,6 +10,7 @@ import it.sii.challenge.valand.persistence.repository.UserRepository;
 import it.sii.challenge.valand.persistence.repositoryImpl.BusinessRepositoryImpl;
 import it.sii.challenge.valand.persistence.repositoryImpl.UserRepositoryImpl;
 import it.sii.challenge.valand.utilities.CoupleObjectSimilarity;
+import it.sii.challenge.valand.utilities.MapsListsUtilities;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -19,6 +20,8 @@ import java.util.Map;
 
 public class KNNAlgorithm extends ClassificationAlgorithm {
         
+	
+		private MapsListsUtilities<String> utils = new MapsListsUtilities<String>();
         /**
          * I conti di KNN vengono realizzati tramite una matrice sparsa.
          * Il suo output è una lista di oggetti, che vengono ordinati sulla base della distanza dal
@@ -41,11 +44,13 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 			Map<String, Integer> rowU;
 			double similarity;
 			for (String u : column.keySet()){	
-				if (!user.equals(u)){
-					rowU = matrix.getUserValutatedItems(u);	
-					similarity = this.getSimilarity(user, matrix.getUser(u), rowUser, rowU);
-					if (similarity > SIMILARITY_TRESHOLD)
-						neighborhood.add(new CoupleObjectSimilarity<User>(matrix.getUser(u), similarity));
+				if (!user.getId().equals(u)){
+					if(matrix.userInMatrix(u)){
+						rowU = matrix.getUserValutatedItems(u);	
+						similarity = this.getSimilarity(user, matrix.getUserFromUsers(u), rowUser, rowU);
+						if (similarity > SIMILARITY_TRESHOLD)
+							neighborhood.add(new CoupleObjectSimilarity<User>(matrix.getUserFromUsers(u), similarity));
+					}
 				}
 			}
 			return neighborhood;
@@ -60,16 +65,20 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 		public List<CoupleObjectSimilarity<Business>> getNeighborHood(UserBusinessMatrix matrix, Business business, User user) {
 			Map<String, Integer> row = matrix.getUserValutatedItems(user.getId());
 			Map<String, Integer> columnBusiness = matrix.getItemRatingsByAllUsers(business.getId());	
-			
+	
 			List<CoupleObjectSimilarity<Business>> neighborhood = new LinkedList<CoupleObjectSimilarity<Business>>();
 			Map<String, Integer> columnB;
 			double similarity;
+			if(row != null)
 			for (String id_business : row.keySet()){	
-				if (!business.equals(id_business)){
+				if (!business.getId().equals(id_business)){
 					columnB = matrix.getItemRatingsByAllUsers(id_business);
-					similarity = this.getSimilarity(business, matrix.getBusiness(id_business), columnBusiness, columnB);
-					if (similarity > SIMILARITY_TRESHOLD)
-						neighborhood.add(new CoupleObjectSimilarity<Business>(matrix.getBusiness(id_business), similarity));
+					if(matrix.businessInMatrix(id_business)){
+						similarity = this.getSimilarity(business, matrix.getBusinessFromBusiness(id_business), columnBusiness, columnB);
+						if (similarity > SIMILARITY_TRESHOLD)
+							neighborhood.add(new CoupleObjectSimilarity<Business>(matrix.getBusinessFromBusiness(id_business), similarity));
+				
+					}
 				}
 			}
 			return neighborhood;

@@ -45,6 +45,10 @@ public class Business {
 
 	
 
+	public Business(String business_id2) {
+		this.business_id = business_id2;
+	}
+
 	/**
 	 * Getters & Setters
 	 */

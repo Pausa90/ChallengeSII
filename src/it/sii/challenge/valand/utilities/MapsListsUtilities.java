@@ -1,13 +1,20 @@
 package it.sii.challenge.valand.utilities;
 
+import it.sii.challenge.valand.model.UserBusinessMatrix;
+import it.sii.challenge.valand.persistence.repository.MatrixRepository;
+import it.sii.challenge.valand.persistence.repositoryImpl.MatrixRepositoryImpl;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
 public class MapsListsUtilities<T> {
+	
+	private MatrixRepository matrix_repo = new MatrixRepositoryImpl();
 
 	public MapsListsUtilities(){}
+	
 	
 	public Set<T> unionListOfKeySets(Map<T, Integer> map1, Map<T, Integer> map2){
 		Set<T> result = new HashSet<T>();
@@ -46,6 +53,9 @@ public class MapsListsUtilities<T> {
 //			risultato += (char)((int)((Math.random()*25)+97));
 //		return risultato;
 //	}
+
+	
+
 	
 	
 	

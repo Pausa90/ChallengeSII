@@ -40,6 +40,17 @@ public class BusinessRepositoryImpl implements BusinessRepository{
 			e.printStackTrace();
 			return null;
 		}
+		finally {
+			try {
+				if (c!= null) c.close();
+			} catch (SQLException e) {
+				try {
+					throw new PersistenceException(e.getMessage());
+				} catch (PersistenceException e1) {
+					e1.printStackTrace();
+				}
+			}
+		}
 		return listBusiness;
 	}
 
@@ -67,6 +78,17 @@ public class BusinessRepositoryImpl implements BusinessRepository{
 		
 			e.printStackTrace();
 			return null;
+		}
+		finally {
+			try {
+				if (c!= null) c.close();
+			} catch (SQLException e) {
+				try {
+					throw new PersistenceException(e.getMessage());
+				} catch (PersistenceException e1) {
+					e1.printStackTrace();
+				}
+			}
 		}
 		return null;
 	}

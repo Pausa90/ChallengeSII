@@ -49,6 +49,7 @@ public class SimilarityCalculator {
 		UserRepository u_repo = new UserRepositoryImpl();
 		Integer rating1;
 		Integer rating2;
+		double averageStars;
 		
 		MapsListsUtilities<String> utilities = new MapsListsUtilities<String>();
 
@@ -60,17 +61,29 @@ public class SimilarityCalculator {
 			if (rating2==null)
 				rating2 = 0;
 			User u = u_repo.findById(user);
-			similarity_numerator += ( (rating1 - u.getAverageStars()) * (rating2 - u.getAverageStars()));
+			if(u!=null)
+				averageStars = u.getAverageStars();
+			else
+				averageStars = 3;
+			similarity_numerator += ( (rating1 - averageStars) * (rating2 - averageStars));
 		}               
 
 		for (String user : columnB1.keySet()){
 			User u = u_repo.findById(user);
-			similarity_denominator_p1 += Math.pow(columnB1.get(user)-u.getAverageStars(), 2);
+			if(u!=null)
+				averageStars = u.getAverageStars();
+			else
+				averageStars = 3;
+			similarity_denominator_p1 += Math.pow(columnB1.get(user)-averageStars, 2);
 		}
 
 		for (String user : columnB2.keySet()){
 			User u = u_repo.findById(user);
-			similarity_denominator_p2 += Math.pow(columnB2.get(user)-u.getAverageStars(), 2);
+			if(u!=null)
+				averageStars = u.getAverageStars();
+			else
+				averageStars = 3;
+			similarity_denominator_p2 += Math.pow(columnB2.get(user)-averageStars, 2);
 		}
 
 

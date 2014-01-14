@@ -11,6 +11,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
@@ -31,15 +32,17 @@ public class DocumentIO {
 	private File reviewFile;
 	private File userFile;	
 	
+	private File outputFile;
 	private File reviewsToTestFile;
 
-	public DocumentIO(String businessFileName, String checkinFileName, String reviewFileName, String userFileName, String testFileName){
+	public DocumentIO(String businessFileName, String checkinFileName, String reviewFileName, String userFileName, String testFileName, String outputFile){
 		this.businessFile = newFileIstance(businessFileName);
 		this.checkinFile = newFileIstance(checkinFileName);
 		this.reviewFile = newFileIstance(reviewFileName);
 		this.userFile = newFileIstance(userFileName);
 		
 		this.reviewsToTestFile = newFileIstance(testFileName);
+		this.outputFile = newFileIstance(outputFile);
 	}
 
 	private List<Business> getListBusinessFromFile(){		
@@ -199,6 +202,24 @@ public class DocumentIO {
 			e.printStackTrace();
 		}
 	}
+	
+	
+	public void saveStringInOutputFile(String s, FileWriter writer){
+			try {
+				writer.write(s);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
+	}
+	
+	
+	public File getOutputFile(){
+		return this.outputFile;
+	}
+	
+	
 
 	private String getString(List<Review> reviewsToTest) {
 		String out = "";
