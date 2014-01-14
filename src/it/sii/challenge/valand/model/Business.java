@@ -35,11 +35,12 @@ public class Business {
 		this.categories = categories;
 	}
 		
-	public Business(String id, String name, double stars) {
+	public Business(String id, String name, double stars, int reviewCount) {
 		super();
 		this.business_id = id;
 		this.name = name;
 		this.stars = stars;
+		this.review_count = reviewCount;
 	}
 
 	

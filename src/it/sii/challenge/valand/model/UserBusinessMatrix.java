@@ -1,11 +1,16 @@
 package it.sii.challenge.valand.model;
 
+import it.sii.challenge.valand.persistence.repository.BusinessRepository;
+import it.sii.challenge.valand.persistence.repository.UserRepository;
+import it.sii.challenge.valand.persistence.repositoryImpl.BusinessRepositoryImpl;
+import it.sii.challenge.valand.persistence.repositoryImpl.UserRepositoryImpl;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class UserBusinessMatrix {
-	private Map<User, Map<Business, Integer>> matrix;
+	private Map<String, Map<String, Integer>> matrix;
 	
 	/**
 	 * Constructor
@@ -16,14 +21,14 @@ public class UserBusinessMatrix {
 	 */
 	public UserBusinessMatrix(List<User> users, Map<String, Business> business, List<Review> reviews) {
 		System.out.println("Crea matrice");
-		this.matrix = new HashMap<User, Map<Business, Integer>>();
+		this.matrix = new HashMap<String, Map<String, Integer>>();
 		System.out.println("utenti:" + users.size());
 		for(User user : users){
-			Map<Business, Integer> tempMap = new HashMap<Business, Integer>();
+			Map<String, Integer> tempMap = new HashMap<String, Integer>();
 			for(Review review : reviews)
 				if(review.getUserId().equals(user.getId()))
-					tempMap.put(business.get(review.getBusinessId()), review.getStars());
-			this.matrix.put(user, tempMap);
+					tempMap.put(review.getBusinessId(), review.getStars());
+			this.matrix.put(user.getId(), tempMap);
 		}
 		System.out.println("fine matrice");
 	}
@@ -32,13 +37,13 @@ public class UserBusinessMatrix {
 	 * Costruttore vuoto per test
 	 */
 	public UserBusinessMatrix() {
-		this.matrix = new HashMap<User, Map<Business, Integer>>();
+		this.matrix = new HashMap<String, Map<String, Integer>>();
 	}
 		
 	/**
 	 * get entire matrix
 	 */
-	public Map<User, Map<Business, Integer>> getMatrix(){
+	public Map<String, Map<String, Integer>> getMatrix(){
 		return this.matrix;
 	}
 	
@@ -47,7 +52,7 @@ public class UserBusinessMatrix {
 	 * @param user
 	 * @return Map<String, Integer>
 	 */
-	public Map<Business, Integer> getUserValutatedItems(User user){
+	public Map<String, Integer> getUserValutatedItems(String user){
 		return this.getMatrix().get(user);
 	}
 	
@@ -56,10 +61,10 @@ public class UserBusinessMatrix {
 	 * @param business
 	 * @return Map<String, Integer>
 	 */
-	public Map<User, Integer> getItemRatingsByAllUsers(Business business){
-		Map<User, Integer> result = new HashMap<User, Integer>();
+	public Map<String, Integer> getItemRatingsByAllUsers(String business){
+		Map<String, Integer> result = new HashMap<String, Integer>();
 		
-		for (User user : this.getMatrix().keySet()){
+		for (String user : this.getMatrix().keySet()){
 			if(this.getMatrix().get(user).containsKey(business))
 				result.put(user, this.getMatrix().get(user).get(business));
 		}
@@ -72,24 +77,23 @@ public class UserBusinessMatrix {
 	 * @return Integer
 	 */
 	public Integer getRatingByUserItem(User user, Business business){
-		return this.getMatrix().get(user).get(business);
+		return this.getMatrix().get(user.getId()).get(business.getId());
+	}
+	
+	public Integer getRatingByUserItem(String userId, String businessId){
+		return this.getMatrix().get(userId).get(businessId);
 	}
 	
 	
 	/** TODO: database **/
 	public User getUser(String user_id){
-		for (User user : this.matrix.keySet())
-			if (user.getId().equals(user_id))
-				return user;
-		return null;		
+		UserRepository repo = new UserRepositoryImpl();
+		return repo.findById(user_id);
 	}	
 	
 	public Business getBusiness(String business_id){
-		for (User user : this.matrix.keySet())
-			for (Business business : this.matrix.get(user).keySet())
-				if (business.getId().equals(business_id))
-					return business;
-		return null;		
+		BusinessRepository repo = new BusinessRepositoryImpl();
+		return repo.findById(business_id);
 	}	
 	/**			**/
 	
@@ -97,14 +101,14 @@ public class UserBusinessMatrix {
 		String output = "";
 		boolean first = true;
 		
-		for(User user : this.matrix.keySet()){
-			output += user.getId()+":\t[";
-			for(Business business : this.matrix.get(user).keySet())
+		for(String user : this.matrix.keySet()){
+			output += user+":\t[";
+			for(String business : this.matrix.get(user).keySet())
 				if (first){
-					output += business.getId() + " - "+ this.matrix.get(user).get(business).intValue();
+					output += business + " - "+ this.matrix.get(user).get(business).intValue();
 					first = false;
 				}
-				else output += " | " + business.getId() + " - "+ this.matrix.get(user).get(business).intValue();
+				else output += " | " + business + " - "+ this.matrix.get(user).get(business).intValue();
 			output += "]\n";
 			first = true;
 		}
