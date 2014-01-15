@@ -17,6 +17,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import org.omg.CORBA.RepositoryIdHelper;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -30,9 +32,10 @@ public class Main {
 		String userFile = trainingPath+"user.json";
 		String businessFile = trainingPath+"business.json";
 		String reviewFile = trainingPath+"review_training.json";
-		String checkinFile = trainingPath+"checkin.json";		
+		String checkinFile = trainingPath+"checkin.json";	
 		
 		DocumentIO documentIO = new DocumentIO(businessFile, checkinFile, reviewFile, userFile, testFile, outputFile);
+
 //		populateDB(documentIO);
 		
 		Classifier classifier = new Classifier();
@@ -41,8 +44,18 @@ public class Main {
 		List<Review> reviewsToTest = documentIO.getReviewsFromTest();
 		Predictor predictor = new Predictor(classifier.getMatrix(), reviewsToTest);
 	
-		int k = 3;
+		int k = 5;
 		predictor.startPrediction(k, documentIO);
+		
+//		ReviewRepository r_repo = new ReviewRepositoryImpl();
+//		BusinessRepository b_repo = new BusinessRepositoryImpl();
+//		UserRepository u_repo = new UserRepositoryImpl();
+//		List<Review> reviews = r_repo.findAll();
+//		List<User> users = u_repo.findAll();
+//		List<Business> businesses = b_repo.findAll();
+//		fixDatabase(reviews, users, businesses);
+//		
+//		
 		
 		long endTime = System.nanoTime();
 		printTemporalInformation(startTime, endTime);
@@ -90,6 +103,7 @@ public class Main {
 					newUser = newUsers.get(newUsers.indexOf(newUser));
 				newUser.setAverageStars(newUser.getAverageStars()+review.getStars());
 				newUser.setReviewCount(newUser.getReviewCount()+1);
+				newUsers.add(newUser);
 			}
 			//Se non è presente inferiamo il business
 			if (!businesses.contains(review.getBusinessId())){
@@ -97,7 +111,8 @@ public class Main {
 				if (newBusinesses.contains(newBusiness))
 					newBusiness = newBusinesses.get(newBusinesses.indexOf(newBusiness));
 				newBusiness.setStars(newBusiness.getStars()+review.getStars());
-				newBusiness.setReviewCount(newBusiness.getReviewCount()+1);				
+				newBusiness.setReviewCount(newBusiness.getReviewCount()+1);			
+				newBusinesses.add(newBusiness);
 			}
 		}
 		
@@ -109,6 +124,25 @@ public class Main {
 		
 		users.addAll(newUsers);
 		businesses.addAll(newBusinesses);
+	}
+	
+	//Metodo provvisorio
+	public static void fixDatabase(List<Review> reviews, List<User> users, List<Business> businesses){
+		ReviewRepositoryImpl r_repo = new ReviewRepositoryImpl();		
+		List<Review> toDelete = new LinkedList<Review>();
+		int tenere = 0;
+		int eliminare = 0;
+		for (Review review : reviews){
+			if (!users.contains(new User(review.getUserId())) || !businesses.contains(new Business(review.getBusinessId())) ){
+				toDelete.add(review);
+				eliminare++;
+			}
+			else{
+				tenere++;
+			}
+		}
+		System.out.println("eliminare:" + eliminare + ", tenere:" + tenere);
+		r_repo.delete(toDelete);
 	}
 	
 }

@@ -177,6 +177,38 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 		return false;
 	}
 
+	public boolean delete(List<Review> reviews) {
+		PreparedStatement statement = null; 
+		try{
+			c=d.getConnection();
+			for(Review r : reviews){
+				statement = null;
+				
+				String insert = "delete from Review where business_id=? and user_id=?";
+				statement = c.prepareStatement(insert);
+				statement.setString(1, r.getBusinessId());
+				statement.setString(2, r.getUserId());
+				statement.executeUpdate();
+			}
+			return true;
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				if (c!= null) c.close();
+			} catch (SQLException e) {
+				try {
+					throw new PersistenceException(e.getMessage());
+				} catch (PersistenceException e1) {
+					e1.printStackTrace();
+				}
+			}
+		}
+		return false;		
+	}
+
 	
 	
 }

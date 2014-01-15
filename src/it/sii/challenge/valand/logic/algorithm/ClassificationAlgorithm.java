@@ -12,7 +12,7 @@ import java.util.List;
 
 public abstract class ClassificationAlgorithm {
         public final int initializedPrediction = -1;
-        public final double SIMILARITY_TRESHOLD = 0.65;
+        public final double SIMILARITY_TRESHOLD = 0.25;
         protected SimilarityCalculator similarityCalculator;
         
         public ClassificationAlgorithm(SimilarityCalculator calculator){

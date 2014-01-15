@@ -1,5 +1,6 @@
 package it.sii.challenge.valand.model;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class Business {
@@ -10,6 +11,7 @@ public class Business {
 	private double stars;
 	private int review_count;
 	private List<String> categories;
+	private boolean infered;
 	/*
 	private String full_address;
 	private String city;
@@ -24,29 +26,45 @@ public class Business {
 	 * Constructors
 	 */
 	
+	/**
+	 * Full costructore. Set infered = false.
+	 * @param id
+	 * @param name
+	 * @param neighborhoods
+	 * @param stars
+	 * @param reviewCount
+	 * @param categories
+	 */
 	public Business(String id, String name, List<String> neighborhoods,
 			double stars, int reviewCount, List<String> categories) {
-		super();
 		this.business_id = id;
 		this.name = name;
 		this.neighborhoods = neighborhoods;
 		this.stars = stars;
 		this.review_count = reviewCount;
 		this.categories = categories;
+		this.infered = false;
 	}
 		
+	/**
+	 * Set infered = false.
+	 * @param id
+	 * @param name
+	 * @param stars
+	 * @param reviewCount
+	 */
 	public Business(String id, String name, double stars, int reviewCount) {
-		super();
-		this.business_id = id;
-		this.name = name;
-		this.stars = stars;
-		this.review_count = reviewCount;
+		this(id, name, new LinkedList<String>(), stars, reviewCount, new LinkedList<String>());
 	}
 
 	
-
+	/**
+	 * Empty costructor. Set infered = true
+	 * @param business_id
+	 */
 	public Business(String business_id) {
-		this.business_id = business_id;
+		this(business_id, "", new LinkedList<String>(), 0, 0, new LinkedList<String>());
+		this.infered = true;
 	}
 
 	/**

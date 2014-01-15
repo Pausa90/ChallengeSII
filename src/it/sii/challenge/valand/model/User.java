@@ -6,6 +6,7 @@ public class User {
 	private String user_id;
 	private int review_count;
 	private double average_stars;
+	//private List<> similarityUsers;
 	/*
 	private String name; //firstname
 	private Map<String, Integer> votes;
