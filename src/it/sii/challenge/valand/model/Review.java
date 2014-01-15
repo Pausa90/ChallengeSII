@@ -56,5 +56,8 @@ public class Review {
 		return this.user_id.equals(review.getUserId()) && this.business_id.equals(review.getBusinessId());
 	}
 	
+	public String toString() {
+		return "BusinessID: " + this.business_id + ", UserID: "+ this.user_id + ", Stars: "+ stars;
+	}
 
 }

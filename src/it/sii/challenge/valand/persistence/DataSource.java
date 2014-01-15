@@ -9,7 +9,7 @@ public class DataSource{
 	
 	public String dbUri="jdbc:mysql://localhost/challengeSii";
 	public String username="root";
-	public String password="@@MySqlAdministratorPassword@@";
+	public String password="root";
 	
 	public Connection getConnection() throws PersistenceException{
 	

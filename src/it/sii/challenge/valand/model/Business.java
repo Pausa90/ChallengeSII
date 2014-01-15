@@ -45,8 +45,8 @@ public class Business {
 
 	
 
-	public Business(String business_id2) {
-		this.business_id = business_id2;
+	public Business(String business_id) {
+		this.business_id = business_id;
 	}
 
 	/**
@@ -108,6 +108,10 @@ public class Business {
 	public boolean equals(Object obj) {
 		Business business = (Business) obj;
 		return this.business_id.equals(business.getId());
+	}
+	
+	public String toString(){
+		return "BusinessID: " + this.business_id;
 	}
 	
 	

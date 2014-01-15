@@ -25,11 +25,8 @@ public class SimilarityCalculator {
 		for (String key : utilities.unionListOfKeySets(user1, user2)){
 			rating1 = user1.get(key);
 			rating2 = user2.get(key);
-			if (rating1==null)
-				rating1 = 0;
-			if (rating2==null)
-				rating2 = 0;
-			similarity_numerator += ( (rating1 - averageRating1) * (rating2 - averageRating2));
+			if (rating1==null || rating2==null)
+				similarity_numerator += ( (rating1 - averageRating1) * (rating2 - averageRating2));
 		}               
 
 		for (String key : user1.keySet())
@@ -56,16 +53,15 @@ public class SimilarityCalculator {
 		for (String user : utilities.unionListOfKeySets(columnB1, columnB2)){
 			rating1 = columnB1.get(user);
 			rating2 = columnB2.get(user);
-			if (rating1==null)
-				rating1 = 0;
-			if (rating2==null)
-				rating2 = 0;
-			User u = u_repo.findById(user);
-			if(u!=null)
-				averageStars = u.getAverageStars();
-			else
-				averageStars = 3;
-			similarity_numerator += ( (rating1 - averageStars) * (rating2 - averageStars));
+			
+			if (rating1==null || rating2==null){
+				User u = u_repo.findById(user);
+				if(u!=null)
+					averageStars = u.getAverageStars();
+				else
+					averageStars = 3;
+				similarity_numerator += ( (rating1 - averageStars) * (rating2 - averageStars));
+			}
 		}               
 
 		for (String user : columnB1.keySet()){

@@ -21,6 +21,10 @@ public class User {
 		this.average_stars = averageStars;
 	}
 	
+	public User(String id){
+		this(id, 0, 0);
+	}
+	
 	/**
 	 * Getters & Setters
 	 */
@@ -66,7 +70,7 @@ public class User {
 	}
 	
 	public String toString(){
-		return this.user_id;
+		return "UserID: " + this.user_id;
 	}
 	
 	

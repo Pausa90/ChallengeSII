@@ -45,7 +45,6 @@ public class Predictor {
 				System.out.println("Predizione: " + prediction);
 				writerOutput.write(prediction + "\n");
 			}	
-	
 			writerOutput.flush();
 			writerOutput.close();
 		

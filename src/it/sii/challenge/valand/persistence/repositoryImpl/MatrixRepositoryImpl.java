@@ -67,9 +67,4 @@ public class MatrixRepositoryImpl implements MatrixRepository{
 		return matrix;
 	}
 	
-	
-	
-
-	
-	
 }

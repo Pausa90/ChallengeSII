@@ -127,14 +127,15 @@ public class UserBusinessMatrix {
 	
 	/**support methods**/
 	public List<String> getBusinessListByAllUsers(){
-		if(!businessListGenerated){
+		if(!this.businessListGenerated){
 			this.businessListByAllUsers = new LinkedList<String>();
 			for (String user : this.getMatrix().keySet())
 				for(String business : this.getMatrix().get(user).keySet())
-					if(!businessListByAllUsers.contains(business))
-						businessListByAllUsers.add(business);
+					if(!this.businessListByAllUsers.contains(business))
+						this.businessListByAllUsers.add(business);
+			this.businessListGenerated = true;
 		}
-		return businessListByAllUsers;
+		return this.businessListByAllUsers;
 	}
 	
 	
@@ -159,15 +160,24 @@ public class UserBusinessMatrix {
 		return output;
 	}
 	
-
+	/**
+	 * Print the matrix
+	 */
 	public void readTheMatrix(){
+		boolean first = true;
 		for(String user : this.matrix.keySet()){
 			System.out.print("User: " + user + " Business: ");
 			Map<String, Integer> tempMap = this.matrix.get(user);
-			for(String business : tempMap.keySet()){
-				System.out.print("[ Id: " + business + " | rating: " + tempMap.get(business) + " ], " );
+			for(String business : tempMap.keySet()){				
+				if (first){
+					System.out.print("[ Id: " + business + " | rating: " + tempMap.get(business) + " ]" );
+					first = false;
+				}
+				else 
+					System.out.print(", [ Id: " + business + " | rating: " + tempMap.get(business) + " ]" );
 			}
-			System.out.println("___");
+			first = true;
+			System.out.println();
 		}
 	}
 
