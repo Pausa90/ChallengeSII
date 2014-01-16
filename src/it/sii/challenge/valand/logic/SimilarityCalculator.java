@@ -26,14 +26,13 @@ public class SimilarityCalculator {
 			rating2 = user2.get(key);
 			if (rating1 != null && rating2 != null)
 				similarity_numerator += ( (rating1 - averageRating1) * (rating2 - averageRating2));
+			
+			
+			if (rating1 != null)
+				similarity_denominator_p1 += Math.pow(rating1-averageRating1, 2);
+			if (rating2 != null)
+				similarity_denominator_p2 += Math.pow(rating2-averageRating2, 2);
 		}               
-
-		for (String key : user1.keySet())
-			similarity_denominator_p1 += Math.pow(user1.get(key)-averageRating1, 2);
-
-		for (String key : user2.keySet())
-			similarity_denominator_p2 += Math.pow(user2.get(key)-averageRating2, 2);
-
 
 		return similarity_numerator/Math.sqrt(similarity_denominator_p1 * similarity_denominator_p2);
 	}

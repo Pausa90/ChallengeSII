@@ -153,6 +153,51 @@ public class BusinessRepositoryImpl implements BusinessRepository{
 		}
 		return false;
 	}
+	
+	/* DA RISCRIVERE COSì...
+	 public boolean insertList(List<Business> listBusiness){
+		Connection c = null;
+		try {
+
+			c=d.getConnection();
+			PreparedStatement statement = null;
+			
+			String insert = "insert into Business values ";
+			
+			int i=1;
+			for(Business b : listBusiness){
+				if(listBusiness.indexOf(b)!=listBusiness.size()-1)
+					insert += "('"+b.getId()+"', "+"'\"\"'"+", '"+b.getStars()+"', '"+b.getReviewCount()+"'), ";
+				else
+					insert += "('"+b.getId()+"', "+"'\"\"'"+", '"+b.getStars()+"', '"+b.getReviewCount()+"') ";
+				if(i%1000==0)
+					System.out.println("preparato il Business numero: " +i+ " !!!!!" );
+				i++;
+			}
+			statement = c.prepareStatement(insert);
+			System.out.println("FACCIO L'UPDATE DI BUSINESS!!!");
+			statement.executeUpdate();
+			System.out.println("FATTO!!!");
+			return true;
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				if (c!= null) c.close();
+			} catch (SQLException e) {
+				try {
+					throw new PersistenceException(e.getMessage());
+				} catch (PersistenceException e1) {
+					e1.printStackTrace();
+				}
+			}
+		}
+		return false;
+	}
+
+	 */
 
 	
 	

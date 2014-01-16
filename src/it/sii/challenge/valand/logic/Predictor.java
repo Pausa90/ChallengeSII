@@ -20,11 +20,13 @@ public class Predictor {
 	private UserBusinessMatrix matrix;
 	private List<Review> reviewsToTest;
 	private ClassificationAlgorithm algorithm;
-	private final int BUSINESS_REVIEW_COUNT_TRESHOLD = 250;
-	private final int USERS_REVIEW_COUNT_TRESHOLD = 10;
-	private final int NEIGHBORHOOD_TRESHOLD = 5;
+	private final int BUSINESS_REVIEW_COUNT_TRESHOLD = 0;
+	private final int USERS_REVIEW_COUNT_TRESHOLD = 10; //min count to calculate neighborhood
+	private final int NEIGHBORHOOD_TRESHOLD = 5; //min size of neighborhood
 	private final int AVERAGE_VALUE = 4;
 	private PrinterAndSaver printer;
+	
+	
 
 	public Predictor(UserBusinessMatrix matrix, List<Review> reviewsToTest) {
 		this.setMatrix(matrix);
@@ -55,10 +57,11 @@ public class Predictor {
 					review.setStars(5);
 				else if (prediction < 1)
 					review.setStars(1);
-				this.printer.printAndSave("Predizione " + i + ": " + prediction);
+				else review.setStars(prediction);
+				this.printer.addToBackup("Predizione " + i + ": " + review.getStars());
 				i++;
 				writerOutput.write(review.getStars() + "\n");
-				if (i == 4) break;
+				if (i > 1000) break;
 			}	
 			writerOutput.flush();
 			writerOutput.close();
@@ -70,7 +73,7 @@ public class Predictor {
 		}		
 		
 	}
-	
+	/*
 //	private int predict(int k, Review review){
 //		User user = this.matrix.getUserFromMatrix(review.getUserId());
 //		Business business = this.matrix.getBusinessFromMatrix(review.getBusinessId());
@@ -90,7 +93,7 @@ public class Predictor {
 //		}
 //		return AVERAGE_VALUE;
 //	}
-
+*/
 	private int predict(int k, Review review){
 		User user = this.matrix.getUserFromMatrix(review.getUserId());
 		Business business = this.matrix.getBusinessFromMatrix(review.getBusinessId());
@@ -103,62 +106,65 @@ public class Predictor {
 	private int linearCombinationPrediction(Review review, User user, Business business) {
 		this.printer.addToBackup("Inizio Combinazione Lineare");
 		List<CoupleObjectSimilarity<User>> userNeighborhood = this.getUserNeighborhood(user, review);
-		List<CoupleObjectSimilarity<Business>> buisnessNeighborhood = this.getBusinessNeighborhood(business, review);
-		
-		//Parametro che stabilisce dinamicamente quanto fidarsi delle predizioni
-		int lambda = this.calculateLambda(userNeighborhood.size(), buisnessNeighborhood.size());
-		this.printer.addToBackup("lambda = " + lambda + " (userNeigh=" + userNeighborhood.size() + "  businessNeig=" + buisnessNeighborhood.size());
-		
+		//List<CoupleObjectSimilarity<Business>> buisnessNeighborhood = this.getBusinessNeighborhood(business, review);
+//		
+//		//Parametro che stabilisce dinamicamente quanto fidarsi delle predizioni
+//		double lambda = this.calculateLambda(userNeighborhood.size(), buisnessNeighborhood.size());
+//		this.printer.addToBackup("lambda = " + lambda + " (userNeigh=" + userNeighborhood.size() + "  businessNeig=" + buisnessNeighborhood.size());
+//		
 		int userPredict;
-		int buisnessPredict;
-		if (lambda == 0)
-			userPredict = 0;
-		else
+//		int buisnessPredict;
+//		if (lambda == 0)
+//			userPredict = 0;
+//		else
 			userPredict = userBasedPrediction(review, userNeighborhood, user, business);
-		if (lambda == 1)
-			buisnessPredict = 0;
-		else
-			buisnessPredict = itemBasedPrediction(review, buisnessNeighborhood, user);
-		this.printer.addToBackup("userbased: " + userPredict + ", businessbased: " + buisnessPredict);
-		
-		return lambda*userPredict + (1-lambda)*buisnessPredict;
+//		if (lambda == 1)
+//			buisnessPredict = 0;
+//		else
+//			buisnessPredict = itemBasedPrediction(review, buisnessNeighborhood, user);
+//		this.printer.addToBackup("userbased: " + userPredict + ", businessbased: " + buisnessPredict);
+//		
+//		return lambda*userPredict + (1-lambda)*buisnessPredict;
+		return userPredict;
 	}
 	
 	private List<CoupleObjectSimilarity<User>> getUserNeighborhood(User user, Review review){
-		if (user.getReviewCount() < NEIGHBORHOOD_TRESHOLD)
-			return new LinkedList<CoupleObjectSimilarity<User>>();
+//		if (user.getReviewCount() < USERS_REVIEW_COUNT_TRESHOLD){
+//			this.printer.addToBackup("sotto la treshold (" + user.getReviewCount());
+//			return new LinkedList<CoupleObjectSimilarity<User>>();
+//		}
 		return this.algorithm.getNeighborHood(this.matrix, this.matrix.getUserFromMatrix(review.getUserId()), 
-				this.matrix.getBusinessFromMatrix(review.getBusinessId()));
+				this.matrix.getBusinessFromMatrix(review.getBusinessId()), this.printer);
 	}
-	
-	private List<CoupleObjectSimilarity<Business>> getBusinessNeighborhood(Business business, Review review){
-		if (business.getReviewCount() < NEIGHBORHOOD_TRESHOLD)
-			return new LinkedList<CoupleObjectSimilarity<Business>>();
-		return this.algorithm.getNeighborHood(this.matrix, this.matrix.getBusinessFromMatrix(review.getBusinessId()),
-				this.matrix.getUserFromMatrix(review.getUserId()));
-	}
+/*	
+//	private List<CoupleObjectSimilarity<Business>> getBusinessNeighborhood(Business business, Review review){
+//		if (business.getReviewCount() < BUSINESS_REVIEW_COUNT_TRESHOLD)
+//			return new LinkedList<CoupleObjectSimilarity<Business>>();
+//		return this.algorithm.getNeighborHood(this.matrix, this.matrix.getBusinessFromMatrix(review.getBusinessId()),
+//				this.matrix.getUserFromMatrix(review.getUserId()));
+//	}
+//
+//	private double calculateLambda(int userSize, int buisnessSize) {
+//		if (userSize < NEIGHBORHOOD_TRESHOLD)
+//			return 0.;
+//		if (buisnessSize < NEIGHBORHOOD_TRESHOLD)
+//			return 1.;
+//		
+//		return userSize / (double) (userSize+buisnessSize); //us : us+bus = x : 1
+//	}
 
-	private int calculateLambda(int userSize, int buisnessSize) {
-		if (userSize < NEIGHBORHOOD_TRESHOLD)
-			return 0;
-		if (buisnessSize < NEIGHBORHOOD_TRESHOLD)
-			return 1;
-		
-		return userSize / (userSize+buisnessSize); //us : us+bus = x : 1
-	}
+//	private int userBasedPrediction(Review review, User user, Business business) {		
+//		List<CoupleObjectSimilarity<User>> neighborhood = this.algorithm.getNeighborHood(this.matrix, this.matrix.getUserFromMatrix(review.getUserId()), 
+//																		this.matrix.getBusinessFromMatrix(review.getBusinessId()));
+//		return this.userBasedPrediction(review, neighborhood, user, business);
+//	}
 
-	private int userBasedPrediction(Review review, User user, Business business) {		
-		List<CoupleObjectSimilarity<User>> neighborhood = this.algorithm.getNeighborHood(this.matrix, this.matrix.getUserFromMatrix(review.getUserId()), 
-																		this.matrix.getBusinessFromMatrix(review.getBusinessId()));
-		return this.userBasedPrediction(review, neighborhood, user, business);
-	}
-
-	private int itemBasedPrediction(Review review, User user) {
-		Business b = this.matrix.getBusinessFromBusiness(review.getBusinessId());
-		List<CoupleObjectSimilarity<Business>> neighborhood = this.algorithm.getNeighborHood(this.matrix, b, user);
-		return this.itemBasedPrediction(review, neighborhood, user);
-	}
-	
+//	private int itemBasedPrediction(Review review, User user) {
+//		Business b = this.matrix.getBusinessFromBusiness(review.getBusinessId());
+//		List<CoupleObjectSimilarity<Business>> neighborhood = this.algorithm.getNeighborHood(this.matrix, b, user);
+//		return this.itemBasedPrediction(review, neighborhood, user);
+//	}
+	*/
 	private int userBasedPrediction(Review review, List<CoupleObjectSimilarity<User>> neighborhood, User user, Business business) {
 		if (neighborhood.size() < NEIGHBORHOOD_TRESHOLD){
 			this.printer.addToBackup("userNeigh troppo scarsa (" + neighborhood.size() + ")");
@@ -166,13 +172,13 @@ public class Predictor {
 		}
 		return this.algorithm.userBasedPrediction(neighborhood, review, user, business, this.matrix);
 	}
-	
-	private int itemBasedPrediction(Review review, List<CoupleObjectSimilarity<Business>> neighborhood, User user) {
-		if (neighborhood.size() < NEIGHBORHOOD_TRESHOLD){
-			this.printer.addToBackup("itemNeigh troppo scarsa (" + neighborhood.size() + ")");
-			return this.AVERAGE_VALUE;
-		}
-		return this.algorithm.itemBasedPrediction(neighborhood, review, user, this.matrix);
-	}
-
+/*
+//	private int itemBasedPrediction(Review review, List<CoupleObjectSimilarity<Business>> neighborhood, User user) {
+//		if (neighborhood.size() < NEIGHBORHOOD_TRESHOLD){
+//			this.printer.addToBackup("itemNeigh troppo scarsa (" + neighborhood.size() + ")");
+//			return this.AVERAGE_VALUE;
+//		}
+//		return this.algorithm.itemBasedPrediction(neighborhood, review, user, this.matrix);
+//	}
+*/
 }

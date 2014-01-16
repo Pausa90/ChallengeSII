@@ -5,6 +5,8 @@ import it.sii.challenge.valand.model.Business;
 import it.sii.challenge.valand.model.Review;
 import it.sii.challenge.valand.model.User;
 import it.sii.challenge.valand.model.UserBusinessMatrix;
+import it.sii.challenge.valand.persistence.repository.ReviewRepository;
+import it.sii.challenge.valand.persistence.repositoryImpl.ReviewRepositoryImpl;
 import it.sii.challenge.valand.utilities.CoupleObjectSimilarity;
 import it.sii.challenge.valand.utilities.MapsListsUtilities;
 import it.sii.challenge.valand.utilities.PrinterAndSaver;
@@ -15,6 +17,8 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+
+import org.omg.CORBA.RepositoryIdHelper;
 
 public class KNNAlgorithm extends ClassificationAlgorithm {
 
@@ -39,34 +43,54 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 	/** 
 	 * Return the user-based Neighborhood
 	 */
-	public List<CoupleObjectSimilarity<User>> getNeighborHood(UserBusinessMatrix matrix, User user, Business business) {			
-		Map<String, Integer> column = matrix.getItemRatingsByAllUsers(business.getId());
-		Map<String, Integer> rowUser = matrix.getUserValutatedItems(user.getId());	
-
+	public List<CoupleObjectSimilarity<User>> getNeighborHood(UserBusinessMatrix matrix, User user, Business business, PrinterAndSaver printer) {			
+		ReviewRepository repo = new ReviewRepositoryImpl();
 		List<CoupleObjectSimilarity<User>> neighborhood = new LinkedList<CoupleObjectSimilarity<User>>();
-		Map<String, Integer> rowU;
+		//int MIN_SAME_BUSINESS = 15;
+		int MIN_SAME_BUSINESS = 10;
+		List<User> users = repo.getNeighborhood(user, business, MIN_SAME_BUSINESS);
+		if (users.size() == 0) {
+			printer.addToBackup("sotto soglia in getNeighborhood");
+			return neighborhood;
+		}
+		
 		double similarity;
-		for (String u : column.keySet()){	
-			if (!user.getId().equals(u)){
-				rowU = matrix.getUserValutatedItems(u);	
-				similarity = this.getSimilarity(user, matrix.getUserFromUsers(u), rowUser, rowU);
-				this.printer.addToBackup("user based similarity:" + similarity);
-				if (similarity > SIMILARITY_TRESHOLD)
-					neighborhood.add(new CoupleObjectSimilarity<User>(matrix.getUserFromUsers(u), similarity));
-
-			}
+		Map<String, Integer> rowUser = matrix.getUserValutatedItems(user.getId());	
+		Map<String, Integer> rowU;
+		for (User u : users){
+			rowU = matrix.getUserValutatedItems(u.getId());
+			similarity = this.getSimilarity(user, u, rowUser, rowU);
+			if (similarity > SIMILARITY_TRESHOLD)
+				neighborhood.add(new CoupleObjectSimilarity<User>(u, similarity));
 		}
 		return neighborhood;
 	}
-
+	/*
+//	public List<CoupleObjectSimilarity<User>> getNeighborHood(UserBusinessMatrix matrix, User user, Business business) {			
+//		Map<String, Integer> column = matrix.getItemRatingsByAllUsers(business.getId());
+//		Map<String, Integer> rowUser = matrix.getUserValutatedItems(user.getId());	
+//
+//		List<CoupleObjectSimilarity<User>> neighborhood = new LinkedList<CoupleObjectSimilarity<User>>();
+//		Map<String, Integer> rowU;
+//		double similarity;
+//		for (String u : column.keySet()){	
+//			if (!user.getId().equals(u)){
+//				rowU = matrix.getUserValutatedItems(u);	
+//				similarity = this.getSimilarity(user, matrix.getUserFromUsers(u), rowUser, rowU);
+////				this.printer.addToBackup("user based similarity:" + similarity);
+//				if (similarity > SIMILARITY_TRESHOLD)
+//					neighborhood.add(new CoupleObjectSimilarity<User>(matrix.getUserFromUsers(u), similarity));
+//			}
+//		}
+//		//System.out.println("neigh:" + neighborhood.size());
+//		return neighborhood;
+//	}
+*/
 
 	private double getSimilarity(User user, User u, Map<String, Integer> rowUser, Map<String, Integer> rowU) {
-		//TODO: sentire biancalana per il problema dei voti uguali
-		int i;
-		if (this.controllaVotiUguali(rowUser, user.getAverageStars()) && this.controllaVotiUguali(rowU, u.getAverageStars()))
-			i = 0;//fai qualcosa		
-
-		return this.similarityCalculator.doPearsonSimilarity(rowUser, rowU,	user.getAverageStars(), u.getAverageStars());
+		//if (this.controllaVotiUguali(rowUser, user.getAverageStars()) || this.controllaVotiUguali(rowU, u.getAverageStars()))
+			return 1 - (Math.abs(user.getAverageStars() - u.getAverageStars())/4.);
+		//return this.similarityCalculator.doPearsonSimilarity(rowUser, rowU,	user.getAverageStars(), u.getAverageStars());
 	}
 
 	private boolean controllaVotiUguali(Map<String, Integer> rowUser, double average) {
@@ -133,7 +157,6 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 	@Override
 	public int userBasedPrediction(List<CoupleObjectSimilarity<User>> neighborhood, Review review, User user, Business business, UserBusinessMatrix matrix) {
 		Collections.sort(neighborhood, new MaxSimilarity<User>());
-
 		double predictNumerator = 0;
 		double predictDenominator = 0;
 

@@ -2,6 +2,7 @@ package it.sii.challenge.valand;
 
 import it.sii.challenge.valand.logic.Classifier;
 import it.sii.challenge.valand.logic.Predictor;
+import it.sii.challenge.valand.logic.Statistic;
 import it.sii.challenge.valand.model.Business;
 import it.sii.challenge.valand.model.Review;
 import it.sii.challenge.valand.model.User;
@@ -28,18 +29,19 @@ public class Main {
 
 		String testFile = trainingPath+"review_test.dat";
 		String outputFile = trainingPath+"output.dat";
+		String trueFile = trainingPath+"review_realratings.dat";
 
 		String userFile = trainingPath+"user.json";
 		String businessFile = trainingPath+"business.json";
 		String reviewFile = trainingPath+"review_training.json";
 		String checkinFile = trainingPath+"checkin.json";	
 		
-		DocumentIO documentIO = new DocumentIO(businessFile, checkinFile, reviewFile, userFile, testFile, outputFile);
+		DocumentIO documentIO = new DocumentIO(businessFile, checkinFile, reviewFile, userFile, testFile, outputFile, trueFile);
 
 //		populateDB(documentIO);
 		
 		Classifier classifier = new Classifier();
-		//classifier.getMatrix().readTheMatrix();
+//		classifier.getMatrix().readTheMatrix();
 		
 		List<Review> reviewsToTest = documentIO.getReviewsFromTest();
 		Predictor predictor = new Predictor(classifier.getMatrix(), reviewsToTest);
@@ -57,17 +59,15 @@ public class Main {
 //		
 //		
 		
+		Statistic statistics = new Statistic(startTime);
+		statistics.printMAE(documentIO.getOutputFile(), documentIO.getTrueFile());
+		
 		long endTime = System.nanoTime();
-		printTemporalInformation(startTime, endTime);
+		statistics.printTemporalInformation(endTime);
 		
 	}
 	
-	public static void printTemporalInformation(long startTime, long endTime){
-		long toSeconds = 1000000000;
-		int minutes = (int)((endTime - startTime)/(toSeconds*60));
-		int seconds = (int)(((endTime - startTime)/toSeconds)-(minutes*60));
-		System.out.println("The program took "+ minutes + " minutes and " + seconds + " seconds"); 
-	}
+
 
 	public static void populateDB(DocumentIO documentIO){
 		System.out.println("Start population");

@@ -1,608 +1,3197 @@
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0 (userNeigh=0  businessNeig=0
-itemNeigh troppo scarsa (0)
-userbased: 0, businessbased: 4
-Predizione 1: 4
+Predizione 1: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user based similarity:0.061068821839442414
-user based similarity:0.06673830789046767
-user based similarity:0.14893038070526837
-user based similarity:-0.8099421215430211
-user based similarity:-0.809942121543021
-user based similarity:-0.8099421215430211
-user based similarity:NaN
-user based similarity:0.2473628899261614
-user based similarity:-0.20123982651577724
-user based similarity:-0.3084999416289856
-user based similarity:-0.5350469875354169
-user based similarity:0.8099421215430211
-user based similarity:0.8099421215430211
-user based similarity:0.8099421215430211
-user based similarity:0.1331536645576252
-user based similarity:-0.808484732360029
-user based similarity:-0.3880979626282649
-user based similarity:-0.5314600999402944
-user based similarity:-0.8099421215430213
-user based similarity:-0.17994649676069702
-user based similarity:0.8099421215430211
-user based similarity:-0.43699300232236493
-user based similarity:-0.4021888688525287
-user based similarity:0.07937493431500654
-user based similarity:-0.05637056466765933
-user based similarity:0.04841167622585992
-user based similarity:-0.1084497212395057
-user based similarity:-0.8099421215430213
-user based similarity:-0.1859007421892117
-user based similarity:-0.8099421215430211
-user based similarity:-0.7772435787276302
-user based similarity:0.06827816469177653
-user based similarity:-0.8099421215430211
-user based similarity:0.4819538925562267
-user based similarity:-0.8099421215430211
-user based similarity:NaN
-user based similarity:-0.15067850265592045
-user based similarity:-0.1478130206835567
-user based similarity:0.8099421215430211
-user based similarity:-0.1206479848920752
-user based similarity:-0.17355902604493306
-user based similarity:-4.158818559425614E-4
-user based similarity:0.7798284761133777
-user based similarity:-0.2650353528467288
-user based similarity:-0.809942121543021
-user based similarity:0.06213382277262687
-user based similarity:0.1524337911925703
-user based similarity:-0.6346790754671233
-user based similarity:-0.4877783556586176
-user based similarity:0.8099421215430211
-user based similarity:-0.01639219040369336
-user based similarity:0.8099421215430211
-user based similarity:-0.1301379380302634
-user based similarity:-0.17822333889443603
-user based similarity:-0.011634008093095323
-user based similarity:0.12714233289468566
-user based similarity:-0.31071275983458374
-user based similarity:-0.11993558262452904
-user based similarity:0.05661676380824277
-user based similarity:-0.12325979495463454
-user based similarity:-0.8099421215430211
-user based similarity:-0.7080066675534461
-user based similarity:-0.47363741357542866
-user based similarity:-0.5727155665116892
-user based similarity:0.8099421215430211
-user based similarity:-0.6976007886296594
-user based similarity:0.8099421215430211
-user based similarity:-0.11304810292781874
-user based similarity:0.1152753835936871
-user based similarity:-0.6560062402496101
-user based similarity:0.1492468438444192
-user based similarity:-0.8099421215430211
-user based similarity:-0.461873193854429
-user based similarity:-0.4232450218371341
-user based similarity:-0.8099421215430211
-user based similarity:-0.2954414554328922
-user based similarity:0.14650739523615505
-user based similarity:0.0898746318068124
-user based similarity:0.8099421215430213
-user based similarity:-0.9983245500747429
-user based similarity:-0.37091833181541806
-user based similarity:0.8099421215430213
-user based similarity:0.03366004586781133
-user based similarity:0.8099421215430211
-user based similarity:0.18363465346240695
-user based similarity:0.8099421215430213
-user based similarity:-0.7444542756185496
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430213
-user based similarity:-0.7338910222081089
-user based similarity:-0.16409881276938448
-user based similarity:-0.809942121543021
-user based similarity:-0.18375262466607414
-user based similarity:0.06859051409722514
-user based similarity:-0.15691746311797075
-user based similarity:0.39583138098857207
-user based similarity:-0.5271194670647305
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430211
-user based similarity:0.13895203827645305
-user based similarity:-0.8099421215430211
-user based similarity:-0.10370120476516413
-user based similarity:0.17752966177046584
-user based similarity:-0.2049335622093601
-user based similarity:0.8099421215430211
-user based similarity:0.08311451155309534
-user based similarity:-0.8099421215430213
-user based similarity:-0.7736125962399358
-user based similarity:-0.6940865777173307
-user based similarity:0.8099421215430211
-user based similarity:-0.4957302368320962
-user based similarity:-0.8099421215430213
-user based similarity:-0.339489431256903
-user based similarity:0.23323272440256296
-user based similarity:0.038671926692087466
-user based similarity:-0.0060011630110696
-user based similarity:-0.8099421215430211
-user based similarity:-0.5727155665116891
-user based similarity:0.09996762096563036
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430214
-user based similarity:0.02254040093037352
-user based similarity:0.06136198280186187
-user based similarity:0.8099421215430213
-user based similarity:-0.029131593307851908
-user based similarity:0.8099421215430211
-user based similarity:-0.8099421215430213
-user based similarity:-0.221093915124108
-user based similarity:-0.33535173602263374
-user based similarity:0.2898411812126068
-user based similarity:-0.0988739575928414
-user based similarity:0.07167013262667044
-user based similarity:0.8099421215430211
-user based similarity:-0.20635808968337635
-user based similarity:0.8099421215430211
-user based similarity:-0.12433825678753536
-user based similarity:0.13867751547103738
-user based similarity:-0.21961684674678528
-user based similarity:-0.8099421215430211
-user based similarity:-0.11427670306678143
-user based similarity:-0.8099421215430211
-user based similarity:-0.462198830151581
-user based similarity:0.019835066369107677
-user based similarity:0.029823222693264238
-user based similarity:-0.41267536603688093
-user based similarity:-0.8099421215430213
-user based similarity:0.012906261742751052
-user based similarity:0.1881799190967492
-user based similarity:0.09657421935335686
-user based similarity:0.023560585330298606
-user based similarity:-0.18496595059426915
-user based similarity:-0.8099421215430211
-user based similarity:0.06378287978357484
-user based similarity:0.20826020600425058
-user based similarity:-0.1442374960214332
-user based similarity:-0.4824337869274599
-user based similarity:-0.5727155665116892
-user based similarity:0.0212353685301394
-user based similarity:0.14373680603524874
-user based similarity:-0.06286818244322184
-user based similarity:-0.5727155665116891
-user based similarity:-0.8099421215430213
-user based similarity:-0.08608589093935334
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430211
-user based similarity:-0.14509218811419985
-user based similarity:0.8099421215430213
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430213
-user based similarity:0.8099421215430211
-user based similarity:-0.8099421215430211
-user based similarity:-0.07393341511544872
-user based similarity:-0.4839295311408155
-user based similarity:-0.8086477090859283
-user based similarity:-0.6991938221522892
-user based similarity:-0.5727155665116891
-user based similarity:0.8099421215430211
-user based similarity:-0.10134555462243067
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430211
-user based similarity:0.16833610419481734
-user based similarity:-0.04382401235740931
-user based similarity:0.0761652477314987
-user based similarity:-0.8099421215430213
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430213
-user based similarity:-0.5053166801472642
-user based similarity:-0.8099421215430211
-user based similarity:-0.1417614359488792
-user based similarity:-0.5234711875381464
-user based similarity:-0.8099421215430213
-user based similarity:0.505692112427335
-user based similarity:0.243898979010125
-user based similarity:-0.4787956013271493
-user based similarity:0.02681986368334103
-user based similarity:0.039846771077920104
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099320979410537
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430211
-user based similarity:-0.5727155665116891
-user based similarity:-0.5893194560750706
-user based similarity:0.009876103736876593
-user based similarity:0.33275366077602603
-user based similarity:-0.034694108646424665
-user based similarity:NaN
-user based similarity:-0.7131306306282841
-user based similarity:-0.8099421215430211
-user based similarity:-0.03867911352790894
-user based similarity:0.04436721405616408
-user based similarity:-0.7857592747667609
-user based similarity:0.3231016465536502
-user based similarity:-0.8099421215430211
-user based similarity:0.02175217804587071
-user based similarity:-0.12383870051923733
-user based similarity:-0.8060097512728844
-user based similarity:-0.8099421215430213
-user based similarity:0.08812605153816826
-user based similarity:-0.07271760168408932
-user based similarity:-0.47210210168409955
-user based similarity:-0.21790023116520033
-user based similarity:0.5727155665116892
-user based similarity:0.03460690750427994
-user based similarity:-0.809942121543021
-user based similarity:0.809942121543021
-user based similarity:0.8097864682079542
-user based similarity:-0.8099421215430213
-user based similarity:-0.12243302281963704
-user based similarity:-0.8099421215430211
-user based similarity:0.11417570014052413
-user based similarity:-0.38901439764474105
-user based similarity:0.07073929293290424
-user based similarity:-0.02992043064807494
-user based similarity:0.008776926368840319
-user based similarity:-0.40497106077151057
-user based similarity:-0.24309773956574418
-user based similarity:-0.8099421215430213
-user based similarity:-0.4523887524840194
-user based similarity:-0.8099421215430211
-user based similarity:0.04240076241704189
-user based similarity:-0.8099421215430213
-user based similarity:0.8099421215430213
-user based similarity:-0.17452174549591348
-user based similarity:-0.8099421215430211
-user based similarity:0.8099421215430213
-user based similarity:-0.7819273143459669
-user based similarity:0.20417336264716712
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430213
-user based similarity:-0.7994306206870476
-user based similarity:-0.8099421215430213
-user based similarity:0.8099421215430211
-user based similarity:0.8099421215430211
-user based similarity:-0.8099421215430211
-user based similarity:0.011868637522272223
-user based similarity:-0.40497106077151057
-user based similarity:0.09774800329163352
-user based similarity:0.018483713753181655
-user based similarity:0.09870993536861514
-user based similarity:-0.8099421215430211
-user based similarity:0.8099421215430213
-user based similarity:-0.369778572388453
-user based similarity:-0.25031872771118263
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430213
-user based similarity:-0.8099421215430211
-user based similarity:0.12932690037332634
-user based similarity:-0.4676203019008799
-user based similarity:-0.8099421215430211
-user based similarity:-0.5675904919366033
-user based similarity:-0.2251931801037835
-user based similarity:-0.8099421215430213
-user based similarity:-0.8099421215430213
-user based similarity:-0.8099421215430211
-user based similarity:0.8099421215430211
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430213
-user based similarity:0.03049777694021986
-user based similarity:-0.157990501106673
-user based similarity:0.1221033690483014
-user based similarity:0.8006801085615778
-user based similarity:-0.8099421215430211
-user based similarity:0.0538500800458664
-user based similarity:-0.16029690938398894
-user based similarity:-0.8099421215430211
-user based similarity:0.16180508595385842
-user based similarity:-0.21393428249515545
-user based similarity:-0.8099421215430213
-user based similarity:-0.8099421215430211
-user based similarity:0.3452584632806167
-user based similarity:-0.17632031888431207
-user based similarity:-0.5340474738798804
-user based similarity:0.8099421215430211
-user based similarity:-0.036039308311150986
-user based similarity:-0.03980694118792101
-user based similarity:-0.04689052807212987
-user based similarity:0.07299565977115816
-user based similarity:0.32956077539216916
-user based similarity:-0.010483425080362924
-user based similarity:0.062258004425011976
-user based similarity:0.04962943281660009
-user based similarity:-0.8099421215430213
-user based similarity:-0.8099421215430211
-user based similarity:-0.0918852129108497
-user based similarity:0.3062594322774048
-user based similarity:0.05581187456445995
-user based similarity:0.1271230777477649
-user based similarity:-0.018528329597901752
-user based similarity:0.021828895608071927
-user based similarity:0.157990501106673
-user based similarity:-0.20177470845342865
-user based similarity:-0.8099421215430211
-user based similarity:-0.06935998353672959
-user based similarity:-0.21986702197218008
-user based similarity:-0.8099421215430214
-user based similarity:0.0
-user based similarity:0.5727155665116891
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430213
-user based similarity:0.8099421215430211
-user based similarity:0.4049710607715106
-user based similarity:-0.0716157290750356
-user based similarity:-0.09437389921786027
-user based similarity:0.5727155665116892
-user based similarity:-0.20757861578739975
-user based similarity:0.16259953440566102
-user based similarity:-0.8099421215430213
-user based similarity:-0.8099421215430213
-user based similarity:-0.8099421215430211
-user based similarity:-0.661360713286261
-user based similarity:-0.07859390853225186
-user based similarity:-0.7924417867492085
-user based similarity:-0.8099421215430213
-user based similarity:-0.21987366518338744
-user based similarity:-0.305200685071037
-user based similarity:0.8099421215430211
-user based similarity:-0.8099421215430213
-user based similarity:0.0646026983873914
-user based similarity:0.37548489684985953
-user based similarity:-0.8099421215430211
-user based similarity:-0.5025117060651321
-user based similarity:-0.7924417867492085
-user based similarity:-0.5727155665116892
-user based similarity:0.09934925987508543
-user based similarity:-0.2135196630056634
-user based similarity:0.8099421215430211
-user based similarity:-0.24934423903795888
-user based similarity:-0.22614829674846842
-user based similarity:-0.8099421215430213
-user based similarity:-0.8099421215430211
-user based similarity:-0.05460628669474914
-user based similarity:0.10086935913420819
-user based similarity:-0.8099421215430211
-user based similarity:-0.022391886498424034
-user based similarity:-0.8099421215430213
-user based similarity:-0.13228133354605195
-user based similarity:0.13183329264562868
-user based similarity:-0.4795940853748334
-user based similarity:0.14268431712200927
-user based similarity:-0.17332524508800376
-user based similarity:0.15474441817314163
-user based similarity:-0.1047862798458586
-user based similarity:-0.8095987883154387
-user based similarity:-0.012981942305042836
-user based similarity:-0.27910911648612513
-user based similarity:-0.6626718782255032
-user based similarity:-0.8099421215430211
-user based similarity:-0.09002264699728488
-user based similarity:0.016609317511143685
-user based similarity:-0.4107085329118249
-user based similarity:0.14675518189195658
-user based similarity:-0.8099421215430213
-user based similarity:-0.8099421215430213
-user based similarity:-0.8099421215430213
-user based similarity:-0.4203300820213635
-user based similarity:-0.09872489935496158
-user based similarity:-0.5939634134544511
-user based similarity:-0.24958999624434808
-user based similarity:0.23770942262915817
-user based similarity:0.01491868932835486
-user based similarity:0.8099421215430211
-user based similarity:-0.5103656199054387
-user based similarity:-0.20324312362712998
-user based similarity:NaN
-user based similarity:-0.14586655423605596
-user based similarity:0.04581587653313867
-user based similarity:0.13686411198013637
-user based similarity:-0.7215582961609216
-user based similarity:-0.8099421215430211
-user based similarity:-0.1150571600306024
-user based similarity:0.0
-user based similarity:-0.5727155665116891
-user based similarity:0.11630091083399431
-user based similarity:-0.664604932938532
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430213
-user based similarity:0.5727155665116891
-user based similarity:0.8099421215430211
-user based similarity:-0.4210543159893143
-user based similarity:-0.8099421215430213
-user based similarity:0.39708322853830647
-user based similarity:-0.8099421215430211
-user based similarity:0.35276224418130026
-user based similarity:-0.08509699612608591
-user based similarity:-0.38410406081063814
-user based similarity:0.0684799446111755
-user based similarity:-0.8099421215430211
-user based similarity:0.14991385769097265
-user based similarity:-0.3626859907266272
-user based similarity:-0.8099421215430213
-user based similarity:0.8099421215430213
-user based similarity:-0.8099421215430213
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430211
-user based similarity:0.18472538225566612
-user based similarity:0.8099421215430211
-user based similarity:0.035435121616111814
-user based similarity:-0.017406039376862126
-user based similarity:0.8099421215430211
-user based similarity:-0.5727155665116891
-user based similarity:-0.5106624552291136
-user based similarity:-0.19169568989509334
-user based similarity:-0.5094416830189443
-user based similarity:0.8099421215430213
-user based similarity:-0.8099421215430213
-user based similarity:-0.027984552619897095
-user based similarity:-0.10002495024858017
-user based similarity:-0.10351337307462946
-user based similarity:-0.5637691636531847
-user based similarity:0.13862674902395172
-user based similarity:NaN
-user based similarity:-0.8099421215430214
-user based similarity:-0.016166870241187053
-user based similarity:-0.8044760885194494
-user based similarity:0.13867751547103738
-user based similarity:-0.002489432462128997
-user based similarity:0.1301379380302632
-user based similarity:-0.6059887007795854
-user based similarity:-0.21424935982183518
-user based similarity:-0.21646613728077163
-user based similarity:-0.8099421215430213
-user based similarity:-0.8099421215430211
-user based similarity:-0.021152129007560336
-user based similarity:0.5727155665116891
-user based similarity:0.06750801788333817
-user based similarity:-0.8099421215430211
-user based similarity:-0.8099421215430213
-user based similarity:0.1036186113667995
-user based similarity:0.010972247145562664
-user based similarity:-0.34725966385067064
-user based similarity:0.014606004336669235
-user based similarity:-0.5727155665116892
-user based similarity:0.04910074546274668
-user based similarity:-0.804988300628652
-user based similarity:0.28884103131250394
-user based similarity:0.11165250146275098
-user based similarity:0.05656611696358191
-user based similarity:-0.3849159405478907
-user based similarity:-0.07808104436077619
-user based similarity:-0.8099421215430211
-user based similarity:-0.46714271241619054
-user based similarity:0.5727155665116892
-user based similarity:-0.7480265632404433
-user based similarity:-0.8099421215430213
-user based similarity:-0.8097735065476387
-user based similarity:-0.017398903883943825
-user based similarity:-0.3473056834830763
-item based similarity:0.02992460872212364
-lambda = 1 (userNeigh=62  businessNeig=0
-userbased: 4, businessbased: 0
-Predizione 2: 4
+Predizione 2: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user based similarity:0.0370136790125195
-user based similarity:0.3188630623290478
-user based similarity:0.1381763842914849
-user based similarity:0.1594315311645239
-user based similarity:0.06543569485515116
-user based similarity:0.07618589328619237
-user based similarity:0.12388041579164101
-user based similarity:-0.016523174915219534
-user based similarity:-0.029831569860323533
-user based similarity:0.1243707328552037
-user based similarity:0.3188630623290478
-user based similarity:0.07129994828815032
-user based similarity:0.025290309402883557
-user based similarity:0.05172641911712508
-user based similarity:0.08644100010395361
-user based similarity:0.039063151367918596
-user based similarity:NaN
-user based similarity:0.2970456925462107
-user based similarity:0.024092280489130504
-user based similarity:NaN
-user based similarity:0.11717850067991928
-user based similarity:0.3188630623290478
-user based similarity:0.09011659027222794
-user based similarity:0.18039962180413432
-user based similarity:0.2768506671439997
-user based similarity:-0.1061032688212423
-user based similarity:0.0805211952200717
-user based similarity:-0.023635702705987277
-user based similarity:0.10681500943927705
-user based similarity:0.03820926400350919
-user based similarity:NaN
-user based similarity:0.19864526690535345
-user based similarity:0.3107346560230855
-user based similarity:-0.02190534617900833
-user based similarity:0.31886306232904776
-user based similarity:0.058590858083641006
-user based similarity:0.07009047520561919
-user based similarity:0.014709424171429546
-user based similarity:0.06958162473563258
-user based similarity:0.05786453484987474
-user based similarity:-0.01387050814374469
-user based similarity:0.005873282594702343
-user based similarity:NaN
-user based similarity:NaN
-user based similarity:0.3188630623290478
-user based similarity:0.028868505233362454
-user based similarity:0.3188630623290478
-user based similarity:0.0640814122671135
-user based similarity:0.006535674154302511
-user based similarity:-0.053760798335822466
-user based similarity:0.06781080955693906
-user based similarity:0.04020527073102059
-user based similarity:0.3188630623290478
-user based similarity:0.08546082922884274
-user based similarity:-0.05044541831028539
-user based similarity:0.034928784696760314
-user based similarity:-0.045009248964574665
-user based similarity:0.3188630623290478
-user based similarity:0.063851498167311
-user based similarity:0.04638784016781127
-user based similarity:0.03917133550932696
-user based similarity:NaN
-user based similarity:-0.028613198314675636
-user based similarity:0.1120264526482632
-user based similarity:0.0033125166109868216
-user based similarity:0.08233008867473997
-user based similarity:0.010439557442075888
-user based similarity:0.034919887576930375
-user based similarity:-0.06450803823297736
-user based similarity:0.3188630623290478
-user based similarity:0.31886306232904776
-user based similarity:0.1645030743802985
-user based similarity:0.3188630623290478
-user based similarity:0.042589083879366524
-user based similarity:0.13779199394467717
-user based similarity:0.11302740436618848
-user based similarity:-0.011494296878482942
-user based similarity:0.31886306232904776
-user based similarity:0.21740039496276367
-user based similarity:NaN
-user based similarity:-0.12100052828400962
-user based similarity:-0.12751297469176012
-user based similarity:0.14796484082807335
-user based similarity:0.020413115813229927
-user based similarity:0.1388822363601783
-user based similarity:0.008247722012439666
-user based similarity:0.3188630623290478
-user based similarity:-0.014347941086510715
-user based similarity:-0.07543465687547891
-user based similarity:0.3188630623290478
-user based similarity:0.31886306232904776
-user based similarity:0.3188630623290478
-user based similarity:0.13295404002182692
-user based similarity:0.31886306232904776
-user based similarity:-0.2900413400060832
-user based similarity:0.031003233645740175
-user based similarity:0.12823322833806516
-user based similarity:0.03227719492656077
-user based similarity:0.05742956701781082
-user based similarity:-0.3495849324451907
-user based similarity:0.10311420283063305
-user based similarity:0.0911532794034048
-user based similarity:0.060549770075116124
-user based similarity:0.03179449644460742
-user based similarity:-0.10850513602331988
-user based similarity:0.21679502912770307
-user based similarity:0.11185317755492681
-user based similarity:0.15883349091781762
-user based similarity:0.07567917995069273
-user based similarity:0.053124632556609735
-user based similarity:0.29520614077821034
-user based similarity:0.027956849731261207
-user based similarity:0.10891323723907506
-user based similarity:-0.07481819893202887
-user based similarity:-0.0301174196616917
-user based similarity:0.1298387843157797
-user based similarity:0.09836022692922392
-user based similarity:0.09389450273966021
-user based similarity:0.046062319991438797
-item based similarity:0.010467023764194604
-item based similarity:0.004212229774999734
-item based similarity:-0.02329487302208981
-lambda = 1 (userNeigh=21  businessNeig=0
-userbased: 5, businessbased: 0
-Predizione 3: 5
+Predizione 3: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 4: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 5: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 6: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 7: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 8: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 9: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 10: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 11: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 12: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 13: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 14: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 15: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 16: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 17: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 18: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 19: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 20: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 21: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 22: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 23: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 24: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 25: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 26: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 27: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 28: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 29: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 30: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 31: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 32: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 33: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 34: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 35: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 36: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 37: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 38: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 39: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 40: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 41: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 42: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 43: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 44: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 45: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 46: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 47: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 48: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 49: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 50: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 51: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 52: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 53: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 54: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 55: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 56: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 57: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 58: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 59: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 60: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 61: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 62: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 63: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 64: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 65: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 66: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 67: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 68: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 69: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 70: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 71: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 72: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 73: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 74: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 75: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 76: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 77: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 78: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 79: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 80: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 81: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 82: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 83: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 84: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 85: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 86: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 87: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 88: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 89: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 90: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 91: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 92: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 93: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 94: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 95: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 96: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 97: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 98: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 99: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 100: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 101: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 102: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 103: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 104: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 105: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 106: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 107: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 108: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 109: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 110: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 111: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 112: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 113: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 114: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 115: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 116: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 117: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 118: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 119: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 120: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 121: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 122: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 123: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 124: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 125: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 126: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 127: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 128: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 129: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 130: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 131: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 132: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 133: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 134: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 135: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 136: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 137: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 138: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 139: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 140: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 141: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 142: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 143: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 144: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 145: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 146: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 147: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 148: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 149: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 150: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 151: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 152: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 153: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 154: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 155: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 156: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 157: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 158: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 159: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 160: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 161: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 162: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 163: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 164: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 165: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 166: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 167: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 168: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 169: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 170: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 171: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 172: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 173: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 174: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 175: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 176: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 177: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 178: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 179: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 180: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 181: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 182: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 183: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 184: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 185: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 186: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 187: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 188: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 189: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 190: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 191: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 192: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 193: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 194: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 195: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 196: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 197: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 198: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 199: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 200: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 201: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 202: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 203: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 204: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 205: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 206: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 207: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 208: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 209: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 210: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 211: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 212: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 213: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 214: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 215: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 216: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 217: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 218: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 219: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 220: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 221: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 222: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 223: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 224: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 225: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 226: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 227: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 228: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 229: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 230: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 231: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 232: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 233: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 234: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 235: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 236: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 237: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 238: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 239: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 240: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 241: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 242: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 243: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 244: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 245: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 246: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 247: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 248: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 249: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 250: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 251: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 252: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 253: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 254: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 255: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 256: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 257: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 258: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 259: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 260: 1
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 261: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 262: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 263: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 264: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 265: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 266: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 267: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 268: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 269: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 270: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 271: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 272: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 273: 1
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 274: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 275: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 276: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 277: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 278: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 279: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 280: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 281: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 282: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 283: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 284: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 285: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 286: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 287: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 288: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 289: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 290: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 291: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 292: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 293: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 294: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 295: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 296: 1
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 297: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 298: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 299: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 300: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 301: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 302: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 303: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 304: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 305: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 306: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 307: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 308: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 309: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 310: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 311: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 312: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 313: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 314: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 315: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 316: 1
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 317: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 318: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 319: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 320: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 321: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 322: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 323: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 324: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 325: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 326: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 327: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 328: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 329: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 330: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 331: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 332: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 333: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 334: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 335: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 336: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 337: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 338: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 339: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 340: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 341: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 342: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 343: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 344: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 345: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 346: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 347: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 348: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 349: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 350: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 351: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 352: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 353: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 354: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 355: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 356: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 357: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 358: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 359: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 360: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 361: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 362: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 363: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 364: 1
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 365: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 366: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 367: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 368: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 369: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 370: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 371: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 372: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 373: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 374: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 375: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 376: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 377: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 378: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 379: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 380: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 381: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 382: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 383: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 384: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 385: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 386: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 387: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 388: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 389: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 390: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 391: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 392: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 393: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 394: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 395: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 396: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 397: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 398: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 399: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 400: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 401: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 402: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 403: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 404: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 405: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 406: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 407: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 408: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 409: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 410: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 411: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 412: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 413: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 414: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 415: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 416: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 417: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 418: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 419: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 420: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 421: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 422: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 423: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 424: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 425: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 426: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 427: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 428: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 429: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 430: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 431: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 432: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 433: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 434: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 435: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 436: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 437: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 438: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 439: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 440: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 441: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 442: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 443: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 444: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 445: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 446: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 447: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 448: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 449: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 450: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 451: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 452: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 453: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 454: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 455: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 456: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 457: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 458: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 459: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 460: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 461: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 462: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 463: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 464: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 465: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 466: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 467: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 468: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 469: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 470: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 471: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 472: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 473: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 474: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 475: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 476: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 477: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 478: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 479: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 480: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 481: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 482: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 483: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 484: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 485: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 486: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 487: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 488: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 489: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 490: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 491: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 492: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 493: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 494: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 495: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 496: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 497: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 498: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 499: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 500: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 501: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 502: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 503: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 504: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 505: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 506: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 507: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 508: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 509: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 510: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 511: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 512: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 513: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 514: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 515: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 516: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 517: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 518: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 519: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 520: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 521: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 522: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 523: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 524: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 525: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 526: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 527: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 528: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 529: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 530: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 531: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 532: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 533: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 534: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 535: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 536: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 537: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 538: 1
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 539: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 540: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 541: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 542: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 543: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 544: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 545: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 546: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 547: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 548: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 549: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 550: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 551: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 552: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 553: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 554: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 555: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 556: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 557: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 558: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 559: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 560: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 561: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 562: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 563: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 564: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 565: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 566: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 567: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 568: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 569: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 570: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 571: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 572: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 573: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 574: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 575: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 576: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 577: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 578: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 579: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 580: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 581: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 582: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 583: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 584: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 585: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 586: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 587: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 588: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 589: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 590: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 591: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 592: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 593: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 594: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 595: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 596: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 597: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 598: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 599: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 600: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 601: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 602: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 603: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 604: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 605: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 606: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 607: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 608: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 609: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 610: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 611: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 612: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 613: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 614: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 615: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 616: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 617: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 618: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 619: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 620: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 621: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 622: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 623: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 624: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 625: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 626: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 627: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 628: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 629: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 630: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 631: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 632: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 633: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 634: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 635: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 636: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 637: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 638: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 639: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 640: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 641: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 642: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 643: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 644: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 645: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 646: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 647: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 648: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 649: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 650: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 651: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 652: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 653: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 654: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 655: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 656: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 657: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 658: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 659: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 660: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 661: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 662: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 663: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 664: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 665: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 666: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 667: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 668: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 669: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 670: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 671: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 672: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 673: 1
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 674: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 675: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 676: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 677: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 678: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 679: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 680: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 681: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 682: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 683: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 684: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 685: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 686: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 687: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 688: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 689: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 690: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 691: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 692: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 693: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 694: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 695: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 696: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 697: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 698: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 699: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 700: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 701: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 702: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 703: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 704: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 705: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 706: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 707: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 708: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 709: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 710: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 711: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 712: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 713: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 714: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 715: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 716: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 717: 1
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 718: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 719: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 720: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 721: 1
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 722: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 723: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 724: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 725: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 726: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 727: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 728: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 729: 1
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 730: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 731: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 732: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 733: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 734: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 735: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 736: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 737: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 738: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 739: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 740: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 741: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 742: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 743: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 744: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 745: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 746: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 747: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 748: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 749: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 750: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 751: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 752: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 753: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 754: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 755: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 756: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 757: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 758: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 759: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 760: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 761: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 762: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 763: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 764: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 765: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 766: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 767: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 768: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 769: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 770: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 771: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 772: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 773: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 774: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 775: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 776: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 777: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 778: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 779: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 780: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 781: 1
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 782: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 783: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 784: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 785: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 786: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 787: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 788: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 789: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 790: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 791: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 792: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 793: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 794: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 795: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 796: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 797: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 798: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 799: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 800: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 801: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 802: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 803: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 804: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 805: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 806: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 807: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 808: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 809: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 810: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 811: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 812: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 813: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 814: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 815: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 816: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 817: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 818: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 819: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 820: 1
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 821: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 822: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 823: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 824: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 825: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 826: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 827: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 828: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 829: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 830: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 831: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 832: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 833: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 834: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 835: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 836: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 837: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 838: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 839: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 840: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 841: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 842: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 843: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 844: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 845: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 846: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 847: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 848: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 849: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 850: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 851: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 852: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 853: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 854: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 855: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 856: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 857: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 858: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 859: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 860: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 861: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 862: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 863: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 864: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 865: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 866: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 867: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 868: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 869: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 870: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 871: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 872: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 873: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 874: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 875: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 876: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 877: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 878: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 879: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 880: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 881: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 882: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 883: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 884: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 885: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 886: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 887: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 888: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 889: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 890: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 891: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 892: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 893: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 894: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 895: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 896: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 897: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 898: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 899: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 900: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 901: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 902: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 903: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 904: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 905: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 906: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 907: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 908: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 909: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 910: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 911: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 912: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 913: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 914: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 915: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 916: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 917: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 918: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 919: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 920: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 921: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 922: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 923: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 924: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 925: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 926: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 927: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 928: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 929: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 930: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 931: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 932: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 933: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 934: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 935: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 936: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 937: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 938: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 939: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 940: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 941: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 942: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 943: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 944: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 945: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 946: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 947: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 948: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 949: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 950: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 951: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (2)
+Predizione 952: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 953: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 954: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 955: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 956: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 957: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 958: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 959: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 960: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 961: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 962: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 963: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 964: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 965: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 966: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Predizione 967: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 968: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 969: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 970: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 971: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 972: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 973: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 974: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 975: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 976: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 977: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 978: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 979: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 980: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 981: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 982: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (3)
+Predizione 983: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 984: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 985: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (1)
+Predizione 986: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 987: 2
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 988: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+userNeigh troppo scarsa (4)
+Predizione 989: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 990: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 991: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 992: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 993: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+sotto soglia in getNeighborhood
+userNeigh troppo scarsa (0)
+Predizione 994: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 995: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 996: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 997: 3
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 998: 4
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 999: 5
+/*********************************** NUOVA REVIEW *******************************************/
+Inizio Combinazione Lineare
+Predizione 1000: 2

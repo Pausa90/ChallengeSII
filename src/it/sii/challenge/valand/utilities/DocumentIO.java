@@ -34,8 +34,9 @@ public class DocumentIO {
 	
 	private File outputFile;
 	private File reviewsToTestFile;
+	private File trueFile;
 
-	public DocumentIO(String businessFileName, String checkinFileName, String reviewFileName, String userFileName, String testFileName, String outputFile){
+	public DocumentIO(String businessFileName, String checkinFileName, String reviewFileName, String userFileName, String testFileName, String outputFile, String trueFile){
 		this.businessFile = newFileIstance(businessFileName);
 		this.checkinFile = newFileIstance(checkinFileName);
 		this.reviewFile = newFileIstance(reviewFileName);
@@ -43,6 +44,7 @@ public class DocumentIO {
 		
 		this.reviewsToTestFile = newFileIstance(testFileName);
 		this.outputFile = newFileIstance(outputFile);
+		this.setTrueFile(newFileIstance(trueFile));
 	}
 
 	private List<Business> getListBusinessFromFile(){		
@@ -248,5 +250,13 @@ public class DocumentIO {
 		else
 			completeTrainingBackupFilePath = System.getProperty("user.dir") + "\\" + abstractPath;
 		return new File(completeTrainingBackupFilePath);
+	}
+
+	public File getTrueFile() {
+		return trueFile;
+	}
+
+	public void setTrueFile(File trueFile) {
+		this.trueFile = trueFile;
 	}
 }
