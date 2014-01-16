@@ -6,6 +6,7 @@ public class User {
 	private String user_id;
 	private int review_count;
 	private double average_stars;
+	private int countSameBusiness;
 	//private List<> similarityUsers;
 	/*
 	private String name; //firstname
@@ -21,6 +22,14 @@ public class User {
 		this.review_count = reviewCount;
 		this.average_stars = averageStars;
 	}
+	
+	public User(String id, int reviewCount, double averageStars, int countSameBusiness) {
+		this.user_id = id;
+		this.review_count = reviewCount;
+		this.average_stars = averageStars;
+		this.setCountSameBusiness(countSameBusiness);
+	}
+	
 	
 	public User(String id){
 		this(id, 0, 0);
@@ -72,6 +81,14 @@ public class User {
 	
 	public String toString(){
 		return "UserID: " + this.user_id;
+	}
+
+	public int getCountSameBusiness() {
+		return countSameBusiness;
+	}
+
+	public void setCountSameBusiness(int countSameBusiness) {
+		this.countSameBusiness = countSameBusiness;
 	}
 	
 	

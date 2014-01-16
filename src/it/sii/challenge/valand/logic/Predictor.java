@@ -21,7 +21,7 @@ public class Predictor {
 	private List<Review> reviewsToTest;
 	private ClassificationAlgorithm algorithm;
 	private final int BUSINESS_REVIEW_COUNT_TRESHOLD = 0;
-	private final int USERS_REVIEW_COUNT_TRESHOLD = 10; //min count to calculate neighborhood
+	private final int USERS_REVIEW_COUNT_TRESHOLD = 200; //min count to calculate neighborhood
 	private final int NEIGHBORHOOD_TRESHOLD = 5; //min size of neighborhood
 	private final int AVERAGE_VALUE = 4;
 	private PrinterAndSaver printer;
@@ -129,10 +129,10 @@ public class Predictor {
 	}
 	
 	private List<CoupleObjectSimilarity<User>> getUserNeighborhood(User user, Review review){
-//		if (user.getReviewCount() < USERS_REVIEW_COUNT_TRESHOLD){
-//			this.printer.addToBackup("sotto la treshold (" + user.getReviewCount());
-//			return new LinkedList<CoupleObjectSimilarity<User>>();
-//		}
+		if (user.getReviewCount() < USERS_REVIEW_COUNT_TRESHOLD){
+			this.printer.addToBackup("sotto la treshold (" + user.getReviewCount());
+			return new LinkedList<CoupleObjectSimilarity<User>>();
+		}
 		return this.algorithm.getNeighborHood(this.matrix, this.matrix.getUserFromMatrix(review.getUserId()), 
 				this.matrix.getBusinessFromMatrix(review.getBusinessId()), this.printer);
 	}

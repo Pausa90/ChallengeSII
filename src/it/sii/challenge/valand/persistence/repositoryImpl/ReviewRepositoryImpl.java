@@ -271,8 +271,10 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 			rs = statement.executeQuery();
 			
 			while(rs.next()){
-				users.add(new User(rs.getString("user_id"), rs.getInt("review_count"), rs.getDouble("average_stars")));
+				//users.add(new User(rs.getString("user_id"), rs.getInt("review_count"), rs.getDouble("average_stars")));
+				users.add(new User(rs.getString("user_id"), rs.getInt("review_count"), rs.getDouble("average_stars"), rs.getInt("countSameBusiness")));
 			}
+			//System.out.println(users.size());
 			
 			return users;
 			

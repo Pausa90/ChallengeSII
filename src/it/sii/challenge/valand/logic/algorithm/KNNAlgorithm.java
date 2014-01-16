@@ -154,6 +154,24 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 	}
 
 
+//	@Override
+//	public int userBasedPrediction(List<CoupleObjectSimilarity<User>> neighborhood, Review review, User user, Business business, UserBusinessMatrix matrix) {
+//		Collections.sort(neighborhood, new MaxSimilarity<User>());
+//		double predictNumerator = 0;
+//		double predictDenominator = 0;
+//
+//		int i = 0;
+//
+//		for (CoupleObjectSimilarity<User> u : neighborhood){
+//			//if (i == this.k)	break;
+//			predictNumerator += u.getSimilarity() * (matrix.getRatingByUserItem(u.getObject(), business) - u.getObject().getAverageStars());
+//			predictDenominator += u.getSimilarity();
+//			i++;
+//		}
+//
+//		this.setStars(review, user.getAverageStars() + predictNumerator/predictDenominator);
+//		return review.getStars();
+//	}
 	@Override
 	public int userBasedPrediction(List<CoupleObjectSimilarity<User>> neighborhood, Review review, User user, Business business, UserBusinessMatrix matrix) {
 		Collections.sort(neighborhood, new MaxSimilarity<User>());
@@ -161,11 +179,11 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 		double predictDenominator = 0;
 
 		int i = 0;
-
+		User us;
 		for (CoupleObjectSimilarity<User> u : neighborhood){
-			if (i == this.k)	break;
-			predictNumerator += u.getSimilarity() * (matrix.getRatingByUserItem(u.getObject(), business) - u.getObject().getAverageStars());
-			predictDenominator += u.getSimilarity();
+			us = u.getObject();
+			predictNumerator += us.getCountSameBusiness() * (matrix.getRatingByUserItem(us.getId(), business.getId()) - us.getAverageStars());
+			predictDenominator += us.getCountSameBusiness();
 			i++;
 		}
 
