@@ -12,6 +12,8 @@ public class Business {
 	private int review_count;
 	private List<String> categories;
 	private boolean infered;
+	
+	private int countSameBusiness;
 	/*
 	private String full_address;
 	private String city;
@@ -57,6 +59,10 @@ public class Business {
 		this(id, name, new LinkedList<String>(), stars, reviewCount, new LinkedList<String>());
 	}
 
+	public Business(String id, String name, double stars, int reviewCount, int countSameBusiness) {
+		this(id, name, new LinkedList<String>(), stars, reviewCount, new LinkedList<String>());
+		this.countSameBusiness = countSameBusiness;
+	}
 	
 	/**
 	 * Empty costructor. Set infered = true
@@ -130,6 +136,14 @@ public class Business {
 	
 	public String toString(){
 		return "BusinessID: " + this.business_id;
+	}
+
+	public int getCountSameBusiness() {
+		return countSameBusiness;
+	}
+
+	public void setCountSameBusiness(int countSameBusiness) {
+		this.countSameBusiness = countSameBusiness;
 	}
 	
 	

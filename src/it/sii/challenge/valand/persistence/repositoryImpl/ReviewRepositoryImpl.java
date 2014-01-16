@@ -17,14 +17,14 @@ import java.util.List;
 public class ReviewRepositoryImpl implements ReviewRepository{
 	private DataSource d= new DataSource();
 	private Connection c=null;
-	
+
 	@Override
 	public List<Review> findAll() {
 		Connection c=null;
 		List<Review> listReview = new LinkedList<Review>();
-		
+
 		try {
-			 c=d.getConnection();
+			c=d.getConnection();
 		} catch (PersistenceException e) {
 			e.printStackTrace();
 			return null;
@@ -36,7 +36,7 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 			while(rs.next()){
 				listReview.add(new Review(rs.getString("business_id"), rs.getString("user_id"), rs.getInt("stars")));
 			}
-			
+
 		} catch (SQLException e) {
 			e.printStackTrace();
 			return null;
@@ -59,8 +59,8 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 	public Review findById(String b_id, String u_id) {
 		Connection c=null;
 		try {
-			 c=d.getConnection();
-			
+			c=d.getConnection();
+
 		} catch (PersistenceException e) {
 			e.printStackTrace();
 			return null;
@@ -75,9 +75,9 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 				Review r=new Review(rs.getString("business_id"), rs.getString("user_id"), rs.getInt("stars"));
 				return r;
 			}
-			
+
 		} catch (SQLException e) {
-		
+
 			e.printStackTrace();
 			return null;
 		}
@@ -95,7 +95,7 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 		return null;
 	}
 
-	
+
 	@Override
 	public boolean insert(Review b) {
 		Connection c = null;
@@ -103,16 +103,16 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 
 			c=d.getConnection();
 			PreparedStatement statement = null;
-			
+
 			String insert = "insert into Review(business_id, user_id, stars) values (?,?,?)";
 			statement = c.prepareStatement(insert);
 			statement.setString(1, b.getBusinessId());
 			statement.setString(2, b.getUserId());
 			statement.setInt(3, b.getStars());
 			statement.executeUpdate();
-			
+
 			return true;
-			
+
 		}  catch (SQLException e) {
 			try {
 				throw new PersistenceException(e.getMessage());
@@ -136,8 +136,8 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 			}
 		}
 	}
-	
-	
+
+
 	@Override
 	public boolean insertList(List<Review> listReview){
 		PreparedStatement statement = null; 
@@ -147,14 +147,14 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 			int i=1;
 			for(Review r : listReview){
 				statement = null;
-				
+
 				String insert = "insert into Review(business_id, user_id, stars) values (?,?,?)";
 				statement = c.prepareStatement(insert);
 				statement.setString(1, r.getBusinessId());
 				statement.setString(2, r.getUserId());
 				statement.setInt(3, r.getStars());
 				statement.executeUpdate();
-				
+
 				if(i%1000==0)
 					System.out.println("inserita la Review numero: " +i+ " !!!!!" );
 				i++;
@@ -184,7 +184,7 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 			c=d.getConnection();
 			String insert = "delete from Review where business_id in (";
 			String insert2 = ") and user_id in (";
-			
+
 			for(Review r : reviews){
 				if(reviews.indexOf(r) != reviews.size()-1){
 					insert += (r.getBusinessId()+", ");
@@ -195,10 +195,10 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 					insert2 += r.getUserId()+")";
 				}
 			}
-				statement = null;
-				statement = c.prepareStatement(insert+insert2);
-				statement.executeUpdate();
-			
+			statement = null;
+			statement = c.prepareStatement(insert+insert2);
+			statement.executeUpdate();
+
 			return true;
 		}
 		catch(Exception e){
@@ -225,25 +225,25 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 			c=d.getConnection();
 			PreparedStatement statement = null;
 			ResultSet rs;
-			
-//			String check = "select COUNT(*) as reviewInTheMatrix from Review where user_id=?";
-//			statement = c.prepareStatement(check);
-//			statement.setString(1, user.getId());
-//			ResultSet rs=statement.executeQuery();
-//			rs.next();
-//			int reviewInTheMatrix = rs.getInt("reviewInTheMatrix");
-//			
-//			if (reviewInTheMatrix < treshold)
-//				return users;
-			
+
+			//			String check = "select COUNT(*) as reviewInTheMatrix from Review where user_id=?";
+			//			statement = c.prepareStatement(check);
+			//			statement.setString(1, user.getId());
+			//			ResultSet rs=statement.executeQuery();
+			//			rs.next();
+			//			int reviewInTheMatrix = rs.getInt("reviewInTheMatrix");
+			//			
+			//			if (reviewInTheMatrix < treshold)
+			//				return users;
+
 			String createView1 = "create or replace view businessVotati as"
 					+ "			select User.user_id, Review.business_id from User, Review where User.user_id = Review.user_id and"
 					+ "			       User.user_id = ?;";
-			
+
 			String createView2 = "create or replace view allTogether as"
 					+ "			select Review.business_id, Review.user_id, stars from businessVotati, Review"
 					+ "			where businessVotati.business_id = Review.business_id;";
-					
+
 			String createView3 = "create or replace view usersWhoVotedIt as"
 					+ "			select Review.user_id from Business, Review"
 					+ "			where Review.business_id=Business.business_id"
@@ -253,10 +253,10 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 					+ "			select allTogether.user_id, COUNT(allTogether.business_id) as countSameBusiness, avg(stars) as averageStars"
 					+ "			from allTogether, usersWhoVotedIt where allTogether.user_id=usersWhoVotedIt.user_id"
 					+ "			group by user_id order by countSameBusiness desc;";
-			
+
 			String getNeighborhood = "select User.user_id, User.average_stars, User.review_count, countSameBusiness from total, "
 					+ "User where User.user_id = total.user_id LIMIT 0, 10;";
-			
+
 			statement = c.prepareStatement(createView1);
 			statement.setString(1, user.getId());
 			statement.executeUpdate();		
@@ -269,15 +269,15 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 			statement.executeUpdate();		
 			statement = c.prepareStatement(getNeighborhood);
 			rs = statement.executeQuery();
-			
+
 			while(rs.next()){
 				//users.add(new User(rs.getString("user_id"), rs.getInt("review_count"), rs.getDouble("average_stars")));
 				users.add(new User(rs.getString("user_id"), rs.getInt("review_count"), rs.getDouble("average_stars"), rs.getInt("countSameBusiness")));
 			}
 			//System.out.println(users.size());
-			
+
 			return users;
-			
+
 		}  catch (SQLException e) {
 			try {
 				throw new PersistenceException(e.getMessage());
@@ -301,46 +301,123 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 			}
 		}
 	}
-	
-	public boolean isValoriUguali(User user){
+
+	public List<Business> getNeighborhood(Business business, User user, int treshold){
+		
 		Connection c = null;
 		try {
-
+			List<Business> businessList = new LinkedList<Business>();
 			c=d.getConnection();
 			PreparedStatement statement = null;
+			ResultSet rs;
 			
-			String getNeighborhood = "select stars, COUNT(stars) as starCount from Review where user_id=? group by stars;";
-			
-			statement = c.prepareStatement(getNeighborhood);
-			statement.setString(1, user.getId());
-			ResultSet rs=statement.executeQuery();
-			rs.next();
-			if (rs.next())
-				return false;
-			return true;
-			
-		}  catch (SQLException e) {
+		String createView1 = "create or replace view usersWhoVotedItems as "
+				+ "select Business.business_id, Review.user_id from Business, Review where Business.business_id = Review.business_id and "
+				+ "Business.business_id = ?;";
+
+		String createView2 = "create or replace view allTogetherB as "
+				+ "select Review.business_id, Review.user_id, stars from usersWhoVotedItems, Review "
+				+ "where usersWhoVotedItems.user_id = Review.user_id;";
+
+		String createView3 = "create or replace view itemsThatAreVotedByHim as "
+				+ "select Review.business_id from Business, Review "
+				+ "where Review.business_id=Business.business_id "
+				+ "and Review.user_id = ?;";
+
+		String createView4 = "create or replace view totalB as "
+				+ "select allTogetherB.business_id, COUNT(allTogetherB.user_id) as countSameUsers, avg(stars) as averageStarsUsers "
+				+ "from allTogetherB, itemsThatAreVotedByHim where allTogetherB.business_id = itemsThatAreVotedByHim.business_id "
+				+ "group by allTogetherB.business_id order by countSameUsers desc;";
+	
+		String getNeighborhood = "select Business.business_id, Business.stars, Business.review_count, countSameUsers from totalB, Business where Business.business_id = totalB.business_id LIMIT 0, 100;";
+		
+		
+		statement = c.prepareStatement(createView1);
+		statement.setString(1, business.getId());
+		statement.executeUpdate();		
+		statement = c.prepareStatement(createView2);
+		statement.executeUpdate();		
+		statement = c.prepareStatement(createView3);
+		statement.setString(1, user.getId());
+		statement.executeUpdate();		
+		statement = c.prepareStatement(createView4);
+		statement.executeUpdate();		
+		statement = c.prepareStatement(getNeighborhood);
+		rs = statement.executeQuery();
+
+		while(rs.next()){
+			businessList.add(new Business(rs.getString("business_id"), "", rs.getDouble("stars"), rs.getInt("review_count"), rs.getInt("countSameUsers")));
+		}
+		//System.out.println(businessList.size());
+
+		return businessList;
+
+	}  catch (SQLException e) {
+		try {
+			throw new PersistenceException(e.getMessage());
+		} catch (PersistenceException e1) {
+			e1.printStackTrace();
+		}
+		return null;
+	} catch (PersistenceException e) {
+		e.printStackTrace();
+		return null;
+	}
+	finally {
+		try {
+			if (c!= null) c.close();
+		} catch (SQLException e) {
 			try {
 				throw new PersistenceException(e.getMessage());
 			} catch (PersistenceException e1) {
 				e1.printStackTrace();
 			}
-			return true;
-		} catch (PersistenceException e) {
-			e.printStackTrace();
-			return true;
 		}
-		finally {
+	}
+
+}
+
+
+
+public boolean isValoriUguali(User user){
+	Connection c = null;
+	try {
+
+		c=d.getConnection();
+		PreparedStatement statement = null;
+
+		String getNeighborhood = "select stars, COUNT(stars) as starCount from Review where user_id=? group by stars;";
+
+		statement = c.prepareStatement(getNeighborhood);
+		statement.setString(1, user.getId());
+		ResultSet rs=statement.executeQuery();
+		rs.next();
+		if (rs.next())
+			return false;
+		return true;
+
+	}  catch (SQLException e) {
+		try {
+			throw new PersistenceException(e.getMessage());
+		} catch (PersistenceException e1) {
+			e1.printStackTrace();
+		}
+		return true;
+	} catch (PersistenceException e) {
+		e.printStackTrace();
+		return true;
+	}
+	finally {
+		try {
+			if (c!= null) c.close();
+		} catch (SQLException e) {
 			try {
-				if (c!= null) c.close();
-			} catch (SQLException e) {
-				try {
-					throw new PersistenceException(e.getMessage());
-				} catch (PersistenceException e1) {
-					e1.printStackTrace();
-				}
+				throw new PersistenceException(e.getMessage());
+			} catch (PersistenceException e1) {
+				e1.printStackTrace();
 			}
 		}
 	}
-	
+}
+
 }
