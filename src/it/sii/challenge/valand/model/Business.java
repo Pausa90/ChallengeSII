@@ -1,5 +1,7 @@
 package it.sii.challenge.valand.model;
 
+import it.sii.challenge.valand.persistence.repositoryImpl.BusinessRepositoryImpl;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -12,6 +14,7 @@ public class Business implements CommonValues{
 	private int review_count;
 	private List<String> categories;
 	private boolean infered;
+	private boolean categoriesTaken = false;
 	
 	private int countSameUsers;
 	/*
@@ -92,7 +95,7 @@ public class Business implements CommonValues{
 		this.name = name;
 	}
 	public List<String> getNeighborhoods() {
-		return neighborhoods;
+		return this.neighborhoods;
 	}
 	public void setNeighborhoods(List<String> neighborhoods) {
 		this.neighborhoods = neighborhoods;
@@ -110,7 +113,12 @@ public class Business implements CommonValues{
 		this.review_count = reviewCount;
 	}
 	public List<String> getCategories() {
-		return categories;
+		if(this.categories == null || this.categories.size() == 0){
+			BusinessRepositoryImpl repo = new BusinessRepositoryImpl();
+			List<String> toReturn = repo.getNeighborhoods(this.getId());
+			this.categories = toReturn;
+		}
+		return this.categories;
 	}
 	public void setCategories(List<String> categories) {
 		this.categories = categories;

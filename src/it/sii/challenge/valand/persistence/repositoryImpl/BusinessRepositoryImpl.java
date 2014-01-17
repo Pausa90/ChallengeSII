@@ -197,7 +197,84 @@ public class BusinessRepositoryImpl implements BusinessRepository{
 		return false;
 	}
 
+	public List<String> getNeighborhoods(String id) {
+		Connection c = null;
+		List<String> toReturn = new LinkedList<String>();
+		try {
+			c=d.getConnection();
+			PreparedStatement statement = null;
+			
+			String findAll = "select * from Business, Categories where Business.business_id = Categories.business_id and Business.business_id = ?;";
+			
+			statement = c.prepareStatement(findAll);
+			statement.setString(1, id);
+			ResultSet rs = statement.executeQuery();
+		
+			while(rs.next())
+				toReturn.add(rs.getString("category"));
+			
+			return toReturn;
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			return toReturn;
+		}
+		finally {
+			try {
+				if (c!= null) c.close();
+			} catch (SQLException e) {
+				try {
+					throw new PersistenceException(e.getMessage());
+				} catch (PersistenceException e1) {
+					e1.printStackTrace();
+				}
+			}
+		}
+	}
 
+	@Override
+	public boolean insertCategories(List<Business> businessList) {
+		Connection c = null;
+		System.out.println("Comincio a creare le categorie");
+		try {
+			c=d.getConnection();
+			PreparedStatement statement = null;
+			
+			String insertAll = "insert into Categories (business_id, category) values (?,?)";
+			int i=0;
+			for(Business b : businessList){
+				for(String category : b.getCategories()){
+					statement = c.prepareStatement(insertAll);
+					statement.setString(1, b.getId());
+					statement.setString(2, category);					
+					statement.executeUpdate();
+				}
+			}
+			return true;
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		finally {
+			try {
+				if (c!= null) c.close();
+			} catch (SQLException e) {
+				try {
+					throw new PersistenceException(e.getMessage());
+				} catch (PersistenceException e1) {
+					e1.printStackTrace();
+				}
+			}
+		}
+		
+	}
+
+
+	
+	
+	
+	
 	
 	
 }

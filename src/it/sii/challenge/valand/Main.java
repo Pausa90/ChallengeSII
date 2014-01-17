@@ -37,17 +37,17 @@ public class Main {
 //		String businessFile = trainingPath+"business.json";
 //		String reviewFile = trainingPath+"review_training.json";
 //		String checkinFile = trainingPath+"checkin.json";	
-		
+//		
 		DocumentIO documentIO = new DocumentIO(testFile, outputFile, trueFile);
-
+//		DocumentIO documentIO = new DocumentIO(businessFile, checkinFile, reviewFile, userFile, testFile, outputFile, trueFile);
 //		populateDB(documentIO);
 		
 		Classifier classifier = new Classifier();
-//		classifier.getMatrix().readTheMatrix();
+		classifier.getMatrix().readTheMatrix();
 		
 		List<Review> reviewsToTest = documentIO.getReviewsFromTest();
 		Predictor predictor = new Predictor(classifier.getMatrix(), reviewsToTest);
-//	
+	
 		int k = 5;
 		predictor.startPrediction(documentIO);
 		
@@ -74,29 +74,30 @@ public class Main {
 	public static void populateDB(DocumentIO documentIO){
 		System.out.println("Start population");
 		BusinessRepository b_repo = new BusinessRepositoryImpl();
-		UserRepository u_repo = new UserRepositoryImpl();
-		ReviewRepository r_repo = new ReviewRepositoryImpl();
-	
+//		UserRepository u_repo = new UserRepositoryImpl();
+//		ReviewRepository r_repo = new ReviewRepositoryImpl();
+//	
 		List<Business> businessList = documentIO.getListBusinessFromFile();
-		List<User> users = documentIO.getUsersFromFile();
-		List<Review> reviews = documentIO.getReviewFromFile();
-		
-		System.out.println("presi da file user, business, review");
-		System.out.println("Business.size: " + businessList.size());
-		System.out.println("User.size: " + users.size());
-		System.out.println("Review.size: " + reviews.size());
-		
-		inferInformation(reviews, users, businessList);
-		System.out.println("Inferite informazioni...");
-		System.out.println("Business.size: " + businessList.size());
-		System.out.println("User.size: " + users.size());
-		System.out.println("Review.size: " + reviews.size());
-		
-		
-		
-		b_repo.insertList(businessList);
-		u_repo.insertList(users);
-		r_repo.insertList(reviews);
+//		List<User> users = documentIO.getUsersFromFile();
+//		List<Review> reviews = documentIO.getReviewFromFile();
+//		
+//		System.out.println("presi da file user, business, review");
+//		System.out.println("Business.size: " + businessList.size());
+//		System.out.println("User.size: " + users.size());
+//		System.out.println("Review.size: " + reviews.size());
+//		
+//		inferInformation(reviews, users, businessList);
+//		System.out.println("Inferite informazioni...");
+//		System.out.println("Business.size: " + businessList.size());
+//		System.out.println("User.size: " + users.size());
+//		System.out.println("Review.size: " + reviews.size());
+//		
+//		
+//		
+//		b_repo.insertList(businessList);
+		b_repo.insertCategories(businessList);
+//		u_repo.insertList(users);
+//		r_repo.insertList(reviews);
 		System.out.println("Population is done");
 	}
 

@@ -24,5 +24,7 @@ public interface BusinessRepository {
 	 
 	public Business findById(String id);
 
+	public boolean insertCategories(List<Business> businessList);
+
 	
 }

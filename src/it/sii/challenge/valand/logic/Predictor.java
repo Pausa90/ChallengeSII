@@ -90,8 +90,8 @@ public class Predictor {
 		PredictionList<Business> buisnessNeighborhood = this.getBusinessNeighborhood(business, review);
 		
 		//Parametro che stabilisce dinamicamente quanto fidarsi delle predizioni
-		//double lambda = this.calculateLambda(userNeighborhood.getCommonsValue(), buisnessNeighborhood.getCommonsValue());
-		double lambda = this.calculateLambda(userNeighborhood.size(), buisnessNeighborhood.size());
+		double lambda = this.calculateLambda(userNeighborhood.getCommonsValue(), buisnessNeighborhood.getCommonsValue());
+		//double lambda = this.calculateLambda(userNeighborhood.size(), buisnessNeighborhood.size());
 
 		int userPredict;
 		int buisnessPredict;
@@ -109,7 +109,7 @@ public class Predictor {
 	
 	private int approximate(double predicted) {
 		int casted = (int) predicted;
-		if (predicted-casted > 0.4)
+		if (predicted-casted > 0.5)
 			return casted+1;
 		else
 			return casted;
