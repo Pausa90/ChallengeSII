@@ -3,7 +3,7 @@ package it.sii.challenge.valand.model;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Business {
+public class Business implements CommonValues{
 
 	private String business_id;
 	private String name;
@@ -144,6 +144,11 @@ public class Business {
 
 	public void setCountSameUsers(int countSameUsers) {
 		this.countSameUsers = countSameUsers;
+	}
+
+	@Override
+	public int getCommonValues() {
+		return this.countSameUsers;
 	}
 	
 	
