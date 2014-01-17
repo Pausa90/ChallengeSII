@@ -74,16 +74,23 @@ public class Main {
 		BusinessRepository b_repo = new BusinessRepositoryImpl();
 		UserRepository u_repo = new UserRepositoryImpl();
 		ReviewRepository r_repo = new ReviewRepositoryImpl();
-		
-		Map<String, Business> business = documentIO.getBusinessFromFile();
-		List<Business> businessList = new LinkedList<Business>();
-		for (Business b : business.values())
-			businessList.add(b);
-		
+	
+		List<Business> businessList = documentIO.getListBusinessFromFile();
 		List<User> users = documentIO.getUsersFromFile();
 		List<Review> reviews = documentIO.getReviewFromFile();
 		
+		System.out.println("presi da file user, business, review");
+		System.out.println("Business.size: " + businessList.size());
+		System.out.println("User.size: " + users.size());
+		System.out.println("Review.size: " + reviews.size());
+		
 		inferInformation(reviews, users, businessList);
+		System.out.println("Inferite informazioni...");
+		System.out.println("Business.size: " + businessList.size());
+		System.out.println("User.size: " + users.size());
+		System.out.println("Review.size: " + reviews.size());
+		
+		
 		
 		b_repo.insertList(businessList);
 		u_repo.insertList(users);
@@ -94,33 +101,49 @@ public class Main {
 	private static void inferInformation(List<Review> reviews, List<User> users, List<Business> businesses) {
 		List<User> newUsers = new LinkedList<User>();
 		List<Business> newBusinesses = new LinkedList<Business>();
-		
+		System.out.println("Infer information..");
+		System.out.println("Scandisco le review...");
+		User newUser;
+		Business newBusiness;
 		for (Review review : reviews){
+			newUser = new User(review.getUserId());
+			newBusiness = new Business(review.getBusinessId());
 			//Se non è presente inferiamo l'utente
-			if (!users.contains(review.getUserId())){
-				User newUser = new User(review.getUserId());
-				if (newUsers.contains(newUser))
+			if (!users.contains(newUser)){
+				if (newUsers.contains(newUser)){
 					newUser = newUsers.get(newUsers.indexOf(newUser));
-				newUser.setAverageStars(newUser.getAverageStars()+review.getStars());
-				newUser.setReviewCount(newUser.getReviewCount()+1);
-				newUsers.add(newUser);
+					newUser.setAverageStars(newUser.getAverageStars()+review.getStars());
+					newUser.setReviewCount(newUser.getReviewCount()+1);	
+				}
+				else{
+					newUser.setAverageStars(newUser.getAverageStars()+review.getStars());
+					newUser.setReviewCount(newUser.getReviewCount()+1);
+					newUsers.add(newUser);
+				}
+				
 			}
 			//Se non è presente inferiamo il business
-			if (!businesses.contains(review.getBusinessId())){
-				Business newBusiness = new Business(review.getBusinessId());
-				if (newBusinesses.contains(newBusiness))
+			if (!businesses.contains(newBusiness)){
+				if (newBusinesses.contains(newBusiness)){
 					newBusiness = newBusinesses.get(newBusinesses.indexOf(newBusiness));
+					newBusiness.setStars(newBusiness.getStars()+review.getStars());
+					newBusiness.setReviewCount(newBusiness.getReviewCount()+1);								
+				}
 				newBusiness.setStars(newBusiness.getStars()+review.getStars());
-				newBusiness.setReviewCount(newBusiness.getReviewCount()+1);			
+				newBusiness.setReviewCount(newBusiness.getReviewCount()+1);
 				newBusinesses.add(newBusiness);
 			}
 		}
-		
+		System.out.println("sistemo le medie...");
 		//Sistemiamo le medie
 		for (User user : newUsers)
 			user.setAverageStars(user.getAverageStars()/user.getReviewCount());
 		for (Business business : newBusinesses)
 			business.setStars(business.getStars()/business.getReviewCount());
+		
+		System.out.println("In totale: ");
+		System.out.println("Users nuovi: " + newUsers.size());
+		System.out.println("Business nuovi: " + newBusinesses.size());
 		
 		users.addAll(newUsers);
 		businesses.addAll(newBusinesses);
