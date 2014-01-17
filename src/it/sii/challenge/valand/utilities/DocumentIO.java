@@ -47,7 +47,7 @@ public class DocumentIO {
 		this.setTrueFile(newFileIstance(trueFile));
 	}
 
-	private List<Business> getListBusinessFromFile(){		
+	public List<Business> getListBusinessFromFile(){		
 		List<Business> result = new LinkedList<Business>();
 		try {
 			TypeToken<Business> token = new TypeToken<Business>(){};
