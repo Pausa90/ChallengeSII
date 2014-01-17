@@ -1,7 +1,7 @@
 package it.sii.challenge.valand.model;
 
 
-public class User {
+public class User implements CommonValues{
 	
 	private String user_id;
 	private int review_count;
@@ -83,6 +83,11 @@ public class User {
 
 	public void setCountSameBusiness(int countSameBusiness) {
 		this.countSameBusiness = countSameBusiness;
+	}
+
+	@Override
+	public int getCommonValues() {
+		return this.countSameBusiness;
 	}
 	
 	

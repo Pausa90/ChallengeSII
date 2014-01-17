@@ -78,7 +78,10 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 
 	@Override
 	public int itemBasedPrediction(PredictionList<Business> neighborhood, Review review, User user, UserBusinessMatrix matrix) {
-		Collections.sort(neighborhood.getList(), new MaxSimilarity<Business>());
+		
+		List<CoupleObjectSimilarity<Business>> list = neighborhood.getList();
+		Collections.sort(list, new MaxSimilarity<Business>());
+		neighborhood.setList(list);
 
 		double predictNumerator = 0;
 		double predictDenominator = 0;
@@ -96,7 +99,9 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 
 	@Override
 	public int userBasedPrediction(PredictionList<User> neighborhood, Review review, User user, Business business, UserBusinessMatrix matrix) {
+		List<CoupleObjectSimilarity<User>> list = neighborhood.getList();
 		Collections.sort(neighborhood.getList(), new MaxSimilarity<User>());
+		neighborhood.setList(list);
 		double predictNumerator = 0;
 		double predictDenominator = 0;
 

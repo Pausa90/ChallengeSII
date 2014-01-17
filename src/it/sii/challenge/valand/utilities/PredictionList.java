@@ -1,5 +1,7 @@
 package it.sii.challenge.valand.utilities;
 
+import it.sii.challenge.valand.model.Business;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -41,6 +43,10 @@ public class PredictionList <T>{
 
 	public int size(){
 		return this.list.size();
+	}
+
+	public void setList(List<CoupleObjectSimilarity<T>> list) {
+		this.list = list;		
 	}
 	
 }
