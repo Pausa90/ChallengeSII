@@ -108,7 +108,7 @@ public class Predictor {
 	
 	private int approximate(double predicted) {
 		int casted = (int) predicted;
-		if (predicted-casted > 0.5)
+		if (predicted-casted > 0.4)
 			return casted+1;
 		else
 			return casted;

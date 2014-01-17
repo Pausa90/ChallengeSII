@@ -128,8 +128,9 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
  *
  */
 class MaxSimilarity<T> implements Comparator<CoupleObjectSimilarity<T>>{
-
+	
 	public int compare(CoupleObjectSimilarity<T> c1, CoupleObjectSimilarity<T> c2) {
 		return Double.compare(c2.getSimilarity(),c1.getSimilarity());
 	}
+	
 }
