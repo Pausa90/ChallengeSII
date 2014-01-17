@@ -7,12 +7,6 @@ public class User {
 	private int review_count;
 	private double average_stars;
 	private int countSameBusiness;
-	//private List<> similarityUsers;
-	/*
-	private String name; //firstname
-	private Map<String, Integer> votes;
-	*/
-	
 	
 	/**
 	 * Constructors

@@ -1,7 +1,5 @@
 package it.sii.challenge.valand.utilities;
 
-import java.util.Comparator;
-
 /**
  * Classe di supporto che memorizza la coppia (Object, distanza).
  * @author andrea

@@ -28,11 +28,11 @@ public interface ReviewRepository {
 	/**
 	 * UserBased
 	 */
-	public List<User> getNeighborhood(User user, Business business, int treshold);
+	public List<User> getNeighborhood(User user, Business business);
 	/**
 	 * ItemBased
 	 */
-	public List<Business> getNeighborhood(Business business, User user, int treshold);
+	public List<Business> getNeighborhood(Business business, User user);
 
 	
 }

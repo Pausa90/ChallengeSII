@@ -14,8 +14,7 @@ import java.util.List;
 
 public abstract class ClassificationAlgorithm {
         public final int initializedPrediction = -1;
-//        public final double SIMILARITY_TRESHOLD = 0.25;
-        public final double SIMILARITY_TRESHOLD = 0.25;
+        public final double SIMILARITY_TRESHOLD = 0.5;
         protected SimilarityCalculator similarityCalculator;
         
         public ClassificationAlgorithm(SimilarityCalculator calculator){
@@ -24,7 +23,7 @@ public abstract class ClassificationAlgorithm {
 
         public abstract int itemBasedPrediction(PredictionList<Business> neighborhood, Review review, User user, UserBusinessMatrix matrix);
         public abstract int userBasedPrediction(PredictionList<User> neighborhood, Review review, User user, Business business, UserBusinessMatrix matrix);
-        public abstract PredictionList<User> getNeighborHood(UserBusinessMatrix matrix, User user, Business business, PrinterAndSaver printer);
+        public abstract PredictionList<User> getNeighborHood(UserBusinessMatrix matrix, User user, Business business);
         public abstract PredictionList<Business> getNeighborHood(UserBusinessMatrix matrix, Business business, User user);
         
 }

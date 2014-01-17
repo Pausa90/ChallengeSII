@@ -46,6 +46,16 @@ public class DocumentIO {
 		this.outputFile = newFileIstance(outputFile);
 		this.setTrueFile(newFileIstance(trueFile));
 	}
+	
+	public DocumentIO(String testFileName, String outputFile, String trueFile){
+		this.reviewsToTestFile = newFileIstance(testFileName);
+		this.outputFile = newFileIstance(outputFile);
+		this.setTrueFile(newFileIstance(trueFile));
+	}
+	public DocumentIO(String testFileName, String outputFile){
+		this.reviewsToTestFile = newFileIstance(testFileName);
+		this.outputFile = newFileIstance(outputFile);
+	}
 
 	public List<Business> getListBusinessFromFile(){		
 		List<Business> result = new LinkedList<Business>();

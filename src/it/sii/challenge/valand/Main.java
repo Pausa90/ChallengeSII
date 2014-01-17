@@ -22,18 +22,23 @@ public class Main {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		String trainingPath = "dataset/";
+		String testFile = args[0];
+		String outputFile = args[1];
+		String trueFile = args[2]; //DA ELIMINARE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-		String testFile = trainingPath+"review_test.dat";
-		String outputFile = trainingPath+"output.dat";
-		String trueFile = trainingPath+"review_realratings.dat";
-
-		String userFile = trainingPath+"user.json";
-		String businessFile = trainingPath+"business.json";
-		String reviewFile = trainingPath+"review_training.json";
-		String checkinFile = trainingPath+"checkin.json";	
 		
-		DocumentIO documentIO = new DocumentIO(businessFile, checkinFile, reviewFile, userFile, testFile, outputFile, trueFile);
+//		String trainingPath = "dataset/";
+//
+//		String testFile = trainingPath+"review_test.dat";
+//		String outputFile = trainingPath+"output.dat";
+//		String trueFile = trainingPath+"review_realratings.dat";
+//
+//		String userFile = trainingPath+"user.json";
+//		String businessFile = trainingPath+"business.json";
+//		String reviewFile = trainingPath+"review_training.json";
+//		String checkinFile = trainingPath+"checkin.json";	
+		
+		DocumentIO documentIO = new DocumentIO(testFile, outputFile, trueFile);
 
 //		populateDB(documentIO);
 		
@@ -44,7 +49,7 @@ public class Main {
 		Predictor predictor = new Predictor(classifier.getMatrix(), reviewsToTest);
 //	
 		int k = 5;
-		predictor.startPrediction(k, documentIO);
+		predictor.startPrediction(documentIO);
 		
 //		ReviewRepository r_repo = new ReviewRepositoryImpl();
 //		BusinessRepository b_repo = new BusinessRepositoryImpl();
