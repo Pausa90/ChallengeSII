@@ -1,5 +1,6 @@
 package it.sii.challenge.valand.persistence.repositoryImpl;
 
+import it.sii.challenge.valand.model.Business;
 import it.sii.challenge.valand.model.User;
 import it.sii.challenge.valand.persistence.DataSource;
 import it.sii.challenge.valand.persistence.PersistenceException;
@@ -143,14 +144,28 @@ public class UserRepositoryImpl implements UserRepository{
 	
 	@Override
 	public boolean insertList(List<User> listUsers){
-		try{
+		Connection c = null;
+		try {
+
+			c=d.getConnection();
+			PreparedStatement statement = null;
+			
+			String insert = "insert into User values ";
+			
 			int i=1;
 			for(User u : listUsers){
-				insert(u);
+				if(listUsers.indexOf(u)!=listUsers.size()-1)
+					insert += "('"+u.getId()+"', '"+u.getReviewCount()+"', '"+u.getAverageStars()+"'), ";
+				else
+					insert += "('"+u.getId()+"', '"+u.getReviewCount()+"', '"+u.getAverageStars()+"');";
 				if(i%1000==0)
-					System.out.println("inserito lo User numero: " +i+ " !!!!!" );
+					System.out.println("preparato lo User numero: " +i+ " !!!!!" );
 				i++;
 			}
+			statement = c.prepareStatement(insert);
+			System.out.println("FACCIO L'UPDATE DI USER!!!");
+			statement.executeUpdate();
+			System.out.println("FATTO!!!");
 			return true;
 		}
 		catch(Exception e){

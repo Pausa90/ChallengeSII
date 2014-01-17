@@ -136,25 +136,25 @@ public class BusinessRepositoryImpl implements BusinessRepository{
 		}
 	}
 	
-	@Override
-	public boolean insertList(List<Business> listBusiness){
-		try{
-			int i=1;
-			for(Business b : listBusiness){
-				insert(b);
-				if(i%1000==0)
-					System.out.println("inserito il Business numero: " +i+ " !!!!!" );
-				i++;
-			}
-			return true;
-		}
-		catch(Exception e){
-			e.printStackTrace();
-		}
-		return false;
-	}
 	
-	/* DA RISCRIVERE COSì...
+//	public boolean insertList(List<Business> listBusiness){
+//		try{
+//			int i=1;
+//			for(Business b : listBusiness){
+//				insert(b);
+//				if(i%1000==0)
+//					System.out.println("inserito il Business numero: " +i+ " !!!!!" );
+//				i++;
+//			}
+//			return true;
+//		}
+//		catch(Exception e){
+//			e.printStackTrace();
+//		}
+//		return false;
+//	}
+	
+	@Override
 	 public boolean insertList(List<Business> listBusiness){
 		Connection c = null;
 		try {
@@ -169,7 +169,7 @@ public class BusinessRepositoryImpl implements BusinessRepository{
 				if(listBusiness.indexOf(b)!=listBusiness.size()-1)
 					insert += "('"+b.getId()+"', "+"'\"\"'"+", '"+b.getStars()+"', '"+b.getReviewCount()+"'), ";
 				else
-					insert += "('"+b.getId()+"', "+"'\"\"'"+", '"+b.getStars()+"', '"+b.getReviewCount()+"') ";
+					insert += "('"+b.getId()+"', "+"'\"\"'"+", '"+b.getStars()+"', '"+b.getReviewCount()+"');";
 				if(i%1000==0)
 					System.out.println("preparato il Business numero: " +i+ " !!!!!" );
 				i++;
@@ -197,7 +197,6 @@ public class BusinessRepositoryImpl implements BusinessRepository{
 		return false;
 	}
 
-	 */
 
 	
 	

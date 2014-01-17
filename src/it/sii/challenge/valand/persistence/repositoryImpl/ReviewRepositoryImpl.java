@@ -140,25 +140,28 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 
 	@Override
 	public boolean insertList(List<Review> listReview){
-		PreparedStatement statement = null; 
-		try{
-			c=d.getConnection();
+		Connection c = null;
+		try {
 
+			c=d.getConnection();
+			PreparedStatement statement = null;
+			
+			String insert = "insert into Review values ";
+			
 			int i=1;
 			for(Review r : listReview){
-				statement = null;
-
-				String insert = "insert into Review(business_id, user_id, stars) values (?,?,?)";
-				statement = c.prepareStatement(insert);
-				statement.setString(1, r.getBusinessId());
-				statement.setString(2, r.getUserId());
-				statement.setInt(3, r.getStars());
-				statement.executeUpdate();
-
+				if(listReview.indexOf(r)!=listReview.size()-1)
+					insert += "('"+r.getBusinessId()+"', '"+r.getUserId()+"', '"+r.getStars()+"'), ";
+				else
+					insert += "('"+r.getBusinessId()+"', '"+r.getUserId()+"', '"+r.getStars()+"');";
 				if(i%1000==0)
-					System.out.println("inserita la Review numero: " +i+ " !!!!!" );
+					System.out.println("preparata la Review numero: " +i+ " !!!!!" );
 				i++;
 			}
+			statement = c.prepareStatement(insert);
+			System.out.println("FACCIO L'UPDATE DI REVIEW!!!");
+			statement.executeUpdate();
+			System.out.println("FATTO!!!");
 			return true;
 		}
 		catch(Exception e){
