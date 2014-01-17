@@ -6,6 +6,7 @@ import it.sii.challenge.valand.model.Review;
 import it.sii.challenge.valand.model.User;
 import it.sii.challenge.valand.model.UserBusinessMatrix;
 import it.sii.challenge.valand.utilities.CoupleObjectSimilarity;
+import it.sii.challenge.valand.utilities.PredictionList;
 import it.sii.challenge.valand.utilities.PrinterAndSaver;
 
 import java.util.List;
@@ -21,9 +22,9 @@ public abstract class ClassificationAlgorithm {
         	this.similarityCalculator = calculator;
         }
 
-        public abstract int itemBasedPrediction(List<CoupleObjectSimilarity<Business>> neighborhood, Review review, User user, UserBusinessMatrix matrix);
-        public abstract int userBasedPrediction(List<CoupleObjectSimilarity<User>> neighborhood, Review review, User user, Business business, UserBusinessMatrix matrix);
-        public abstract List<CoupleObjectSimilarity<User>> getNeighborHood(UserBusinessMatrix matrix, User user, Business business, PrinterAndSaver printer);
-        public abstract List<CoupleObjectSimilarity<Business>> getNeighborHood(UserBusinessMatrix matrix, Business business, User user);
+        public abstract int itemBasedPrediction(PredictionList<Business> neighborhood, Review review, User user, UserBusinessMatrix matrix);
+        public abstract int userBasedPrediction(PredictionList<User> neighborhood, Review review, User user, Business business, UserBusinessMatrix matrix);
+        public abstract PredictionList<User> getNeighborHood(UserBusinessMatrix matrix, User user, Business business, PrinterAndSaver printer);
+        public abstract PredictionList<Business> getNeighborHood(UserBusinessMatrix matrix, Business business, User user);
         
 }

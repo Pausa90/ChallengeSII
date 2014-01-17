@@ -7,8 +7,7 @@ userbased: 0, businessbased: 4
 Predizione 1: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (173)
-lambda = 0.0 (userNeigh=0  businessNeig=2
+lambda = 0.0 (userNeigh=10  businessNeig=2
 itemNeigh troppo scarsa (2)
 userbased: 0, businessbased: 4
 Predizione 2: 4
@@ -33,9 +32,8 @@ userbased: 0, businessbased: 5
 Predizione 5: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (159)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 0.4574468085106383 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 3
 Predizione 6: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -46,7 +44,7 @@ userbased: 0, businessbased: 4
 Predizione 7: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6980609418282548 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 8: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -65,8 +63,8 @@ userbased: 0, businessbased: 4
 Predizione 10: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.6666666666666666 (userNeigh=10  businessNeig=5
-userbased: 3, businessbased: 3
+lambda = 0.0 (userNeigh=10  businessNeig=5
+userbased: 0, businessbased: 3
 Predizione 11: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -77,8 +75,7 @@ userbased: 0, businessbased: 4
 Predizione 12: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (131)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=10  businessNeig=10
 userbased: 0, businessbased: 4
 Predizione 13: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -109,9 +106,8 @@ userbased: 0, businessbased: 4
 Predizione 17: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (141)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 1.0 (userNeigh=5  businessNeig=10
+userbased: 5, businessbased: 0
 Predizione 18: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -121,7 +117,7 @@ userbased: 0, businessbased: 4
 Predizione 19: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.3838582677165354 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 20: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -221,7 +217,7 @@ userbased: 0, businessbased: 5
 Predizione 35: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (199)
+sotto soglia in getNeighborhood users
 sotto soglia in getNeighborhood business
 lambda = 0.0 (userNeigh=0  businessNeig=0
 itemNeigh troppo scarsa (0)
@@ -229,9 +225,9 @@ userbased: 0, businessbased: 4
 Predizione 36: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (101)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=3  businessNeig=10
+userNeigh troppo scarsa (3)
+userbased: 4, businessbased: 0
 Predizione 37: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -247,9 +243,10 @@ userbased: 0, businessbased: 3
 Predizione 39: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=10  businessNeig=3
-userbased: 3, businessbased: 0
-Predizione 40: 3
+lambda = 0.0 (userNeigh=10  businessNeig=3
+itemNeigh troppo scarsa (3)
+userbased: 0, businessbased: 4
+Predizione 40: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (10)
@@ -266,8 +263,7 @@ userbased: 0, businessbased: 5
 Predizione 42: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (112)
-lambda = 0.0 (userNeigh=0  businessNeig=6
+lambda = 0.0 (userNeigh=4  businessNeig=6
 userbased: 0, businessbased: 4
 Predizione 43: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -313,20 +309,18 @@ userbased: 0, businessbased: 4
 Predizione 49: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (113)
-lambda = 0.0 (userNeigh=0  businessNeig=5
+lambda = 0.0 (userNeigh=3  businessNeig=5
 userbased: 0, businessbased: 4
 Predizione 50: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5803921568627451 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 51: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (100)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.3257918552036199 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 52: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -368,9 +362,10 @@ userbased: 0, businessbased: 4
 Predizione 58: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=5  businessNeig=1
-userbased: 3, businessbased: 0
-Predizione 59: 3
+lambda = 0.0 (userNeigh=5  businessNeig=1
+itemNeigh troppo scarsa (1)
+userbased: 0, businessbased: 4
+Predizione 59: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (20)
@@ -413,7 +408,7 @@ userbased: 0, businessbased: 4
 Predizione 65: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.740625 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 66: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -452,8 +447,7 @@ userbased: 0, businessbased: 4
 Predizione 71: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (113)
-lambda = 0.0 (userNeigh=0  businessNeig=3
+lambda = 0.0 (userNeigh=10  businessNeig=3
 itemNeigh troppo scarsa (3)
 userbased: 0, businessbased: 4
 Predizione 72: 4
@@ -474,8 +468,8 @@ Predizione 74: 4
 Inizio Combinazione Lineare
 user sotto la treshold (99)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 75: 4
+userbased: 0, businessbased: 5
+Predizione 75: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (10)
@@ -484,31 +478,29 @@ userbased: 0, businessbased: 4
 Predizione 76: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5662878787878788 (userNeigh=10  businessNeig=10
 userbased: 5, businessbased: 5
 Predizione 77: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5471204188481675 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 4
 Predizione 78: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.7409326424870466 (userNeigh=10  businessNeig=10
 userbased: 5, businessbased: 4
-Predizione 79: 4
+Predizione 79: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (100)
-lambda = 0.0 (userNeigh=0  businessNeig=1
+lambda = 0.0 (userNeigh=1  businessNeig=1
 itemNeigh troppo scarsa (1)
 userbased: 0, businessbased: 4
 Predizione 80: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (149)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5620437956204379 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 81: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -527,7 +519,7 @@ userbased: 0, businessbased: 3
 Predizione 84: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.41852286049237986 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 85: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -539,21 +531,18 @@ userbased: 0, businessbased: 4
 Predizione 86: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (180)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5577889447236181 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 87: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (153)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.1916376306620209 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 88: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (103)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.25555555555555554 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 5
 Predizione 89: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -576,8 +565,8 @@ userbased: 0, businessbased: 2
 Predizione 92: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.4117647058823529 (userNeigh=7  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 1.0 (userNeigh=7  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 93: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -617,15 +606,14 @@ Predizione 98: 4
 Predizione 99: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.25229357798165136 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 4
-Predizione 100: 3
+Predizione 100: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (120)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 101: 3
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 2, businessbased: 0
+Predizione 101: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (11)
@@ -648,12 +636,12 @@ userbased: 0, businessbased: 5
 Predizione 104: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6948051948051948 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 105: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6039603960396039 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 106: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -664,10 +652,9 @@ userbased: 0, businessbased: 4
 Predizione 107: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (196)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 108: 4
+lambda = 1.0 (userNeigh=7  businessNeig=10
+userbased: 2, businessbased: 0
+Predizione 108: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (3)
@@ -719,9 +706,8 @@ userbased: 0, businessbased: 4
 Predizione 115: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (110)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.44761904761904764 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 116: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -731,15 +717,14 @@ userbased: 0, businessbased: 4
 Predizione 117: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.7933194154488518 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 118: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (149)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 119: 3
+lambda = 1.0 (userNeigh=7  businessNeig=10
+userbased: 2, businessbased: 0
+Predizione 119: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (34)
@@ -773,26 +758,28 @@ userbased: 0, businessbased: 4
 Predizione 124: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (160)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 125: 3
+lambda = 1.0 (userNeigh=4  businessNeig=10
+userNeigh troppo scarsa (4)
+userbased: 4, businessbased: 0
+Predizione 125: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=5  businessNeig=2
-userbased: 4, businessbased: 0
+lambda = 0.0 (userNeigh=5  businessNeig=2
+itemNeigh troppo scarsa (2)
+userbased: 0, businessbased: 4
 Predizione 126: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=10  businessNeig=1
-userbased: 4, businessbased: 0
+lambda = 0.0 (userNeigh=10  businessNeig=1
+itemNeigh troppo scarsa (1)
+userbased: 0, businessbased: 4
 Predizione 127: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (92)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 128: 3
+userbased: 0, businessbased: 4
+Predizione 128: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (28)
@@ -801,27 +788,25 @@ userbased: 0, businessbased: 5
 Predizione 129: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.0 (userNeigh=2  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 130: 3
+lambda = 1.0 (userNeigh=2  businessNeig=10
+userNeigh troppo scarsa (2)
+userbased: 4, businessbased: 0
+Predizione 130: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (160)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.4859154929577465 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 131: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (162)
-lambda = 0.0 (userNeigh=0  businessNeig=2
+lambda = 0.0 (userNeigh=10  businessNeig=2
 itemNeigh troppo scarsa (2)
 userbased: 0, businessbased: 4
 Predizione 132: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (108)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 0.15862068965517243 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 3
 Predizione 133: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -832,9 +817,8 @@ userbased: 0, businessbased: 4
 Predizione 134: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (134)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5048543689320388 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 5
 Predizione 135: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -866,9 +850,8 @@ userbased: 0, businessbased: 4
 Predizione 139: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (110)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.2568306010928962 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 140: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -879,9 +862,9 @@ userbased: 0, businessbased: 4
 Predizione 141: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6666666666666666 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 3
-Predizione 142: 3
+Predizione 142: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (13)
@@ -891,16 +874,14 @@ userbased: 0, businessbased: 4
 Predizione 143: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (148)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=10  businessNeig=10
 userbased: 0, businessbased: 4
 Predizione 144: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (124)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 145: 4
+lambda = 0.771551724137931 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 4
+Predizione 145: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (56)
@@ -909,10 +890,9 @@ userbased: 0, businessbased: 4
 Predizione 146: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (187)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 147: 4
+lambda = 0.65625 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 4
+Predizione 147: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (19)
@@ -947,14 +927,13 @@ userbased: 0, businessbased: 4
 Predizione 152: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (127)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 0.34532374100719426 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 3
 Predizione 153: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.375 (userNeigh=6  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 1.0 (userNeigh=6  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 154: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -979,12 +958,12 @@ userbased: 0, businessbased: 4
 Predizione 158: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 3
-Predizione 159: 3
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
+Predizione 159: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6482758620689655 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 160: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -995,14 +974,13 @@ userbased: 0, businessbased: 5
 Predizione 161: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 0.0 (userNeigh=10  businessNeig=10
+userbased: 0, businessbased: 4
 Predizione 162: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (149)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.6812933025404158 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 163: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1014,8 +992,8 @@ Predizione 164: 5
 Inizio Combinazione Lineare
 user sotto la treshold (93)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 165: 4
+userbased: 0, businessbased: 5
+Predizione 165: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (50)
@@ -1031,15 +1009,14 @@ userbased: 0, businessbased: 4
 Predizione 167: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (159)
-lambda = 0.0 (userNeigh=0  businessNeig=4
+lambda = 0.0 (userNeigh=10  businessNeig=4
 itemNeigh troppo scarsa (4)
 userbased: 0, businessbased: 4
 Predizione 168: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 0.0 (userNeigh=10  businessNeig=10
+userbased: 0, businessbased: 4
 Predizione 169: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1063,15 +1040,14 @@ userbased: 0, businessbased: 4
 Predizione 172: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (149)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 0.6078799249530957 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 3
 Predizione 173: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5263157894736842 (userNeigh=10  businessNeig=9
-userbased: 4, businessbased: 3
-Predizione 174: 4
+lambda = 0.0 (userNeigh=10  businessNeig=9
+userbased: 0, businessbased: 3
+Predizione 174: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (37)
@@ -1080,9 +1056,8 @@ userbased: 0, businessbased: 4
 Predizione 175: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (130)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 0.47717842323651455 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 3
 Predizione 176: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1105,7 +1080,7 @@ userbased: 0, businessbased: 4
 Predizione 179: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.4578313253012048 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 180: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1116,13 +1091,13 @@ userbased: 0, businessbased: 3
 Predizione 181: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5263157894736842 (userNeigh=10  businessNeig=9
-userbased: 4, businessbased: 4
+lambda = 0.0 (userNeigh=10  businessNeig=9
+userbased: 0, businessbased: 4
 Predizione 182: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 183: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1171,8 +1146,7 @@ userbased: 0, businessbased: 4
 Predizione 190: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (134)
-lambda = 0.0 (userNeigh=0  businessNeig=8
+lambda = 0.0 (userNeigh=3  businessNeig=8
 userbased: 0, businessbased: 4
 Predizione 191: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1218,8 +1192,7 @@ userbased: 0, businessbased: 4
 Predizione 197: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (105)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=3  businessNeig=10
 userbased: 0, businessbased: 2
 Predizione 198: 2
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1236,7 +1209,7 @@ userbased: 0, businessbased: 5
 Predizione 200: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.7361963190184049 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 201: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1253,8 +1226,8 @@ userbased: 0, businessbased: 4
 Predizione 203: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5454545454545454 (userNeigh=6  businessNeig=5
-userbased: 4, businessbased: 4
+lambda = 0.0 (userNeigh=6  businessNeig=5
+userbased: 0, businessbased: 4
 Predizione 204: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1276,14 +1249,15 @@ userbased: 0, businessbased: 3
 Predizione 207: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.0 (userNeigh=4  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=4  businessNeig=10
+userNeigh troppo scarsa (4)
+userbased: 4, businessbased: 0
 Predizione 208: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Predizione 209: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (193)
+sotto soglia in getNeighborhood users
 sotto soglia in getNeighborhood business
 lambda = 0.0 (userNeigh=0  businessNeig=0
 itemNeigh troppo scarsa (0)
@@ -1291,9 +1265,8 @@ userbased: 0, businessbased: 4
 Predizione 210: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (170)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.5116279069767442 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 211: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1303,7 +1276,7 @@ userbased: 0, businessbased: 3
 Predizione 212: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.7417582417582418 (userNeigh=10  businessNeig=10
 userbased: 5, businessbased: 5
 Predizione 213: 5
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1323,19 +1296,19 @@ userbased: 0, businessbased: 5
 Predizione 216: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.0 (userNeigh=1  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=1  businessNeig=10
+userNeigh troppo scarsa (1)
+userbased: 4, businessbased: 0
 Predizione 217: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (100)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5208333333333334 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 218: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (84)
-lambda = 0.0 (userNeigh=0  businessNeig=9
+lambda = 0.0 (userNeigh=0  businessNeig=10
 userbased: 0, businessbased: 4
 Predizione 219: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1352,15 +1325,14 @@ userbased: 0, businessbased: 3
 Predizione 221: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (101)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=1  businessNeig=10
 userbased: 0, businessbased: 4
 Predizione 222: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 2, businessbased: 3
-Predizione 223: 2
+lambda = 0.0 (userNeigh=10  businessNeig=10
+userbased: 0, businessbased: 3
+Predizione 223: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (51)
@@ -1369,7 +1341,7 @@ userbased: 0, businessbased: 4
 Predizione 224: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5454545454545454 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 4
 Predizione 225: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1381,9 +1353,8 @@ userbased: 0, businessbased: 4
 Predizione 226: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (188)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 0.5 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 3
 Predizione 227: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1407,10 +1378,9 @@ userbased: 0, businessbased: 3
 Predizione 230: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (132)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 231: 4
+lambda = 1.0 (userNeigh=7  businessNeig=10
+userbased: 5, businessbased: 0
+Predizione 231: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (19)
@@ -1420,16 +1390,14 @@ userbased: 0, businessbased: 4
 Predizione 232: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (104)
-lambda = 0.0 (userNeigh=0  businessNeig=2
+lambda = 0.0 (userNeigh=10  businessNeig=2
 itemNeigh troppo scarsa (2)
 userbased: 0, businessbased: 4
 Predizione 233: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (112)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 0
 Predizione 234: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1454,7 +1422,7 @@ userbased: 0, businessbased: 4
 Predizione 237: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6238532110091743 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 238: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1480,17 +1448,16 @@ Predizione 241: 4
 Inizio Combinazione Lineare
 user sotto la treshold (48)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
-Predizione 242: 5
+userbased: 0, businessbased: 4
+Predizione 242: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5377358490566038 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 243: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (162)
-lambda = 0.0 (userNeigh=0  businessNeig=8
+lambda = 0.0 (userNeigh=10  businessNeig=8
 userbased: 0, businessbased: 3
 Predizione 244: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1523,7 +1490,7 @@ userbased: 0, businessbased: 4
 Predizione 249: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6972972972972973 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 250: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1534,9 +1501,8 @@ userbased: 0, businessbased: 5
 Predizione 251: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (122)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.28 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 252: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1547,9 +1513,8 @@ userbased: 0, businessbased: 4
 Predizione 253: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (116)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.26865671641791045 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 4
 Predizione 254: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1566,14 +1531,14 @@ userbased: 0, businessbased: 4
 Predizione 256: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=10  businessNeig=1
-userbased: 4, businessbased: 0
+lambda = 0.0 (userNeigh=10  businessNeig=1
+itemNeigh troppo scarsa (1)
+userbased: 0, businessbased: 4
 Predizione 257: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (130)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.314 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 258: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1591,32 +1556,28 @@ userbased: 0, businessbased: 4
 Predizione 260: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (163)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 261: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 0
+Predizione 261: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (169)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5670103092783505 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 262: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (112)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
-Predizione 263: 5
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
+Predizione 263: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (129)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=4  businessNeig=10
+userNeigh troppo scarsa (4)
+userbased: 4, businessbased: 0
 Predizione 264: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (148)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=10  businessNeig=10
 userbased: 0, businessbased: 3
 Predizione 265: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1634,20 +1595,18 @@ userbased: 0, businessbased: 4
 Predizione 267: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 1, businessbased: 2
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 1, businessbased: 0
 Predizione 268: 1
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (195)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.46153846153846156 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 269: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (167)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.4930875576036866 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 4
 Predizione 270: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1678,9 +1637,9 @@ userbased: 0, businessbased: 4
 Predizione 274: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
-Predizione 275: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 0
+Predizione 275: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (78)
@@ -1689,8 +1648,9 @@ userbased: 0, businessbased: 5
 Predizione 276: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=10  businessNeig=3
-userbased: 4, businessbased: 0
+lambda = 0.0 (userNeigh=10  businessNeig=3
+itemNeigh troppo scarsa (3)
+userbased: 0, businessbased: 4
 Predizione 277: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1724,8 +1684,7 @@ userbased: 0, businessbased: 4
 Predizione 282: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (180)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=10  businessNeig=10
 userbased: 0, businessbased: 4
 Predizione 283: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1737,25 +1696,23 @@ userbased: 0, businessbased: 4
 Predizione 284: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.375 (userNeigh=6  businessNeig=10
-userbased: 5, businessbased: 5
+lambda = 1.0 (userNeigh=6  businessNeig=10
+userbased: 5, businessbased: 0
 Predizione 285: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (48)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 286: 3
+userbased: 0, businessbased: 2
+Predizione 286: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (102)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.33488372093023255 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 5
 Predizione 287: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (114)
-lambda = 0.0 (userNeigh=0  businessNeig=2
+lambda = 0.0 (userNeigh=2  businessNeig=2
 itemNeigh troppo scarsa (2)
 userbased: 0, businessbased: 4
 Predizione 288: 4
@@ -1776,17 +1733,18 @@ Predizione 290: 4
 Predizione 291: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.0 (userNeigh=3  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 292: 3
+lambda = 1.0 (userNeigh=3  businessNeig=10
+userNeigh troppo scarsa (3)
+userbased: 4, businessbased: 0
+Predizione 292: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.43636363636363634 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 293: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6678571428571428 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 5
 Predizione 294: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1810,8 +1768,7 @@ userbased: 0, businessbased: 4
 Predizione 297: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (103)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=10  businessNeig=10
 userbased: 0, businessbased: 2
 Predizione 298: 2
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1830,14 +1787,12 @@ userbased: 0, businessbased: 4
 Predizione 300: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (188)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5506329113924051 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 301: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (170)
-lambda = 0.0 (userNeigh=0  businessNeig=4
+lambda = 0.0 (userNeigh=10  businessNeig=4
 itemNeigh troppo scarsa (4)
 userbased: 0, businessbased: 4
 Predizione 302: 4
@@ -1849,9 +1804,9 @@ userbased: 0, businessbased: 5
 Predizione 303: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 2, businessbased: 3
-Predizione 304: 2
+lambda = 0.0 (userNeigh=10  businessNeig=10
+userbased: 0, businessbased: 3
+Predizione 304: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (10)
@@ -1873,8 +1828,7 @@ userbased: 0, businessbased: 4
 Predizione 307: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (132)
-lambda = 0.0 (userNeigh=0  businessNeig=8
+lambda = 0.0 (userNeigh=5  businessNeig=8
 userbased: 0, businessbased: 4
 Predizione 308: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1903,7 +1857,7 @@ userbased: 0, businessbased: 4
 Predizione 312: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5454545454545454 (userNeigh=10  businessNeig=10
 userbased: 5, businessbased: 5
 Predizione 313: 5
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1914,10 +1868,10 @@ userbased: 0, businessbased: 4
 Predizione 314: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (110)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 315: 3
+lambda = 1.0 (userNeigh=4  businessNeig=10
+userNeigh troppo scarsa (4)
+userbased: 4, businessbased: 0
+Predizione 315: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (1)
@@ -1927,14 +1881,14 @@ userbased: 0, businessbased: 4
 Predizione 316: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.375 (userNeigh=6  businessNeig=10
-userbased: 3, businessbased: 4
+lambda = 0.0 (userNeigh=6  businessNeig=10
+userbased: 0, businessbased: 4
 Predizione 317: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 3, businessbased: 4
-Predizione 318: 3
+lambda = 0.0 (userNeigh=10  businessNeig=10
+userbased: 0, businessbased: 4
+Predizione 318: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (40)
@@ -1944,13 +1898,12 @@ userbased: 0, businessbased: 4
 Predizione 319: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (127)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.6787564766839378 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 320: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.8571428571428571 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 321: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -1964,9 +1917,8 @@ Predizione 322: 4
 Predizione 323: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (150)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 0.6222222222222222 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 3
 Predizione 324: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -1977,10 +1929,10 @@ userbased: 0, businessbased: 4
 Predizione 325: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (176)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
-Predizione 326: 5
+lambda = 1.0 (userNeigh=4  businessNeig=10
+userNeigh troppo scarsa (4)
+userbased: 4, businessbased: 0
+Predizione 326: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (7)
@@ -1992,13 +1944,14 @@ Predizione 327: 4
 Inizio Combinazione Lineare
 user sotto la treshold (86)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
-Predizione 328: 5
+userbased: 0, businessbased: 4
+Predizione 328: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.0 (userNeigh=3  businessNeig=5
-userbased: 0, businessbased: 2
-Predizione 329: 2
+lambda = 1.0 (userNeigh=3  businessNeig=6
+userNeigh troppo scarsa (3)
+userbased: 4, businessbased: 0
+Predizione 329: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (15)
@@ -2009,8 +1962,8 @@ Predizione 330: 4
 Inizio Combinazione Lineare
 user sotto la treshold (91)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 331: 3
+userbased: 0, businessbased: 2
+Predizione 331: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (16)
@@ -2020,9 +1973,8 @@ userbased: 0, businessbased: 4
 Predizione 332: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (169)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 0.5416666666666666 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 3
 Predizione 333: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2057,8 +2009,7 @@ userbased: 0, businessbased: 5
 Predizione 338: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (104)
-lambda = 0.0 (userNeigh=0  businessNeig=3
+lambda = 0.0 (userNeigh=4  businessNeig=3
 itemNeigh troppo scarsa (3)
 userbased: 0, businessbased: 4
 Predizione 339: 4
@@ -2098,9 +2049,8 @@ userbased: 0, businessbased: 4
 Predizione 344: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (142)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 0
 Predizione 345: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2123,24 +2073,22 @@ userbased: 0, businessbased: 5
 Predizione 348: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.4117647058823529 (userNeigh=7  businessNeig=10
-userbased: 4, businessbased: 3
-Predizione 349: 3
+lambda = 1.0 (userNeigh=7  businessNeig=10
+userbased: 4, businessbased: 0
+Predizione 349: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (103)
-lambda = 0.0 (userNeigh=0  businessNeig=5
+lambda = 0.0 (userNeigh=7  businessNeig=5
 userbased: 0, businessbased: 3
 Predizione 350: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.375 (userNeigh=6  businessNeig=10
-userbased: 2, businessbased: 4
-Predizione 351: 3
+lambda = 1.0 (userNeigh=6  businessNeig=10
+userbased: 2, businessbased: 0
+Predizione 351: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (125)
-lambda = 0.0 (userNeigh=0  businessNeig=4
+lambda = 0.0 (userNeigh=2  businessNeig=4
 itemNeigh troppo scarsa (4)
 userbased: 0, businessbased: 4
 Predizione 352: 4
@@ -2174,8 +2122,8 @@ Predizione 356: 4
 Inizio Combinazione Lineare
 user sotto la treshold (81)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
-Predizione 357: 5
+userbased: 0, businessbased: 4
+Predizione 357: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (81)
@@ -2198,8 +2146,9 @@ userbased: 0, businessbased: 4
 Predizione 360: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.0 (userNeigh=2  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=2  businessNeig=10
+userNeigh troppo scarsa (2)
+userbased: 4, businessbased: 0
 Predizione 361: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2210,10 +2159,9 @@ userbased: 0, businessbased: 4
 Predizione 362: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (142)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 363: 3
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
+Predizione 363: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (24)
@@ -2228,7 +2176,7 @@ userbased: 0, businessbased: 4
 Predizione 365: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.49743589743589745 (userNeigh=10  businessNeig=10
 userbased: 5, businessbased: 5
 Predizione 366: 5
 /*********************************** NUOVA REVIEW *******************************************/
@@ -2239,7 +2187,7 @@ userbased: 0, businessbased: 4
 Predizione 367: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6351575456053068 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 368: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -2279,13 +2227,12 @@ Predizione 373: 4
 Inizio Combinazione Lineare
 user sotto la treshold (25)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 2
-Predizione 374: 2
+userbased: 0, businessbased: 3
+Predizione 374: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (112)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.3644524236983842 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 375: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2301,9 +2248,8 @@ userbased: 0, businessbased: 4
 Predizione 377: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (168)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5851063829787234 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 378: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2319,9 +2265,8 @@ userbased: 0, businessbased: 4
 Predizione 380: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (104)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.47058823529411764 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 4
 Predizione 381: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2331,14 +2276,13 @@ userbased: 0, businessbased: 5
 Predizione 382: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 5
-Predizione 383: 4
+lambda = 0.19975186104218362 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
+Predizione 383: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (160)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 1.0 (userNeigh=7  businessNeig=10
+userbased: 3, businessbased: 0
 Predizione 384: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2387,9 +2331,8 @@ userbased: 0, businessbased: 4
 Predizione 391: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (124)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.4411764705882353 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 392: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2400,9 +2343,8 @@ userbased: 0, businessbased: 4
 Predizione 393: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (182)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5605633802816902 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 394: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2412,9 +2354,8 @@ userbased: 0, businessbased: 2
 Predizione 395: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (140)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 0.49454545454545457 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 3
 Predizione 396: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2432,14 +2373,14 @@ userbased: 0, businessbased: 4
 Predizione 398: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=10  businessNeig=1
-userbased: 3, businessbased: 0
-Predizione 399: 3
+lambda = 0.0 (userNeigh=10  businessNeig=1
+itemNeigh troppo scarsa (1)
+userbased: 0, businessbased: 4
+Predizione 399: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (102)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.525974025974026 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 400: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2450,8 +2391,7 @@ userbased: 0, businessbased: 4
 Predizione 401: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (115)
-lambda = 0.0 (userNeigh=0  businessNeig=1
+lambda = 0.0 (userNeigh=10  businessNeig=1
 itemNeigh troppo scarsa (1)
 userbased: 0, businessbased: 4
 Predizione 402: 4
@@ -2478,8 +2418,9 @@ userbased: 0, businessbased: 4
 Predizione 405: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.0 (userNeigh=4  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=4  businessNeig=10
+userNeigh troppo scarsa (4)
+userbased: 4, businessbased: 0
 Predizione 406: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2515,7 +2456,7 @@ userbased: 0, businessbased: 3
 Predizione 411: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.757679180887372 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 412: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -2546,18 +2487,18 @@ userbased: 0, businessbased: 4
 Predizione 416: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 0.0 (userNeigh=10  businessNeig=10
+userbased: 0, businessbased: 4
 Predizione 417: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5263157894736842 (userNeigh=10  businessNeig=9
-userbased: 4, businessbased: 3
-Predizione 418: 4
+lambda = 0.0 (userNeigh=10  businessNeig=9
+userbased: 0, businessbased: 3
+Predizione 418: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.4444444444444444 (userNeigh=8  businessNeig=10
-userbased: 3, businessbased: 4
+lambda = 0.0 (userNeigh=8  businessNeig=10
+userbased: 0, businessbased: 4
 Predizione 419: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2575,7 +2516,7 @@ userbased: 0, businessbased: 4
 Predizione 421: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.8577981651376146 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 422: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -2586,7 +2527,7 @@ userbased: 0, businessbased: 3
 Predizione 423: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.75 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 424: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -2611,9 +2552,8 @@ userbased: 0, businessbased: 5
 Predizione 427: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (109)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.10030864197530864 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 428: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2623,9 +2563,8 @@ userbased: 0, businessbased: 4
 Predizione 429: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (156)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 430: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2635,9 +2574,8 @@ userbased: 0, businessbased: 4
 Predizione 431: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (110)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.6506849315068494 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 432: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2648,9 +2586,9 @@ userbased: 0, businessbased: 4
 Predizione 433: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5555555555555556 (userNeigh=10  businessNeig=8
-userbased: 3, businessbased: 5
-Predizione 434: 4
+lambda = 0.0 (userNeigh=10  businessNeig=8
+userbased: 0, businessbased: 5
+Predizione 434: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (1)
@@ -2662,12 +2600,12 @@ Predizione 435: 4
 Predizione 436: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.23177083333333334 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 437: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.37317073170731707 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 438: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -2685,7 +2623,7 @@ userbased: 0, businessbased: 5
 Predizione 440: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.3142857142857143 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 441: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -2702,9 +2640,9 @@ userbased: 0, businessbased: 4
 Predizione 443: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.4444444444444444 (userNeigh=8  businessNeig=10
-userbased: 4, businessbased: 4
-Predizione 444: 4
+lambda = 0.0 (userNeigh=8  businessNeig=10
+userbased: 0, businessbased: 5
+Predizione 444: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (56)
@@ -2713,8 +2651,8 @@ userbased: 0, businessbased: 5
 Predizione 445: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 446: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2725,9 +2663,9 @@ userbased: 0, businessbased: 4
 Predizione 447: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.8440366972477065 (userNeigh=10  businessNeig=10
 userbased: 5, businessbased: 4
-Predizione 448: 4
+Predizione 448: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (32)
@@ -2743,40 +2681,36 @@ userbased: 0, businessbased: 4
 Predizione 450: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (106)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.23125 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 451: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (149)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.2934131736526946 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 452: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5555555555555556 (userNeigh=10  businessNeig=8
-userbased: 4, businessbased: 4
+lambda = 0.0 (userNeigh=10  businessNeig=8
+userbased: 0, businessbased: 4
 Predizione 453: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (165)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 454: 4
+lambda = 1.0 (userNeigh=5  businessNeig=10
+userbased: 5, businessbased: 0
+Predizione 454: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 0.0 (userNeigh=10  businessNeig=10
+userbased: 0, businessbased: 4
 Predizione 455: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Predizione 456: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (132)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 457: 4
+lambda = 1.0 (userNeigh=5  businessNeig=10
+userbased: 3, businessbased: 0
+Predizione 457: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (62)
@@ -2785,7 +2719,7 @@ userbased: 0, businessbased: 4
 Predizione 458: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6623376623376623 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 459: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -2830,7 +2764,7 @@ userbased: 0, businessbased: 4
 Predizione 465: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.8513931888544891 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 466: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -2867,9 +2801,8 @@ userbased: 0, businessbased: 4
 Predizione 471: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (104)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.4636363636363636 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 4
 Predizione 472: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -2887,14 +2820,14 @@ userbased: 0, businessbased: 4
 Predizione 474: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.763013698630137 (userNeigh=10  businessNeig=10
 userbased: 5, businessbased: 5
 Predizione 475: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.625 (userNeigh=10  businessNeig=6
-userbased: 3, businessbased: 2
-Predizione 476: 3
+lambda = 0.0 (userNeigh=10  businessNeig=6
+userbased: 0, businessbased: 2
+Predizione 476: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (14)
@@ -2920,8 +2853,7 @@ userbased: 0, businessbased: 4
 Predizione 479: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (100)
-lambda = 0.0 (userNeigh=0  businessNeig=9
+lambda = 0.0 (userNeigh=10  businessNeig=9
 userbased: 0, businessbased: 4
 Predizione 480: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -2935,19 +2867,17 @@ userbased: 0, businessbased: 4
 Predizione 482: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (163)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
-Predizione 483: 5
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 0
+Predizione 483: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (112)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.3942307692307692 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 484: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.676923076923077 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 485: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -2966,8 +2896,8 @@ Predizione 487: 4
 Inizio Combinazione Lineare
 user sotto la treshold (73)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 488: 4
+userbased: 0, businessbased: 5
+Predizione 488: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (3)
@@ -2977,14 +2907,14 @@ userbased: 0, businessbased: 4
 Predizione 489: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=10  businessNeig=2
-userbased: 3, businessbased: 0
-Predizione 490: 3
+lambda = 0.0 (userNeigh=10  businessNeig=2
+itemNeigh troppo scarsa (2)
+userbased: 0, businessbased: 4
+Predizione 490: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (102)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.47794117647058826 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 491: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3000,7 +2930,7 @@ userbased: 0, businessbased: 4
 Predizione 493: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6432748538011696 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 494: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -3058,7 +2988,7 @@ userbased: 0, businessbased: 4
 Predizione 502: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.8159392789373814 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 503: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -3069,15 +2999,14 @@ userbased: 0, businessbased: 5
 Predizione 504: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (113)
-lambda = 0.0 (userNeigh=0  businessNeig=6
+lambda = 0.0 (userNeigh=10  businessNeig=6
 userbased: 0, businessbased: 3
 Predizione 505: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 3, businessbased: 4
-Predizione 506: 3
+lambda = 0.5022421524663677 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
+Predizione 506: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (3)
@@ -3087,9 +3016,8 @@ userbased: 0, businessbased: 4
 Predizione 507: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (130)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 508: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3100,9 +3028,9 @@ userbased: 0, businessbased: 4
 Predizione 509: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 3
-Predizione 510: 3
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
+Predizione 510: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (35)
@@ -3124,14 +3052,13 @@ userbased: 0, businessbased: 4
 Predizione 513: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.4444444444444444 (userNeigh=8  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 1.0 (userNeigh=8  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 514: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (163)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 515: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Predizione 516: 4
@@ -3156,15 +3083,14 @@ userbased: 0, businessbased: 5
 Predizione 519: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (160)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 520: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
-Predizione 521: 4
+lambda = 0.7125382262996942 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 4
+Predizione 521: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (55)
@@ -3198,17 +3124,15 @@ userbased: 0, businessbased: 2
 Predizione 526: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (188)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.5608974358974359 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 527: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Predizione 528: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (108)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 0
 Predizione 529: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3244,9 +3168,8 @@ userbased: 0, businessbased: 4
 Predizione 534: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (153)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5977653631284916 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 535: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3256,7 +3179,7 @@ userbased: 0, businessbased: 3
 Predizione 536: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (103)
+sotto soglia in getNeighborhood users
 sotto soglia in getNeighborhood business
 lambda = 0.0 (userNeigh=0  businessNeig=0
 itemNeigh troppo scarsa (0)
@@ -3284,9 +3207,8 @@ userbased: 0, businessbased: 4
 Predizione 540: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (127)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.24511278195488723 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 541: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3342,9 +3264,8 @@ userbased: 0, businessbased: 5
 Predizione 549: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (153)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=6  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 550: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3356,7 +3277,7 @@ userbased: 0, businessbased: 4
 Predizione 551: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5838509316770186 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 552: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -3368,22 +3289,20 @@ userbased: 0, businessbased: 4
 Predizione 553: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (190)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 0
 Predizione 554: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (163)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 555: 4
+lambda = 0.5161290322580645 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 4
+Predizione 555: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Predizione 556: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5555555555555556 (userNeigh=10  businessNeig=8
-userbased: 4, businessbased: 4
+lambda = 0.0 (userNeigh=10  businessNeig=8
+userbased: 0, businessbased: 4
 Predizione 557: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3400,10 +3319,9 @@ userbased: 0, businessbased: 4
 Predizione 559: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (144)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 560: 4
+lambda = 0.45255474452554745 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
+Predizione 560: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (94)
@@ -3426,9 +3344,8 @@ userbased: 0, businessbased: 4
 Predizione 563: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (142)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=8  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 564: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3440,9 +3357,8 @@ Predizione 565: 3
 Predizione 566: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (190)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.6693877551020408 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 567: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Predizione 568: 4
@@ -3462,10 +3378,9 @@ userbased: 0, businessbased: 4
 Predizione 570: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (148)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 571: 3
+lambda = 0.648 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 3
+Predizione 571: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (1)
@@ -3489,8 +3404,8 @@ userbased: 0, businessbased: 4
 Predizione 574: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 0.0 (userNeigh=10  businessNeig=10
+userbased: 0, businessbased: 4
 Predizione 575: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3545,9 +3460,8 @@ userbased: 0, businessbased: 4
 Predizione 583: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (132)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.35278514588859416 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 584: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3578,31 +3492,30 @@ userbased: 0, businessbased: 5
 Predizione 588: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=10  businessNeig=2
-userbased: 3, businessbased: 0
-Predizione 589: 3
+lambda = 0.0 (userNeigh=10  businessNeig=2
+itemNeigh troppo scarsa (2)
+userbased: 0, businessbased: 4
+Predizione 589: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (190)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=3  businessNeig=10
+userNeigh troppo scarsa (3)
+userbased: 4, businessbased: 0
 Predizione 590: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (112)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5853658536585366 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 591: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6235632183908046 (userNeigh=10  businessNeig=10
 userbased: 5, businessbased: 5
 Predizione 592: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (129)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5303030303030303 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 593: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3619,7 +3532,7 @@ userbased: 0, businessbased: 5
 Predizione 595: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.34143049932523617 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 596: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -3660,8 +3573,7 @@ userbased: 0, businessbased: 4
 Predizione 603: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (176)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=4  businessNeig=10
 userbased: 0, businessbased: 4
 Predizione 604: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -3673,9 +3585,8 @@ userbased: 0, businessbased: 4
 Predizione 605: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (110)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.35039370078740156 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 606: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3696,10 +3607,9 @@ userbased: 0, businessbased: 4
 Predizione 609: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (115)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 610: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 0
+Predizione 610: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (77)
@@ -3763,9 +3673,8 @@ userbased: 0, businessbased: 4
 Predizione 620: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (106)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.6 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 621: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3776,9 +3685,8 @@ userbased: 0, businessbased: 4
 Predizione 622: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (166)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5170731707317073 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 623: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3789,13 +3697,12 @@ userbased: 0, businessbased: 4
 Predizione 624: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (122)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5307692307692308 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 625: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.7403846153846154 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 626: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -3829,7 +3736,7 @@ Predizione 630: 4
 Predizione 631: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5225225225225225 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 632: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -3848,8 +3755,7 @@ userbased: 0, businessbased: 4
 Predizione 634: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (133)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=10  businessNeig=10
 userbased: 0, businessbased: 4
 Predizione 635: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -3861,20 +3767,18 @@ userbased: 0, businessbased: 4
 Predizione 636: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.4117647058823529 (userNeigh=7  businessNeig=10
-userbased: 2, businessbased: 3
-Predizione 637: 3
+lambda = 1.0 (userNeigh=7  businessNeig=10
+userbased: 2, businessbased: 0
+Predizione 637: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (145)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.3165137614678899 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 5
 Predizione 638: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (154)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.577639751552795 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 639: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3892,12 +3796,12 @@ userbased: 0, businessbased: 4
 Predizione 641: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.625 (userNeigh=10  businessNeig=6
-userbased: 4, businessbased: 3
-Predizione 642: 4
+lambda = 0.0 (userNeigh=10  businessNeig=6
+userbased: 0, businessbased: 3
+Predizione 642: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.3333333333333333 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 643: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -3920,7 +3824,7 @@ userbased: 0, businessbased: 2
 Predizione 646: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6167176350662589 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 647: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -3931,13 +3835,12 @@ userbased: 0, businessbased: 4
 Predizione 648: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6875 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 649: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (167)
-lambda = 0.0 (userNeigh=0  businessNeig=1
+lambda = 0.0 (userNeigh=10  businessNeig=1
 itemNeigh troppo scarsa (1)
 userbased: 0, businessbased: 4
 Predizione 650: 4
@@ -3949,9 +3852,8 @@ userbased: 0, businessbased: 4
 Predizione 651: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (105)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 2
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 2, businessbased: 0
 Predizione 652: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -3969,26 +3871,24 @@ userbased: 0, businessbased: 4
 Predizione 654: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (108)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=10  businessNeig=10
 userbased: 0, businessbased: 3
 Predizione 655: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (187)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.5708333333333333 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 656: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (102)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
-Predizione 657: 5
+lambda = 0.0 (userNeigh=10  businessNeig=10
+userbased: 0, businessbased: 4
+Predizione 657: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=10  businessNeig=3
-userbased: 4, businessbased: 0
+lambda = 0.0 (userNeigh=10  businessNeig=3
+itemNeigh troppo scarsa (3)
+userbased: 0, businessbased: 4
 Predizione 658: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -4007,20 +3907,18 @@ userbased: 0, businessbased: 4
 Predizione 660: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (161)
-lambda = 0.0 (userNeigh=0  businessNeig=7
+lambda = 0.0 (userNeigh=5  businessNeig=7
 userbased: 0, businessbased: 4
 Predizione 661: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.6666666666666666 (userNeigh=10  businessNeig=5
-userbased: 3, businessbased: 3
+lambda = 0.0 (userNeigh=10  businessNeig=5
+userbased: 0, businessbased: 3
 Predizione 662: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (179)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 0.6930232558139535 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 3
 Predizione 663: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -4043,7 +3941,7 @@ userbased: 0, businessbased: 4
 Predizione 666: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.4835680751173709 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 667: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -4063,12 +3961,12 @@ Predizione 669: 3
 Predizione 670: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.4444444444444444 (userNeigh=8  businessNeig=10
-userbased: 4, businessbased: 4
-Predizione 671: 4
+lambda = 0.0 (userNeigh=8  businessNeig=10
+userbased: 0, businessbased: 3
+Predizione 671: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.7325581395348837 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 672: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -4086,9 +3984,9 @@ userbased: 0, businessbased: 4
 Predizione 674: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (158)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=1  businessNeig=10
+userNeigh troppo scarsa (1)
+userbased: 4, businessbased: 0
 Predizione 675: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -4106,7 +4004,7 @@ userbased: 0, businessbased: 4
 Predizione 677: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6318181818181818 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 678: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -4117,9 +4015,8 @@ userbased: 0, businessbased: 4
 Predizione 679: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (121)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.4311377245508982 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 5
 Predizione 680: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -4151,12 +4048,12 @@ userbased: 0, businessbased: 4
 Predizione 684: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 0.0 (userNeigh=10  businessNeig=10
+userbased: 0, businessbased: 4
 Predizione 685: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.7039473684210527 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 686: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -4181,14 +4078,13 @@ userbased: 0, businessbased: 4
 Predizione 689: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (156)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=10  businessNeig=10
 userbased: 0, businessbased: 4
 Predizione 690: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.4117647058823529 (userNeigh=7  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 1.0 (userNeigh=7  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 691: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -4199,9 +4095,8 @@ userbased: 0, businessbased: 4
 Predizione 692: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (106)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.5458515283842795 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 4
 Predizione 693: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -4239,8 +4134,7 @@ userbased: 0, businessbased: 4
 Predizione 698: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (149)
-lambda = 0.0 (userNeigh=0  businessNeig=1
+lambda = 0.0 (userNeigh=10  businessNeig=1
 itemNeigh troppo scarsa (1)
 userbased: 0, businessbased: 4
 Predizione 699: 4
@@ -4301,8 +4195,8 @@ userbased: 0, businessbased: 4
 Predizione 707: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5555555555555556 (userNeigh=10  businessNeig=8
-userbased: 4, businessbased: 4
+lambda = 0.0 (userNeigh=10  businessNeig=8
+userbased: 0, businessbased: 4
 Predizione 708: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -4341,18 +4235,17 @@ userbased: 0, businessbased: 4
 Predizione 713: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (166)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 714: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5727699530516432 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 715: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.8269230769230769 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 4
 Predizione 716: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -4364,16 +4257,15 @@ userbased: 0, businessbased: 4
 Predizione 717: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.0 (userNeigh=2  businessNeig=3
-itemNeigh troppo scarsa (3)
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=2  businessNeig=5
+userNeigh troppo scarsa (2)
+userbased: 4, businessbased: 0
 Predizione 718: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (126)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 719: 3
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
+Predizione 719: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (73)
@@ -4395,7 +4287,7 @@ userbased: 0, businessbased: 4
 Predizione 722: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.8237410071942446 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 723: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -4406,14 +4298,14 @@ userbased: 0, businessbased: 4
 Predizione 724: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=10  businessNeig=3
-userbased: 4, businessbased: 0
+lambda = 0.0 (userNeigh=10  businessNeig=3
+itemNeigh troppo scarsa (3)
+userbased: 0, businessbased: 4
 Predizione 725: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (187)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.4151898734177215 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 726: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -4475,9 +4367,8 @@ userbased: 0, businessbased: 4
 Predizione 735: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (188)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.3273381294964029 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 736: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -4488,9 +4379,9 @@ userbased: 0, businessbased: 4
 Predizione 737: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 5, businessbased: 4
-Predizione 738: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 0
+Predizione 738: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (28)
@@ -4538,20 +4429,18 @@ userbased: 0, businessbased: 4
 Predizione 746: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.2899590163934426 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 3
 Predizione 747: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (103)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=10  businessNeig=10
 userbased: 0, businessbased: 5
 Predizione 748: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (176)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 0
 Predizione 749: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -4571,8 +4460,8 @@ Predizione 751: 4
 Inizio Combinazione Lineare
 user sotto la treshold (66)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 752: 3
+userbased: 0, businessbased: 2
+Predizione 752: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (7)
@@ -4582,9 +4471,9 @@ userbased: 0, businessbased: 4
 Predizione 753: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.24423963133640553 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 5
-Predizione 754: 4
+Predizione 754: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (31)
@@ -4603,13 +4492,12 @@ Predizione 757: 4
 Predizione 758: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (145)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.22674418604651161 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 5
 Predizione 759: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6267409470752089 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 760: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -4642,8 +4530,8 @@ userbased: 0, businessbased: 4
 Predizione 764: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 2, businessbased: 2
+lambda = 0.0 (userNeigh=10  businessNeig=10
+userbased: 0, businessbased: 2
 Predizione 765: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -4664,8 +4552,8 @@ Predizione 767: 4
 Inizio Combinazione Lineare
 user sotto la treshold (34)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 768: 3
+userbased: 0, businessbased: 2
+Predizione 768: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (44)
@@ -4694,20 +4582,20 @@ userbased: 0, businessbased: 4
 Predizione 772: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (123)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.48 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 5
 Predizione 773: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=7  businessNeig=1
-userbased: 4, businessbased: 0
+lambda = 0.0 (userNeigh=7  businessNeig=1
+itemNeigh troppo scarsa (1)
+userbased: 0, businessbased: 4
 Predizione 774: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.7227722772277227 (userNeigh=10  businessNeig=10
 userbased: 5, businessbased: 4
-Predizione 775: 4
+Predizione 775: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (10)
@@ -4717,7 +4605,7 @@ userbased: 0, businessbased: 4
 Predizione 776: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5869074492099323 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 777: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -4760,14 +4648,12 @@ userbased: 0, businessbased: 4
 Predizione 783: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (103)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.19069767441860466 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 784: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (150)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=9  businessNeig=10
 userbased: 0, businessbased: 4
 Predizione 785: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -4793,20 +4679,19 @@ userbased: 0, businessbased: 4
 Predizione 788: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6442307692307693 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 789: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (94)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 790: 3
+userbased: 0, businessbased: 4
+Predizione 790: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (130)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.3248259860788863 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 791: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -4817,19 +4702,19 @@ userbased: 0, businessbased: 4
 Predizione 792: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.375 (userNeigh=6  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 1.0 (userNeigh=6  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 793: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.628428927680798 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 794: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.3618421052631579 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 5
-Predizione 795: 4
+Predizione 795: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (3)
@@ -4840,7 +4725,7 @@ userbased: 0, businessbased: 4
 Predizione 796: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.47692307692307695 (userNeigh=10  businessNeig=10
 userbased: 5, businessbased: 4
 Predizione 797: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -4876,12 +4761,12 @@ userbased: 0, businessbased: 4
 Predizione 802: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 3
+lambda = 0.0 (userNeigh=10  businessNeig=10
+userbased: 0, businessbased: 3
 Predizione 803: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.7810945273631841 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 804: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -4925,8 +4810,9 @@ userbased: 0, businessbased: 3
 Predizione 811: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.0 (userNeigh=3  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=3  businessNeig=10
+userNeigh troppo scarsa (3)
+userbased: 4, businessbased: 0
 Predizione 812: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -4939,10 +4825,9 @@ Predizione 813: 4
 Predizione 814: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (153)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 815: 3
+lambda = 1.0 (userNeigh=9  businessNeig=10
+userbased: 2, businessbased: 0
+Predizione 815: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (9)
@@ -4992,8 +4877,8 @@ userbased: 0, businessbased: 3
 Predizione 823: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 3, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 0
 Predizione 824: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5010,9 +4895,8 @@ userbased: 0, businessbased: 4
 Predizione 826: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (187)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 0.8540145985401459 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 4
 Predizione 827: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5024,9 +4908,8 @@ userbased: 0, businessbased: 4
 Predizione 828: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (158)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.48132780082987553 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 829: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Predizione 830: 4
@@ -5045,9 +4928,9 @@ userbased: 0, businessbased: 4
 Predizione 832: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 3, businessbased: 4
-Predizione 833: 3
+lambda = 0.0 (userNeigh=10  businessNeig=10
+userbased: 0, businessbased: 4
+Predizione 833: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (34)
@@ -5056,19 +4939,18 @@ userbased: 0, businessbased: 4
 Predizione 834: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5543478260869565 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 835: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.784688995215311 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 836: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (167)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5342465753424658 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 837: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Predizione 838: 4
@@ -5115,8 +4997,8 @@ userbased: 0, businessbased: 4
 Predizione 844: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 845: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5128,13 +5010,14 @@ userbased: 0, businessbased: 4
 Predizione 846: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=10  businessNeig=2
-userbased: 3, businessbased: 0
-Predizione 847: 3
+lambda = 0.0 (userNeigh=10  businessNeig=2
+itemNeigh troppo scarsa (2)
+userbased: 0, businessbased: 4
+Predizione 847: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.45454545454545453 (userNeigh=5  businessNeig=6
-userbased: 2, businessbased: 3
+lambda = 0.0 (userNeigh=5  businessNeig=6
+userbased: 0, businessbased: 3
 Predizione 848: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5150,9 +5033,8 @@ userbased: 0, businessbased: 4
 Predizione 850: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (188)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.1446862996158771 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 851: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5203,7 +5085,7 @@ Predizione 858: 4
 Predizione 859: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (156)
+sotto soglia in getNeighborhood users
 sotto soglia in getNeighborhood business
 lambda = 0.0 (userNeigh=0  businessNeig=0
 itemNeigh troppo scarsa (0)
@@ -5211,14 +5093,12 @@ userbased: 0, businessbased: 4
 Predizione 860: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (109)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
+lambda = 0.3624161073825503 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
 Predizione 861: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (164)
-lambda = 0.0 (userNeigh=0  businessNeig=5
+lambda = 0.0 (userNeigh=10  businessNeig=5
 userbased: 0, businessbased: 5
 Predizione 862: 5
 /*********************************** NUOVA REVIEW *******************************************/
@@ -5261,15 +5141,15 @@ userbased: 0, businessbased: 4
 Predizione 868: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 3, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 0
 Predizione 869: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (66)
 lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 870: 4
+userbased: 0, businessbased: 3
+Predizione 870: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (39)
@@ -5313,14 +5193,15 @@ userbased: 0, businessbased: 4
 Predizione 876: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6153846153846154 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 877: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 1.0 (userNeigh=10  businessNeig=1
-userbased: 3, businessbased: 0
-Predizione 878: 3
+lambda = 0.0 (userNeigh=10  businessNeig=1
+itemNeigh troppo scarsa (1)
+userbased: 0, businessbased: 4
+Predizione 878: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (25)
@@ -5330,8 +5211,7 @@ userbased: 0, businessbased: 4
 Predizione 879: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (100)
-lambda = 0.0 (userNeigh=0  businessNeig=2
+lambda = 0.0 (userNeigh=10  businessNeig=2
 itemNeigh troppo scarsa (2)
 userbased: 0, businessbased: 4
 Predizione 880: 4
@@ -5344,7 +5224,7 @@ userbased: 0, businessbased: 4
 Predizione 881: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.4496124031007752 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 882: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -5355,8 +5235,7 @@ userbased: 0, businessbased: 4
 Predizione 883: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (192)
-lambda = 0.0 (userNeigh=0  businessNeig=8
+lambda = 0.0 (userNeigh=8  businessNeig=8
 userbased: 0, businessbased: 4
 Predizione 884: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -5367,14 +5246,12 @@ userbased: 0, businessbased: 4
 Predizione 885: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (143)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.5193370165745856 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 886: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (190)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=10  businessNeig=10
 userbased: 0, businessbased: 4
 Predizione 887: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -5386,10 +5263,9 @@ userbased: 0, businessbased: 4
 Predizione 888: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (102)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 889: 4
+lambda = 0.49473684210526314 (userNeigh=10  businessNeig=10
+userbased: 5, businessbased: 5
+Predizione 889: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (32)
@@ -5431,9 +5307,8 @@ userbased: 0, businessbased: 4
 Predizione 895: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (152)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
+lambda = 0.5 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 3
 Predizione 896: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5449,8 +5324,8 @@ userbased: 0, businessbased: 3
 Predizione 898: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 5
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 899: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5461,14 +5336,13 @@ userbased: 0, businessbased: 4
 Predizione 900: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.7387387387387387 (userNeigh=10  businessNeig=10
 userbased: 5, businessbased: 4
-Predizione 901: 4
+Predizione 901: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (141)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.46511627906976744 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 902: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5486,21 +5360,18 @@ userbased: 0, businessbased: 4
 Predizione 904: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (148)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 905: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (187)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 3
-Predizione 906: 3
+lambda = 1.0 (userNeigh=5  businessNeig=10
+userbased: 4, businessbased: 0
+Predizione 906: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (100)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 907: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5512,8 +5383,7 @@ Predizione 908: 3
 Predizione 909: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (100)
-lambda = 0.0 (userNeigh=0  businessNeig=1
+lambda = 0.0 (userNeigh=1  businessNeig=1
 itemNeigh troppo scarsa (1)
 userbased: 0, businessbased: 4
 Predizione 910: 4
@@ -5540,12 +5410,12 @@ userbased: 0, businessbased: 4
 Predizione 913: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.43641618497109824 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 4
-Predizione 914: 3
+Predizione 914: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.42035398230088494 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 915: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -5591,13 +5461,12 @@ userbased: 0, businessbased: 2
 Predizione 922: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (183)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=10  businessNeig=10
 userbased: 0, businessbased: 4
 Predizione 923: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.7912087912087912 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 924: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -5609,8 +5478,8 @@ userbased: 0, businessbased: 4
 Predizione 925: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 926: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5627,8 +5496,8 @@ userbased: 0, businessbased: 4
 Predizione 928: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 0.8028985507246377 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 3
 Predizione 929: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5645,7 +5514,7 @@ userbased: 0, businessbased: 4
 Predizione 931: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5636363636363636 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 4
 Predizione 932: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -5656,10 +5525,9 @@ userbased: 0, businessbased: 4
 Predizione 933: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (104)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
-Predizione 934: 4
+lambda = 0.6341463414634146 (userNeigh=10  businessNeig=10
+userbased: 3, businessbased: 4
+Predizione 934: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Predizione 935: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -5683,8 +5551,9 @@ userbased: 0, businessbased: 5
 Predizione 938: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.0 (userNeigh=2  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=2  businessNeig=10
+userNeigh troppo scarsa (2)
+userbased: 4, businessbased: 0
 Predizione 939: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5701,7 +5570,7 @@ userbased: 0, businessbased: 4
 Predizione 941: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6046511627906976 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 942: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -5713,8 +5582,7 @@ userbased: 0, businessbased: 4
 Predizione 943: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (189)
-lambda = 0.0 (userNeigh=0  businessNeig=10
+lambda = 0.0 (userNeigh=10  businessNeig=10
 userbased: 0, businessbased: 4
 Predizione 944: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -5738,7 +5606,7 @@ userbased: 0, businessbased: 2
 Predizione 947: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.6234567901234568 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 948: 3
 /*********************************** NUOVA REVIEW *******************************************/
@@ -5782,8 +5650,8 @@ userbased: 0, businessbased: 5
 Predizione 954: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5882352941176471 (userNeigh=10  businessNeig=7
-userbased: 3, businessbased: 3
+lambda = 0.0 (userNeigh=10  businessNeig=7
+userbased: 0, businessbased: 3
 Predizione 955: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5815,13 +5683,13 @@ userbased: 0, businessbased: 4
 Predizione 960: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5698198198198198 (userNeigh=10  businessNeig=10
 userbased: 3, businessbased: 3
 Predizione 961: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 962: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5831,7 +5699,7 @@ userbased: 0, businessbased: 3
 Predizione 963: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5138888888888888 (userNeigh=10  businessNeig=10
 userbased: 5, businessbased: 5
 Predizione 964: 5
 /*********************************** NUOVA REVIEW *******************************************/
@@ -5851,8 +5719,8 @@ Predizione 966: 3
 Predizione 967: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.47368421052631576 (userNeigh=9  businessNeig=10
-userbased: 3, businessbased: 3
+lambda = 1.0 (userNeigh=9  businessNeig=10
+userbased: 3, businessbased: 0
 Predizione 968: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5902,13 +5770,13 @@ userbased: 0, businessbased: 4
 Predizione 975: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 976: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
-userbased: 4, businessbased: 4
+lambda = 1.0 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 0
 Predizione 977: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5944,8 +5812,9 @@ userbased: 0, businessbased: 4
 Predizione 982: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.0 (userNeigh=3  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 1.0 (userNeigh=3  businessNeig=10
+userNeigh troppo scarsa (3)
+userbased: 4, businessbased: 0
 Predizione 983: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -5955,7 +5824,7 @@ userbased: 0, businessbased: 4
 Predizione 984: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.5585585585585585 (userNeigh=10  businessNeig=10
 userbased: 4, businessbased: 5
 Predizione 985: 4
 /*********************************** NUOVA REVIEW *******************************************/
@@ -5974,19 +5843,19 @@ userbased: 0, businessbased: 4
 Predizione 987: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.3333333333333333 (userNeigh=5  businessNeig=10
-userbased: 3, businessbased: 4
-Predizione 988: 4
+lambda = 1.0 (userNeigh=5  businessNeig=10
+userbased: 3, businessbased: 0
+Predizione 988: 3
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.0 (userNeigh=4  businessNeig=10
-userbased: 0, businessbased: 5
-Predizione 989: 5
+lambda = 1.0 (userNeigh=4  businessNeig=10
+userNeigh troppo scarsa (4)
+userbased: 4, businessbased: 0
+Predizione 989: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (107)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 4
+lambda = 0.3194444444444444 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 4
 Predizione 990: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
@@ -6029,15 +5898,14 @@ userbased: 0, businessbased: 5
 Predizione 996: 5
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-lambda = 0.5 (userNeigh=10  businessNeig=10
+lambda = 0.8730650154798761 (userNeigh=10  businessNeig=10
 userbased: 2, businessbased: 3
 Predizione 997: 2
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
-user sotto la treshold (102)
-lambda = 0.0 (userNeigh=0  businessNeig=10
-userbased: 0, businessbased: 5
-Predizione 998: 5
+lambda = 0.5084745762711864 (userNeigh=10  businessNeig=10
+userbased: 4, businessbased: 5
+Predizione 998: 4
 /*********************************** NUOVA REVIEW *******************************************/
 Inizio Combinazione Lineare
 user sotto la treshold (57)

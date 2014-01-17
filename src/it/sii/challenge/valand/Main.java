@@ -16,9 +16,6 @@ import it.sii.challenge.valand.utilities.DocumentIO;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
-
-import org.omg.CORBA.RepositoryIdHelper;
 
 public class Main {
 

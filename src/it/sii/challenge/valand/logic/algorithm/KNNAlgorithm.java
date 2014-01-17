@@ -9,6 +9,7 @@ import it.sii.challenge.valand.persistence.repository.ReviewRepository;
 import it.sii.challenge.valand.persistence.repositoryImpl.ReviewRepositoryImpl;
 import it.sii.challenge.valand.utilities.CoupleObjectSimilarity;
 import it.sii.challenge.valand.utilities.MapsListsUtilities;
+import it.sii.challenge.valand.utilities.PredictionList;
 import it.sii.challenge.valand.utilities.PrinterAndSaver;
 
 import java.util.Collection;
@@ -43,9 +44,9 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 	/** 
 	 * Return the user-based Neighborhood
 	 */
-	public List<CoupleObjectSimilarity<User>> getNeighborHood(UserBusinessMatrix matrix, User user, Business business, PrinterAndSaver printer) {			
+	public PredictionList<User> getNeighborHood(UserBusinessMatrix matrix, User user, Business business, PrinterAndSaver printer) {			
 		ReviewRepository repo = new ReviewRepositoryImpl();
-		List<CoupleObjectSimilarity<User>> neighborhood = new LinkedList<CoupleObjectSimilarity<User>>();
+		PredictionList<User> neighborhood = new PredictionList<User>();
 		//int MIN_SAME_BUSINESS = 15;
 		int MIN_SAME_BUSINESS = 10;
 		List<User> users = repo.getNeighborhood(user, business, MIN_SAME_BUSINESS);
@@ -58,7 +59,7 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 		for (User u : users){
 			similarity = this.getSimilarity(user, u);
 			if (similarity > SIMILARITY_TRESHOLD)
-				neighborhood.add(new CoupleObjectSimilarity<User>(u, similarity));
+				neighborhood.add(new CoupleObjectSimilarity<User>(u, similarity), u.getCountSameBusiness());
 		}
 		return neighborhood;
 	}
@@ -107,9 +108,9 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 	 * Return the item-based Neighborhood
 	 */
 	@Override
-	public List<CoupleObjectSimilarity<Business>> getNeighborHood(UserBusinessMatrix matrix, Business business, User user) {
+	public PredictionList<Business> getNeighborHood(UserBusinessMatrix matrix, Business business, User user) {
 		ReviewRepository repo = new ReviewRepositoryImpl();
-		List<CoupleObjectSimilarity<Business>> neighborhood = new LinkedList<CoupleObjectSimilarity<Business>>();
+		PredictionList<Business> neighborhood = new PredictionList<Business>();
 		//int MIN_SAME_BUSINESS = 15;
 		int MIN_SAME_BUSINESS = 10;
 		List<Business> businesses = repo.getNeighborhood(business, user, MIN_SAME_BUSINESS);
@@ -122,7 +123,7 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 		for (Business b : businesses){	
 				similarity = this.getSimilarity(business, b);
 				if (similarity > SIMILARITY_TRESHOLD)
-					neighborhood.add(new CoupleObjectSimilarity<Business>(b, similarity));
+					neighborhood.add(new CoupleObjectSimilarity<Business>(b, similarity), b.getCountSameUsers());
 		}
 		return neighborhood;
 	}
@@ -169,15 +170,15 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 //		return review.getStars();
 //	}
 	@Override
-	public int itemBasedPrediction(List<CoupleObjectSimilarity<Business>> neighborhood, Review review, User user, UserBusinessMatrix matrix) {
-		Collections.sort(neighborhood, new MaxSimilarity<Business>());
+	public int itemBasedPrediction(PredictionList<Business> neighborhood, Review review, User user, UserBusinessMatrix matrix) {
+		Collections.sort(neighborhood.getList(), new MaxSimilarity<Business>());
 
 		double predictNumerator = 0;
 		double predictDenominator = 0;
 
 		int i = 0;
 		Business bs;
-		for (CoupleObjectSimilarity<Business> b : neighborhood){
+		for (CoupleObjectSimilarity<Business> b : neighborhood.getList()){
 			bs = b.getObject();
 			predictNumerator += bs.getCountSameUsers() * (matrix.getRatingByUserItem(user.getId(), bs.getId()) - user.getAverageStars());
 			predictDenominator += bs.getCountSameUsers();
@@ -208,14 +209,14 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 //		return review.getStars();
 //	}
 	@Override
-	public int userBasedPrediction(List<CoupleObjectSimilarity<User>> neighborhood, Review review, User user, Business business, UserBusinessMatrix matrix) {
-		Collections.sort(neighborhood, new MaxSimilarity<User>());
+	public int userBasedPrediction(PredictionList<User> neighborhood, Review review, User user, Business business, UserBusinessMatrix matrix) {
+		Collections.sort(neighborhood.getList(), new MaxSimilarity<User>());
 		double predictNumerator = 0;
 		double predictDenominator = 0;
 
 		int i = 0;
 		User us;
-		for (CoupleObjectSimilarity<User> u : neighborhood){
+		for (CoupleObjectSimilarity<User> u : neighborhood.getList()){
 			us = u.getObject();
 			predictNumerator += us.getCountSameBusiness() * (matrix.getRatingByUserItem(us.getId(), business.getId()) - us.getAverageStars());
 			predictDenominator += us.getCountSameBusiness();
