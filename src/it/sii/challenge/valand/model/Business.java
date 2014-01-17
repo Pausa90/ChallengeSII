@@ -13,7 +13,7 @@ public class Business {
 	private List<String> categories;
 	private boolean infered;
 	
-	private int countSameBusiness;
+	private int countSameUsers;
 	/*
 	private String full_address;
 	private String city;
@@ -61,7 +61,7 @@ public class Business {
 
 	public Business(String id, String name, double stars, int reviewCount, int countSameBusiness) {
 		this(id, name, new LinkedList<String>(), stars, reviewCount, new LinkedList<String>());
-		this.countSameBusiness = countSameBusiness;
+		this.countSameUsers = countSameBusiness;
 	}
 	
 	/**
@@ -138,12 +138,12 @@ public class Business {
 		return "BusinessID: " + this.business_id;
 	}
 
-	public int getCountSameBusiness() {
-		return countSameBusiness;
+	public int getCountSameUsers() {
+		return countSameUsers;
 	}
 
-	public void setCountSameBusiness(int countSameBusiness) {
-		this.countSameBusiness = countSameBusiness;
+	public void setCountSameUsers(int countSameUsers) {
+		this.countSameUsers = countSameUsers;
 	}
 	
 	

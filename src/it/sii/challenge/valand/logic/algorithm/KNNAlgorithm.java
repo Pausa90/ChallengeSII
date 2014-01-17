@@ -50,16 +50,13 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 		int MIN_SAME_BUSINESS = 10;
 		List<User> users = repo.getNeighborhood(user, business, MIN_SAME_BUSINESS);
 		if (users.size() == 0) {
-			printer.addToBackup("sotto soglia in getNeighborhood");
+			printer.addToBackup("sotto soglia in getNeighborhood users");
 			return neighborhood;
 		}
 		
 		double similarity;
-		Map<String, Integer> rowUser = matrix.getUserValutatedItems(user.getId());	
-		Map<String, Integer> rowU;
 		for (User u : users){
-			rowU = matrix.getUserValutatedItems(u.getId());
-			similarity = this.getSimilarity(user, u, rowUser, rowU);
+			similarity = this.getSimilarity(user, u);
 			if (similarity > SIMILARITY_TRESHOLD)
 				neighborhood.add(new CoupleObjectSimilarity<User>(u, similarity));
 		}
@@ -87,52 +84,90 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 //	}
 */
 
-	private double getSimilarity(User user, User u, Map<String, Integer> rowUser, Map<String, Integer> rowU) {
+	private double getSimilarity(User user, User u) {
 		//if (this.controllaVotiUguali(rowUser, user.getAverageStars()) || this.controllaVotiUguali(rowU, u.getAverageStars()))
 			return 1 - (Math.abs(user.getAverageStars() - u.getAverageStars())/4.);
 		//return this.similarityCalculator.doPearsonSimilarity(rowUser, rowU,	user.getAverageStars(), u.getAverageStars());
 	}
 
-	private boolean controllaVotiUguali(Map<String, Integer> rowUser, double average) {
-		Double averageObj = new Double(average);
-		Double tmp;
-		for (Integer i : rowUser.values()){
-			tmp = new Double(i.intValue());
-			if (!tmp.equals(averageObj)){
-				return false;
-			}
-		}
-		this.printer.addToBackup("Voti uguali (" + rowUser.keySet().size() + ")");
-		return true;
-	}
+//	private boolean controllaVotiUguali(Map<String, Integer> rowUser, double average) {
+//		Double averageObj = new Double(average);
+//		Double tmp;
+//		for (Integer i : rowUser.values()){
+//			tmp = new Double(i.intValue());
+//			if (!tmp.equals(averageObj)){
+//				return false;
+//			}
+//		}
+//		this.printer.addToBackup("Voti uguali (" + rowUser.keySet().size() + ")");
+//		return true;
+//	}
 
 	/** 
 	 * Return the item-based Neighborhood
 	 */
 	@Override
 	public List<CoupleObjectSimilarity<Business>> getNeighborHood(UserBusinessMatrix matrix, Business business, User user) {
-		Map<String, Integer> row = matrix.getUserValutatedItems(user.getId());
-		Map<String, Integer> columnBusiness = matrix.getItemRatingsByAllUsers(business.getId());	
-
+		ReviewRepository repo = new ReviewRepositoryImpl();
 		List<CoupleObjectSimilarity<Business>> neighborhood = new LinkedList<CoupleObjectSimilarity<Business>>();
-		Map<String, Integer> columnB;
+		//int MIN_SAME_BUSINESS = 15;
+		int MIN_SAME_BUSINESS = 10;
+		List<Business> businesses = repo.getNeighborhood(business, user, MIN_SAME_BUSINESS);
+		if (businesses.size() == 0) {
+			printer.addToBackup("sotto soglia in getNeighborhood business");
+			return neighborhood;
+		}
+		
 		double similarity;
-		for (String id_business : row.keySet()){	
-			if (!business.getId().equals(id_business)){
-				columnB = matrix.getItemRatingsByAllUsers(id_business);
-				similarity = this.getSimilarity(business, matrix.getBusinessFromBusiness(id_business), columnBusiness, columnB);
-				this.printer.addToBackup("item based similarity:" + similarity);
+		for (Business b : businesses){	
+				similarity = this.getSimilarity(business, b);
 				if (similarity > SIMILARITY_TRESHOLD)
-					neighborhood.add(new CoupleObjectSimilarity<Business>(matrix.getBusinessFromBusiness(id_business), similarity));
-			}
+					neighborhood.add(new CoupleObjectSimilarity<Business>(b, similarity));
 		}
 		return neighborhood;
 	}
+//	public List<CoupleObjectSimilarity<Business>> getNeighborHood(UserBusinessMatrix matrix, Business business, User user) {
+//		Map<String, Integer> row = matrix.getUserValutatedItems(user.getId());
+//		Map<String, Integer> columnBusiness = matrix.getItemRatingsByAllUsers(business.getId());	
+//
+//		List<CoupleObjectSimilarity<Business>> neighborhood = new LinkedList<CoupleObjectSimilarity<Business>>();
+//		Map<String, Integer> columnB;
+//		double similarity;
+//		for (String id_business : row.keySet()){	
+//			if (!business.getId().equals(id_business)){
+//				columnB = matrix.getItemRatingsByAllUsers(id_business);
+//				similarity = this.getSimilarity(business, matrix.getBusinessFromBusiness(id_business), columnBusiness, columnB);
+//				this.printer.addToBackup("item based similarity:" + similarity);
+//				if (similarity > SIMILARITY_TRESHOLD)
+//					neighborhood.add(new CoupleObjectSimilarity<Business>(matrix.getBusinessFromBusiness(id_business), similarity));
+//			}
+//		}
+//		return neighborhood;
+//	}
 
-	private double getSimilarity(Business business, Business b, Map<String, Integer> columnBusiness, Map<String, Integer> columnB) {
-		return this.similarityCalculator.doAdjustedCosineSimilarity(columnBusiness, columnB);
+	private double getSimilarity(Business business, Business b) {
+		return 1 - (Math.abs(business.getStars() - b.getStars())/4.);
 	}
 
+//	@Override
+//	public int itemBasedPrediction(List<CoupleObjectSimilarity<Business>> neighborhood, Review review, User user, UserBusinessMatrix matrix) {
+//		Collections.sort(neighborhood, new MaxSimilarity<Business>());
+//
+//		double predictNumerator = 0;
+//		double predictDenominator = 0;
+//
+//		int i = 0;
+//
+//		for (CoupleObjectSimilarity<Business> b : neighborhood){
+//			if (i == this.k)	break;
+//			predictNumerator += b.getSimilarity() * (matrix.getRatingByUserItem(user, b.getObject()));
+//			predictDenominator += b.getSimilarity();
+//			i++;
+//		}
+//
+//		this.setStars(review, predictNumerator/predictDenominator);
+//		return review.getStars();
+//	}
 	@Override
 	public int itemBasedPrediction(List<CoupleObjectSimilarity<Business>> neighborhood, Review review, User user, UserBusinessMatrix matrix) {
 		Collections.sort(neighborhood, new MaxSimilarity<Business>());
@@ -141,15 +176,15 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 		double predictDenominator = 0;
 
 		int i = 0;
-
+		Business bs;
 		for (CoupleObjectSimilarity<Business> b : neighborhood){
-			if (i == this.k)	break;
-			predictNumerator += b.getSimilarity() * (matrix.getRatingByUserItem(user, b.getObject()));
-			predictDenominator += b.getSimilarity();
+			bs = b.getObject();
+			predictNumerator += bs.getCountSameUsers() * (matrix.getRatingByUserItem(user.getId(), bs.getId()) - user.getAverageStars());
+			predictDenominator += bs.getCountSameUsers();
 			i++;
-		}
-
-		this.setStars(review, predictNumerator/predictDenominator);
+		} 
+		
+		this.setStars(review, user.getAverageStars() + predictNumerator/predictDenominator);
 		return review.getStars();
 	}
 

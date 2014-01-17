@@ -38,16 +38,16 @@ public class Main {
 		
 		DocumentIO documentIO = new DocumentIO(businessFile, checkinFile, reviewFile, userFile, testFile, outputFile, trueFile);
 
-		populateDB(documentIO);
+//		populateDB(documentIO);
 		
-//		Classifier classifier = new Classifier();
+		Classifier classifier = new Classifier();
 //		classifier.getMatrix().readTheMatrix();
 		
-//		List<Review> reviewsToTest = documentIO.getReviewsFromTest();
-//		Predictor predictor = new Predictor(classifier.getMatrix(), reviewsToTest);
+		List<Review> reviewsToTest = documentIO.getReviewsFromTest();
+		Predictor predictor = new Predictor(classifier.getMatrix(), reviewsToTest);
 //	
-//		int k = 5;
-//		predictor.startPrediction(k, documentIO);
+		int k = 5;
+		predictor.startPrediction(k, documentIO);
 		
 //		ReviewRepository r_repo = new ReviewRepositoryImpl();
 //		BusinessRepository b_repo = new BusinessRepositoryImpl();

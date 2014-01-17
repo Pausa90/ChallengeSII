@@ -220,7 +220,10 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 		}
 		return false;		
 	}
-
+	
+	/** 
+	 * UserBased
+	 */
 	public List<User> getNeighborhood(User user, Business business, int treshold){
 		Connection c = null;
 		try {
@@ -305,6 +308,9 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 		}
 	}
 
+	/** 
+	 * UserBased
+	 */
 	public List<Business> getNeighborhood(Business business, User user, int treshold){
 		
 		Connection c = null;
@@ -332,7 +338,7 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 				+ "from allTogetherB, itemsThatAreVotedByHim where allTogetherB.business_id = itemsThatAreVotedByHim.business_id "
 				+ "group by allTogetherB.business_id order by countSameUsers desc;";
 	
-		String getNeighborhood = "select Business.business_id, Business.stars, Business.review_count, countSameUsers from totalB, Business where Business.business_id = totalB.business_id LIMIT 0, 100;";
+		String getNeighborhood = "select Business.business_id, Business.stars, Business.review_count, countSameUsers from totalB, Business where Business.business_id = totalB.business_id LIMIT 0, 10;";
 		
 		
 		statement = c.prepareStatement(createView1);
@@ -382,45 +388,45 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 
 
 
-public boolean isValoriUguali(User user){
-	Connection c = null;
-	try {
-
-		c=d.getConnection();
-		PreparedStatement statement = null;
-
-		String getNeighborhood = "select stars, COUNT(stars) as starCount from Review where user_id=? group by stars;";
-
-		statement = c.prepareStatement(getNeighborhood);
-		statement.setString(1, user.getId());
-		ResultSet rs=statement.executeQuery();
-		rs.next();
-		if (rs.next())
-			return false;
-		return true;
-
-	}  catch (SQLException e) {
-		try {
-			throw new PersistenceException(e.getMessage());
-		} catch (PersistenceException e1) {
-			e1.printStackTrace();
-		}
-		return true;
-	} catch (PersistenceException e) {
-		e.printStackTrace();
-		return true;
-	}
-	finally {
-		try {
-			if (c!= null) c.close();
-		} catch (SQLException e) {
-			try {
-				throw new PersistenceException(e.getMessage());
-			} catch (PersistenceException e1) {
-				e1.printStackTrace();
-			}
-		}
-	}
-}
+//public boolean isValoriUguali(User user){
+//	Connection c = null;
+//	try {
+//
+//		c=d.getConnection();
+//		PreparedStatement statement = null;
+//
+//		String getNeighborhood = "select stars, COUNT(stars) as starCount from Review where user_id=? group by stars;";
+//
+//		statement = c.prepareStatement(getNeighborhood);
+//		statement.setString(1, user.getId());
+//		ResultSet rs=statement.executeQuery();
+//		rs.next();
+//		if (rs.next())
+//			return false;
+//		return true;
+//
+//	}  catch (SQLException e) {
+//		try {
+//			throw new PersistenceException(e.getMessage());
+//		} catch (PersistenceException e1) {
+//			e1.printStackTrace();
+//		}
+//		return true;
+//	} catch (PersistenceException e) {
+//		e.printStackTrace();
+//		return true;
+//	}
+//	finally {
+//		try {
+//			if (c!= null) c.close();
+//		} catch (SQLException e) {
+//			try {
+//				throw new PersistenceException(e.getMessage());
+//			} catch (PersistenceException e1) {
+//				e1.printStackTrace();
+//			}
+//		}
+//	}
+//}
 
 }

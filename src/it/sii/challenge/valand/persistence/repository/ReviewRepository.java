@@ -25,8 +25,14 @@ public interface ReviewRepository {
 	 
 	public Review findById(String b_id, String u_id);
 	
+	/**
+	 * UserBased
+	 */
 	public List<User> getNeighborhood(User user, Business business, int treshold);
-
+	/**
+	 * ItemBased
+	 */
+	public List<Business> getNeighborhood(Business business, User user, int treshold);
 
 	
 }
