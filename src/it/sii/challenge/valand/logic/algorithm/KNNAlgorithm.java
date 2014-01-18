@@ -2,6 +2,7 @@ package it.sii.challenge.valand.logic.algorithm;
 
 import it.sii.challenge.valand.logic.SimilarityCalculator;
 import it.sii.challenge.valand.model.Business;
+import it.sii.challenge.valand.model.CommonValues;
 import it.sii.challenge.valand.model.Review;
 import it.sii.challenge.valand.model.User;
 import it.sii.challenge.valand.model.UserBusinessMatrix;
@@ -133,8 +134,17 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
  *
  */
 class MaxSimilarity<T> implements Comparator<CoupleObjectSimilarity<T>>{
-
+	
 	public int compare(CoupleObjectSimilarity<T> c1, CoupleObjectSimilarity<T> c2) {
-		return Double.compare(c2.getSimilarity(),c1.getSimilarity());
+		CommonValues nc1 = (CommonValues) c1.getObject();
+		CommonValues nc2 = (CommonValues) c2.getObject();
+		
+		return Double.compare(nc2.getCommonValues(),nc1.getCommonValues());
 	}
+	
+	
+//	public int compare(CoupleObjectSimilarity<T> c1, CoupleObjectSimilarity<T> c2) {
+//		return Double.compare(c2.getSimilarity(),c1.getSimilarity());
+//	}
+	
 }

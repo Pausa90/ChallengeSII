@@ -90,8 +90,8 @@ public class Predictor {
 		PredictionList<Business> buisnessNeighborhood = this.getBusinessNeighborhood(business, review);
 		
 		//Parametro che stabilisce dinamicamente quanto fidarsi delle predizioni
-		//double lambda = this.calculateLambda(userNeighborhood.getCommonsValue(), buisnessNeighborhood.getCommonsValue());
-		double lambda = this.calculateLambda(userNeighborhood.size(), buisnessNeighborhood.size());
+		double lambda = this.calculateLambda(userNeighborhood.getCommonsValue(), buisnessNeighborhood.getCommonsValue());
+		//double lambda = this.calculateLambda(userNeighborhood.size(), buisnessNeighborhood.size());
 
 		int userPredict;
 		int buisnessPredict;
