@@ -251,7 +251,7 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 					+ "			group by user_id order by countSameBusiness desc;";
 
 			String getNeighborhood = "select User.user_id, User.average_stars, User.review_count, countSameBusiness from total, "
-					+ "User where User.user_id = total.user_id LIMIT 0, 10;";
+					+ "User where User.user_id = total.user_id LIMIT 0, 100;";
 
 			statement = c.prepareStatement(createView1);
 			statement.setString(1, user.getId());
@@ -325,7 +325,8 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 					+ "from allTogetherB, itemsThatAreVotedByHim where allTogetherB.business_id = itemsThatAreVotedByHim.business_id "
 					+ "group by allTogetherB.business_id order by countSameUsers desc;";
 
-			String getNeighborhood = "select Business.business_id, Business.stars, Business.review_count, countSameUsers from totalB, Business where Business.business_id = totalB.business_id LIMIT 0, 10;";
+			String getNeighborhood = "select Business.business_id, Business.stars, Business.review_count, countSameUsers from totalB, "
+					+ "Business where Business.business_id = totalB.business_id LIMIT 0, 100;";
 
 
 			statement = c.prepareStatement(createView1);

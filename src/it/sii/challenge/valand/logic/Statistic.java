@@ -20,7 +20,7 @@ public class Statistic {
                 System.out.println("The program took "+ minutes + " minutes and " + seconds + " seconds"); 
         }
         
-        public void printMAE(File output, File trueValues){
+        public void printMAE(File output, File trueValues, int defaultValueCount){
                 try{
                         BufferedReader outputReader = new BufferedReader(new FileReader(output));                
                         BufferedReader trueReader = new BufferedReader(new FileReader(trueValues));
@@ -54,6 +54,7 @@ public class Statistic {
                         
                         if (n==0) System.out.println("non ci sono file da confrontare");
                         else        System.out.println("MAE:" + mae);
+                        System.out.println("Default count:"+defaultValueCount);
                         
                 } catch (IOException e){
                         e.printStackTrace();

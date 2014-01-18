@@ -86,7 +86,6 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 
 		double predictNumerator = 0;
 		double predictDenominator = 0;
-
 		Business bs;
 		for (CoupleObjectSimilarity<Business> b : neighborhood.getList()){
 			bs = b.getObject();
@@ -105,7 +104,6 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 		neighborhood.setList(list);
 		double predictNumerator = 0;
 		double predictDenominator = 0;
-
 		User us;
 		for (CoupleObjectSimilarity<User> u : neighborhood.getList()){
 			us = u.getObject();

@@ -26,11 +26,12 @@ public class Predictor {
 	private UserBusinessMatrix matrix;
 	private List<Review> reviewsToTest;
 	private ClassificationAlgorithm algorithm;
-	private final int BUSINESS_REVIEW_COUNT_TRESHOLD = 30;
-	private final int USERS_REVIEW_COUNT_TRESHOLD = 100; //min count to calculate neighborhood
-	private final int COMMON_TRESHOLD = 50;
-	private final int NEIGHBORHOOD_TRESHOLD = 5; //min size of neighborhood
+	private final int BUSINESS_REVIEW_COUNT_TRESHOLD = 10;
+	private final int USERS_REVIEW_COUNT_TRESHOLD = 50; //min count to calculate neighborhood
+	private final int COMMON_TRESHOLD = 10;
+	private final int NEIGHBORHOOD_TRESHOLD = 1; //min size of neighborhood
 	private final int AVERAGE_VALUE = 4;
+	private int defaultValueCount = 0;
 	
 	
 
@@ -82,6 +83,7 @@ public class Predictor {
 		
 		if (user!=null && business!=null)
 			return this.linearCombinationPrediction(review, user, business);
+		this.setDefaultValueCount(this.getDefaultValueCount() + 1);
 		return AVERAGE_VALUE;
 	}
 	
@@ -91,10 +93,14 @@ public class Predictor {
 		
 		//Parametro che stabilisce dinamicamente quanto fidarsi delle predizioni
 		double lambda = this.calculateLambda(userNeighborhood.getCommonsValue(), buisnessNeighborhood.getCommonsValue());
-		//double lambda = this.calculateLambda(userNeighborhood.size(), buisnessNeighborhood.size());
+//		double lambda = this.calculateLambda(userNeighborhood.size(), buisnessNeighborhood.size());
 
 		int userPredict;
 		int buisnessPredict;
+		if (lambda == -1){
+			this.setDefaultValueCount(this.getDefaultValueCount() + 1);
+			return AVERAGE_VALUE;
+		}
 		if (lambda == 0)
 			userPredict = 0;
 		else
@@ -130,8 +136,18 @@ public class Predictor {
 		return this.algorithm.getNeighborHood(this.matrix, this.matrix.getBusinessFromMatrix(review.getBusinessId()),
 				this.matrix.getUserFromMatrix(review.getUserId()));
 	}
+//
+//	private double calculateLambda(int user, int buisness) {
+//		if (user < NEIGHBORHOOD_TRESHOLD)
+//			return 0.;
+//		if (buisness < NEIGHBORHOOD_TRESHOLD)
+//			return 1.;		
+//		return user / (double) (user+buisness); //us : us+bus = x : 1
+//	}
 
 	private double calculateLambda(int user, int buisness) {
+		if (user < COMMON_TRESHOLD && buisness < COMMON_TRESHOLD)
+			return -1;
 		if (user < COMMON_TRESHOLD)
 			return 0.;
 		if (buisness < COMMON_TRESHOLD)
@@ -140,17 +156,25 @@ public class Predictor {
 	}
 	
 	private int userBasedPrediction(Review review, PredictionList<User> neighborhood, User user, Business business) {
-		if (neighborhood.size() < NEIGHBORHOOD_TRESHOLD){
-			return AVERAGE_VALUE;
-		}
+//		if (neighborhood.size() < NEIGHBORHOOD_TRESHOLD){
+//			return AVERAGE_VALUE;
+//		}
 		return this.algorithm.userBasedPrediction(neighborhood, review, user, business, this.matrix);
 	}
 
 	private int itemBasedPrediction(Review review, PredictionList<Business> neighborhood, User user) {
-		if (neighborhood.size() < NEIGHBORHOOD_TRESHOLD){
-			return this.AVERAGE_VALUE;
-		}
+//		if (neighborhood.size() < NEIGHBORHOOD_TRESHOLD){
+//			return this.AVERAGE_VALUE;
+//		}
 		return this.algorithm.itemBasedPrediction(neighborhood, review, user, this.matrix);
+	}
+
+	public int getDefaultValueCount() {
+		return defaultValueCount;
+	}
+
+	public void setDefaultValueCount(int defaultValueCount) {
+		this.defaultValueCount = defaultValueCount;
 	}
 
 }

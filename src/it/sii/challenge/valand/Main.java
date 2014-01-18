@@ -7,11 +7,8 @@ import it.sii.challenge.valand.model.Business;
 import it.sii.challenge.valand.model.Review;
 import it.sii.challenge.valand.model.User;
 import it.sii.challenge.valand.persistence.repository.BusinessRepository;
-import it.sii.challenge.valand.persistence.repository.ReviewRepository;
-import it.sii.challenge.valand.persistence.repository.UserRepository;
 import it.sii.challenge.valand.persistence.repositoryImpl.BusinessRepositoryImpl;
 import it.sii.challenge.valand.persistence.repositoryImpl.ReviewRepositoryImpl;
-import it.sii.challenge.valand.persistence.repositoryImpl.UserRepositoryImpl;
 import it.sii.challenge.valand.utilities.DocumentIO;
 
 import java.util.LinkedList;
@@ -27,8 +24,8 @@ public class Main {
 		String trueFile = args[2]; //DA ELIMINARE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 		
-//		String trainingPath = "dataset/";
-//
+		String trainingPath = "dataset/";
+
 //		String testFile = trainingPath+"review_test.dat";
 //		String outputFile = trainingPath+"output.dat";
 //		String trueFile = trainingPath+"review_realratings.dat";
@@ -37,13 +34,13 @@ public class Main {
 //		String businessFile = trainingPath+"business.json";
 //		String reviewFile = trainingPath+"review_training.json";
 //		String checkinFile = trainingPath+"checkin.json";	
-//		
+		
 		DocumentIO documentIO = new DocumentIO(testFile, outputFile, trueFile);
 //		DocumentIO documentIO = new DocumentIO(businessFile, checkinFile, reviewFile, userFile, testFile, outputFile, trueFile);
 //		populateDB(documentIO);
 		
 		Classifier classifier = new Classifier();
-		classifier.getMatrix().readTheMatrix();
+//		classifier.getMatrix().readTheMatrix();
 		
 		List<Review> reviewsToTest = documentIO.getReviewsFromTest();
 		Predictor predictor = new Predictor(classifier.getMatrix(), reviewsToTest);
@@ -62,7 +59,7 @@ public class Main {
 //		
 		
 		Statistic statistics = new Statistic(startTime);
-		statistics.printMAE(documentIO.getOutputFile(), documentIO.getTrueFile());
+		statistics.printMAE(documentIO.getOutputFile(), documentIO.getTrueFile(), predictor.getDefaultValueCount());
 		
 		long endTime = System.nanoTime();
 		statistics.printTemporalInformation(endTime);
