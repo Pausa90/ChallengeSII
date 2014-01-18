@@ -13,8 +13,6 @@ public class Business implements CommonValues{
 	private double stars;
 	private int review_count;
 	private List<String> categories;
-	private boolean infered;
-	private boolean categoriesTaken = false;
 	
 	private int countSameUsers;
 	/*
@@ -48,7 +46,6 @@ public class Business implements CommonValues{
 		this.stars = stars;
 		this.review_count = reviewCount;
 		this.categories = categories;
-		this.infered = false;
 	}
 		
 	/**
@@ -73,7 +70,6 @@ public class Business implements CommonValues{
 	 */
 	public Business(String business_id) {
 		this(business_id, "", new LinkedList<String>(), 0, 0, new LinkedList<String>());
-		this.infered = true;
 	}
 
 	/**
@@ -157,7 +153,6 @@ public class Business implements CommonValues{
 	@Override
 	public int getCommonValues() {
 		return this.countSameUsers;
-	}
-	
+	}	
 	
 }

@@ -5,11 +5,7 @@ import it.sii.challenge.valand.model.Business;
 import it.sii.challenge.valand.model.Review;
 import it.sii.challenge.valand.model.User;
 import it.sii.challenge.valand.model.UserBusinessMatrix;
-import it.sii.challenge.valand.utilities.CoupleObjectSimilarity;
 import it.sii.challenge.valand.utilities.PredictionList;
-import it.sii.challenge.valand.utilities.PrinterAndSaver;
-
-import java.util.List;
 
 
 public abstract class ClassificationAlgorithm {

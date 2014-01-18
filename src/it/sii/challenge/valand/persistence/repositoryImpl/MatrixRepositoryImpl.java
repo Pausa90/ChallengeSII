@@ -18,35 +18,29 @@ import java.util.Map;
 
 public class MatrixRepositoryImpl implements MatrixRepository{
 	private DataSource d= new DataSource();
-	private Connection c=null;
 
 	@Override
 	public boolean insertUserRatings(Map<String, Integer> userRatings) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean insertBusinessRatings(Map<String, Integer> userRatings) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public Map<String, Integer> findBusinessRatings() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Map<String, Integer> findUserRatings() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Business findARating(String u_id, String b_id) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

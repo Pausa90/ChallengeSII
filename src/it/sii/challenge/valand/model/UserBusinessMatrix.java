@@ -8,7 +8,6 @@ import it.sii.challenge.valand.persistence.repositoryImpl.MatrixRepositoryImpl;
 import it.sii.challenge.valand.persistence.repositoryImpl.UserRepositoryImpl;
 
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 

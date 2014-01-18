@@ -1,7 +1,5 @@
 package it.sii.challenge.valand.logic;
 
-import it.sii.challenge.valand.model.Business;
-import it.sii.challenge.valand.model.User;
 import it.sii.challenge.valand.persistence.repository.UserRepository;
 import it.sii.challenge.valand.persistence.repositoryImpl.UserRepositoryImpl;
 import it.sii.challenge.valand.utilities.MapsListsUtilities;
@@ -10,7 +8,6 @@ import java.util.Map;
 
 public class SimilarityCalculator {
 
-	//TODO: provare a migliorare sulla base della grandezza della colonna/riga	
 	public double doPearsonSimilarity(Map<String, Integer> user1, Map<String, Integer> user2, 
 			double averageRating1, double averageRating2) {
 		double similarity_numerator = 0;

@@ -1,6 +1,5 @@
 package it.sii.challenge.valand.persistence.repositoryImpl;
 
-import it.sii.challenge.valand.model.Business;
 import it.sii.challenge.valand.model.User;
 import it.sii.challenge.valand.persistence.DataSource;
 import it.sii.challenge.valand.persistence.PersistenceException;
@@ -10,13 +9,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
 public class UserRepositoryImpl implements UserRepository{
 	private DataSource d= new DataSource();
-	private Connection c=null;
 	
 	@Override
 	public List<User> findAll() {
@@ -118,7 +115,6 @@ public class UserRepositoryImpl implements UserRepository{
 			try {
 				throw new PersistenceException(e.getMessage());
 			} catch (PersistenceException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 			return false;

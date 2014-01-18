@@ -1,7 +1,6 @@
 package it.sii.challenge.valand.persistence.repositoryImpl;
 
 import it.sii.challenge.valand.model.Business;
-import it.sii.challenge.valand.model.User;
 import it.sii.challenge.valand.persistence.DataSource;
 import it.sii.challenge.valand.persistence.PersistenceException;
 import it.sii.challenge.valand.persistence.repository.BusinessRepository;
@@ -15,7 +14,6 @@ import java.util.List;
 
 public class BusinessRepositoryImpl implements BusinessRepository{
 	private DataSource d= new DataSource();
-	private Connection c=null;
 	
 	@Override
 	public List<Business> findAll() {
@@ -241,7 +239,6 @@ public class BusinessRepositoryImpl implements BusinessRepository{
 			PreparedStatement statement = null;
 			
 			String insertAll = "insert into Categories (business_id, category) values (?,?)";
-			int i=0;
 			for(Business b : businessList){
 				for(String category : b.getCategories()){
 					statement = c.prepareStatement(insertAll);
