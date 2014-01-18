@@ -28,8 +28,8 @@ public class Predictor {
 	private ClassificationAlgorithm algorithm;
 	private final int BUSINESS_REVIEW_COUNT_TRESHOLD = 10;
 	private final int USERS_REVIEW_COUNT_TRESHOLD = 50; //min count to calculate neighborhood
-	private final int COMMON_TRESHOLD = 10;
-	private final int NEIGHBORHOOD_TRESHOLD = 1; //min size of neighborhood
+	private final int COMMON_TRESHOLD = 5;
+//	private final int NEIGHBORHOOD_TRESHOLD = 1; //min size of neighborhood
 	private final int AVERAGE_VALUE = 4;
 	private int defaultValueCount = 0;
 	
@@ -57,7 +57,8 @@ public class Predictor {
 			writerOutput = new FileWriter(doc_io.getOutputFile());
 			int i = 1;
 			for (Review review : this.reviewsToTest){
-				int prediction = this.predict(review);
+				//int prediction = this.predict(review);
+				int prediction = 4;
 				if (prediction > 5)
 					review.setStars(5);
 				else if (prediction < 1){

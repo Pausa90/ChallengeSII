@@ -306,6 +306,69 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 			c=d.getConnection();
 			PreparedStatement statement = null;
 			ResultSet rs;
+			
+			/*        String createView1 = "create or replace view usersWhoVotedItems as "
+                                        + "select Business.business_id, Review.user_id "
+                                        + "from Business, Review where Business.business_id = Review.business_id and "
+                                        + "Business.business_id = ?;";
+ 
+                        String createView2 = "create or replace view allTogetherB as "
+                                        + "select Review.business_id, Review.user_id, stars from usersWhoVotedItems, Review "
+                                        + "where usersWhoVotedItems.user_id = Review.user_id;";
+ 
+                        String createView3 = "create or replace view itemsThatAreVotedByHim as "
+                                        + "select Review.business_id from Business, Review "
+                                        + "where Review.business_id=Business.business_id and Review.user_id = ?;";
+ 
+                        String createView4 = "create or replace view totalB as "
+                                        + "select allTogetherB.business_id, COUNT(allTogetherB.user_id) as "
+                                        + "countSameUsers, avg(stars) as averageStarsUsers "
+                                        + "from allTogetherB, itemsThatAreVotedByHim "
+                                        + "where allTogetherB.business_id = itemsThatAreVotedByHim.business_id "
+                                        + "group by allTogetherB.business_id order by countSameUsers desc;";
+ 
+                        String createView5 = "create or replace view businessSameUsers as "
+                                        + "select Business.business_id, Business.stars, Business.review_count, "
+                                        + "countSameUsers from totalB, Business where Business.business_id = totalB.business_id LIMIT 0, 100;";
+                       
+                        String createView6 = "create or replace view businessPlusCategories as "
+                                        + "select Categories.business_id, category, stars, review_count, countSameUsers from Categories, businessSameUsers "
+                                        + "where Categories.business_id = businessSameUsers.business_id;";
+ 
+                        String createView7 = "create or replace view businessCategories as "
+                                        + "select Business.business_id, stars, review_count, category from Business, Categories where Business.business_id=Categories.business_id "
+                                        + "and Business.business_id=?;";
+ 
+                        String getNeighborhood = "select businessPlusCategories.business_id, businessPlusCategories.stars, "
+                                        + "businessPlusCategories.review_count, businessPlusCategories.countSameUsers, COUNT(*) as countSameCategories "
+                                        + "from businessPlusCategories, businessCategories where "
+                                        + "businessPlusCategories.category=businessCategories.category "
+                                        + "and businessPlusCategories.business_id != ? "
+                                        + "group by businessPlusCategories.business_id "
+                                        + "order by COUNT(*) desc LIMIT 0, 20;";
+ 
+ 
+                        statement = c.prepareStatement(createView1);
+                        statement.setString(1, business.getId());
+                        statement.executeUpdate();             
+                        statement = c.prepareStatement(createView2);
+                        statement.executeUpdate();             
+                        statement = c.prepareStatement(createView3);
+                        statement.setString(1, user.getId());
+                        statement.executeUpdate();             
+                        statement = c.prepareStatement(createView4);
+                        statement.executeUpdate();             
+                        statement = c.prepareStatement(createView5);
+                        statement.executeUpdate();             
+                        statement = c.prepareStatement(createView6);
+                        statement.executeUpdate();             
+                        statement = c.prepareStatement(createView7);
+                        statement.setString(1, business.getId());
+                        statement.executeUpdate();
+                        statement = c.prepareStatement(getNeighborhood);
+                        statement.setString(1, business.getId());
+                        rs = statement.executeQuery();
+             */
 
 			String createView1 = "create or replace view usersWhoVotedItems as "
 					+ "select Business.business_id, Review.user_id from Business, Review where Business.business_id = Review.business_id and "
