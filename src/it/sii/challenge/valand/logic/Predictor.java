@@ -26,8 +26,8 @@ public class Predictor {
 	private UserBusinessMatrix matrix;
 	private List<Review> reviewsToTest;
 	private ClassificationAlgorithm algorithm;
-	private final int BUSINESS_REVIEW_COUNT_TRESHOLD = 20;
-	private final int USERS_REVIEW_COUNT_TRESHOLD = 80; //min count to calculate neighborhood
+	private final int BUSINESS_REVIEW_COUNT_TRESHOLD = 30;
+	private final int USERS_REVIEW_COUNT_TRESHOLD = 100; //min count to calculate neighborhood
 	private final int COMMON_TRESHOLD = 50;
 	private final int NEIGHBORHOOD_TRESHOLD = 5; //min size of neighborhood
 	private final int AVERAGE_VALUE = 4;
