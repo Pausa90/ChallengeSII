@@ -1,5 +1,7 @@
 package it.sii.challenge.valand.model;
 
+import it.sii.challenge.valand.utilities.CommonValues;
+
 
 public class User implements CommonValues{
 	

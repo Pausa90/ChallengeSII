@@ -4,11 +4,13 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
+/**
+ * Classe che ha il compito di stampare a schermo le stringhe in ingresso e di memorizzarle all'interno di un file
+ * @author andrea
+ */
+
 public class PrinterAndSaver {
 	
-	/**
-	 * Classe che ha il compito di stampare a schermo le stringhe in ingresso e di memorizzarle all'interno di un file
-	 */
 	private String backup;
 	
 	public PrinterAndSaver(){

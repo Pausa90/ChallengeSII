@@ -1,6 +1,7 @@
 package it.sii.challenge.valand.model;
 
 import it.sii.challenge.valand.persistence.repositoryImpl.BusinessRepositoryImpl;
+import it.sii.challenge.valand.utilities.CommonValues;
 
 import java.util.LinkedList;
 import java.util.List;

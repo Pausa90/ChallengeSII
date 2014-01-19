@@ -1,0 +1,8 @@
+it.sii.challenge.valand
+it.sii.challenge.valand.logic
+it.sii.challenge.valand.logic.algorithm
+it.sii.challenge.valand.model
+it.sii.challenge.valand.persistence
+it.sii.challenge.valand.persistence.repository
+it.sii.challenge.valand.persistence.repositoryImpl
+it.sii.challenge.valand.utilities

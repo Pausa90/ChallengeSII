@@ -1,8 +1,9 @@
 package it.sii.challenge.valand.utilities;
 
 /**
- * Classe di supporto che memorizza la coppia (Object, distanza).
- * @author andrea
+ * Classe di supporto che memorizza la coppia (Object, similarità).
+ * Utile per ordinare liste di utenti o di business 
+ * @author andrea e valerio
  *
  */
 public class CoupleObjectSimilarity<T> {

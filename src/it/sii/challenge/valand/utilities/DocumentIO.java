@@ -26,6 +26,13 @@ import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.MalformedJsonException;
 
+/**
+ * Classe che si interfaccia con i dispositivi di input-output,
+ * fornendo un punto di accesso per la lettura e scrittura dei file
+ * @author andrea e valerio
+ *
+ */
+
 public class DocumentIO {
 	private File businessFile;
 	private File checkinFile;
@@ -143,23 +150,6 @@ public class DocumentIO {
 		return result;
 	}
 
-	
-	/**
-	 * Methods to take maps from json file
-	 */	
-//	public Map<String, User> getUsersFromFile(){
-//	Map<String, User> result = new HashMap<String, User>();
-//		try {
-//			for(User u : getListUsersFromFile()){
-//				result.put(u.getId(), u);
-//			}	
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//		return result;
-//	}
-	
-	
 	public Map<String, Business> getBusinessFromFile(){
 		Map<String, Business> result = new HashMap<String, Business>();
 		try {

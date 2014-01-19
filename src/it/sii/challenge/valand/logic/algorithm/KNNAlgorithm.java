@@ -1,13 +1,12 @@
 package it.sii.challenge.valand.logic.algorithm;
 
-import it.sii.challenge.valand.logic.SimilarityCalculator;
 import it.sii.challenge.valand.model.Business;
-import it.sii.challenge.valand.model.CommonValues;
 import it.sii.challenge.valand.model.Review;
 import it.sii.challenge.valand.model.User;
 import it.sii.challenge.valand.model.UserBusinessMatrix;
 import it.sii.challenge.valand.persistence.repository.ReviewRepository;
 import it.sii.challenge.valand.persistence.repositoryImpl.ReviewRepositoryImpl;
+import it.sii.challenge.valand.utilities.CommonValues;
 import it.sii.challenge.valand.utilities.CoupleObjectSimilarity;
 import it.sii.challenge.valand.utilities.PredictionList;
 
@@ -15,22 +14,19 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * KNN è utilizzato per lavorare sulla matrice user-item,
+ * interfacciandosi con il database.
+ */
+
 public class KNNAlgorithm extends ClassificationAlgorithm {
 
-	/**
-	 * I conti di KNN vengono realizzati tramite una matrice sparsa.
-	 * Il suo output è una lista di oggetti, che vengono ordinati sulla base della similarità dal
-	 * Rating i-esimo.
-	 * Si considerano infine i primi n elementi, riportando il valore scelto.
-	 */
-	public KNNAlgorithm(SimilarityCalculator calculator) { //K fisso a 10
-		super(calculator);
+	public KNNAlgorithm() {
+		super();
 	}
 
+	
 	@Override
-	/** 
-	 * Return the user-based Neighborhood
-	 */
 	public PredictionList<User> getNeighborHood(UserBusinessMatrix matrix, User user, Business business) {			
 		ReviewRepository repo = new ReviewRepositoryImpl();
 		PredictionList<User> neighborhood = new PredictionList<User>();
@@ -110,6 +106,11 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 		return review.getStars();
 	}
 
+	/**
+	 * Imposta il voto approssimando il double all'intero più vicino
+	 * @param review
+	 * @param predicted
+	 */
 	private void setStars(Review review, double predicted) {
 		int casted = (int) predicted;
 		if (predicted-casted > 0.5)
@@ -122,7 +123,7 @@ public class KNNAlgorithm extends ClassificationAlgorithm {
 
 /**
  * Metodo di comparazione basato sulla distanza tra due object
- * @author andrea
+ * @author andrea e valerio
  * @param <T>
  *
  */

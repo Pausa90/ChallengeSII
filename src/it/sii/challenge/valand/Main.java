@@ -22,44 +22,16 @@ public class Main {
 		String testFile = args[0];
 		String outputFile = args[1];
 		String trueFile = args[2]; //DA ELIMINARE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 		
-		String trainingPath = "dataset/";
-
-//		String testFile = trainingPath+"review_test.dat";
-//		String outputFile = trainingPath+"output.dat";
-//		String trueFile = trainingPath+"review_realratings.dat";
-//
-//		String userFile = trainingPath+"user.json";
-//		String businessFile = trainingPath+"business.json";
-//		String reviewFile = trainingPath+"review_training.json";
-//		String checkinFile = trainingPath+"checkin.json";	
-		
-		DocumentIO documentIO = new DocumentIO(testFile, outputFile, trueFile);
-//		DocumentIO documentIO = new DocumentIO(businessFile, checkinFile, reviewFile, userFile, testFile, outputFile, trueFile);
-//		populateDB(documentIO);
-		
+		DocumentIO documentIO = new DocumentIO(testFile, outputFile, trueFile);	
 		Classifier classifier = new Classifier();
-//		classifier.getMatrix().readTheMatrix();
 		
 		List<Review> reviewsToTest = documentIO.getReviewsFromTest();
 		Predictor predictor = new Predictor(classifier.getMatrix(), reviewsToTest);
-	
-		int k = 5;
 		predictor.startPrediction(documentIO);
 		
-//		ReviewRepository r_repo = new ReviewRepositoryImpl();
-//		BusinessRepository b_repo = new BusinessRepositoryImpl();
-//		UserRepository u_repo = new UserRepositoryImpl();
-//		List<Review> reviews = r_repo.findAll();
-//		List<User> users = u_repo.findAll();
-//		List<Business> businesses = b_repo.findAll();
-//		fixDatabase(reviews, users, businesses);
-//		
-//		
-		
 		Statistic statistics = new Statistic(startTime);
-		statistics.printMAE(documentIO.getOutputFile(), documentIO.getTrueFile(), predictor.getDefaultValueCount());
+		statistics.printMAE(documentIO.getOutputFile(), documentIO.getTrueFile());
 		
 		long endTime = System.nanoTime();
 		statistics.printTemporalInformation(endTime);

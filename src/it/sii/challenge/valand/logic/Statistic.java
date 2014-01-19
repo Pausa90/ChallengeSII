@@ -5,6 +5,11 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * Classe adibita al calcolo del MAE ed al calcolo dei tempi di esecuzione
+ * @author andrea
+ *
+ */
 public class Statistic {
         
         private long startTime;
@@ -20,7 +25,7 @@ public class Statistic {
                 System.out.println("The program took "+ minutes + " minutes and " + seconds + " seconds"); 
         }
         
-        public void printMAE(File output, File trueValues, int defaultValueCount){
+        public void printMAE(File output, File trueValues){
                 try{
                         BufferedReader outputReader = new BufferedReader(new FileReader(output));                
                         BufferedReader trueReader = new BufferedReader(new FileReader(trueValues));
@@ -54,7 +59,6 @@ public class Statistic {
                         
                         if (n==0) System.out.println("non ci sono file da confrontare");
                         else        System.out.println("MAE:" + mae);
-                        System.out.println("Default count:"+defaultValueCount);
                         
                 } catch (IOException e){
                         e.printStackTrace();

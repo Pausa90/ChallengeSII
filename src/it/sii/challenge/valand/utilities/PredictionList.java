@@ -1,13 +1,19 @@
 package it.sii.challenge.valand.utilities;
 
-import it.sii.challenge.valand.model.Business;
-
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Classe utilizzata per creare una lista di user/business.
+ * Si comporta come una semplice List<T> dall'esterno, ma permette l'accesso
+ * alla variabile commonsValue in O(1) invece che in O(n)
+ * @author andrea
+ * @param <T>
+ */
+
 public class PredictionList <T>{
 	private List<CoupleObjectSimilarity<T>> list;
-	private int commonsValue;
+	private int commonsValue; //Determina l'affidabilità dell'insieme 
 	
 	public PredictionList(List<CoupleObjectSimilarity<T>> list, int value){
 		this.list = list;
@@ -19,6 +25,10 @@ public class PredictionList <T>{
 		this.commonsValue = 0;
 	}
 	
+	/**
+	 * CommonsValue determina l'affidabilità della lista
+	 * @return
+	 */
 	public int getCommonsValue() {
 		return this.commonsValue;
 	}

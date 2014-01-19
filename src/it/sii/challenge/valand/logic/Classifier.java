@@ -12,7 +12,10 @@ public class Classifier {
 	
 	private UserBusinessMatrix matrix;
 	
-	
+	/**
+	 * Avvia la creazione della matrice user-business.
+	 * Una volta terminato, la classificazione è conclusa.
+	 */
 	public Classifier(){
 		this.matrix = new UserBusinessMatrix();
 	}
